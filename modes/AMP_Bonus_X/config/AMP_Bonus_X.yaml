@@ -1,0 +1,92 @@
+#config_version=5
+
+mode:
+    start_events: ball_starting
+    priority: 115
+
+counters:
+    lb_AMP_Complete_count:
+        count_events: AMP_shot_complete
+        events_when_hit: AMP_shot_done
+        starting_count: 1
+        direction: up
+        persist_state: false
+
+shots:
+    eject_chamber:
+        switch: s_eject_chamber
+        show_tokens:
+            light: l_power_amp_1_bottom, l_power_amp_2_mid, l_power_amp_3_top
+
+shot_groups:
+    Amp_shot:
+        shots: eject_chamber
+        reset_events: 
+            AMP_shot_done: .5s
+
+variable_player:
+
+    mode_AMP_Bonus_X_started:
+        pf_Bonus_Multiplier:
+            int: 1
+            action: set
+
+    AMP_shot_done{count==2}:
+        pf_Bonus_Multiplier:
+            int: 2
+            action: set
+
+    AMP_shot_done{count==3}:
+        pf_Bonus_Multiplier:
+            int: 3
+            action: set
+
+    AMP_shot_done{count==4}:
+        pf_Bonus_Multiplier:
+            int: 4
+            action: set
+
+    AMP_shot_done{count==5}:
+       pf_Bonus_Multiplier:
+            int: 5
+            action: set
+
+    AMP_shot_done{count==6}:
+        pf_Bonus_Multiplier:
+            int: 6
+            action: set
+
+    eject_chamber_hit:
+        score: 1000 * current_player.pf_Bonus_Multiplier
+
+show_player:
+    AMP_shot_done:
+        flash: 
+            loops: 4
+            speed: 4
+            show_tokens:
+                lights: AMP_Bonus_X
+
+    AMP_shot_done{count==2}:
+        Bonus_2x_on:
+            show_tokens:
+
+    AMP_shot_done{count==3}:
+        Bonus_3x_on:
+            show_tokens:
+                lights: Bonus_2X, Bonus_3X
+
+    AMP_shot_done{count==4}:
+        Bonus_4x_on:
+            show_tokens:
+                lights: Bonus_2X, Bonus_3X, Bonus_4X
+
+    AMP_shot_done{count==5}:
+        Bonus_5x_on:
+            show_tokens:
+                lights: Bonus_2X, Bonus_3X, Bonus_4X, Bonus_5X
+
+    AMP_shot_done{count>=6}:
+        Bonus_6x_on:
+            show_tokens:
+                lights: Bonus_2X, Bonus_3X, Bonus_4X, Bonus_5X, Bonus_6X

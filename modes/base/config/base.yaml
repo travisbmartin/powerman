@@ -1,0 +1,116 @@
+#config_version=5
+
+mode:
+  start_events: ball_starting
+  priority: 100
+
+
+sound_player:
+  mode_base_started:
+    Invade:
+      loops: -1
+
+  ball_ended:
+    Invade:
+      action: stop
+
+
+slide_player:
+  mode_base_started:
+    widgets:
+      - type: text
+        text: (score)
+        number_grouping: true
+        min_digits: 2
+        font_size: 20
+      - type: text
+        text: PLAYER (number)
+        y: 10
+        x: 10
+        font_size: 10
+        anchor_x: left
+        anchor_y: bottom
+      - type: text
+        text: BALL (ball)
+        y: 10
+        x: right-10
+        anchor_x: right
+        anchor_y: bottom
+        font_size: 10
+
+variable_player:
+  Level_1_my_first_profile_unlit_hit:
+    score: 200 * current_player.pf_multiplier
+
+  Level_1_my_first_profile_flashing_hit:
+    score: 1000 * current_player.pf_multiplier
+
+  s_left_saucer_active:
+    score: 100 * current_player.pf_multiplier
+
+  s_right_saucer_active:
+    score: 100 * current_player.pf_multiplier
+
+  s_load_chamber_active:
+    score: 100 * current_player.pf_multiplier
+
+  s_eject_chamer_active:
+    score: 100 * current_player.pf_multiplier
+
+  s_left_return_lane_active:
+    score: 100 * current_player.pf_multiplier
+
+  s_right_return_lane_active:
+    score: 100 * current_player.pf_multiplier
+
+  s_ramp_drop_target_active:
+    score: 100 * current_player.pf_multiplier
+
+  s_left_bumper_active:
+    score: 100 * current_player.pf_multiplier
+
+  s_middle_bumper_active:
+    score: 100 * current_player.pf_multiplier
+
+  s_right_bumper_active:
+    score: 100 * current_player.pf_multiplier
+
+  s_right_slingshot_active:
+    score: 100 * current_player.pf_multiplier
+
+  s_left_slingshot_active:
+    score: 100 * current_player.pf_multiplier
+
+  s_top_lane_J_active:
+    score: 100 * current_player.pf_multiplier
+
+  s_top_lane_A_active:
+    score: 100 * current_player.pf_multiplier
+
+  s_top_lane_M_active:
+    score: 100 * current_player.pf_multiplier
+
+  s_left_outlane_active:
+    score: 100 * current_player.pf_multiplier
+
+  s_right_outlane_active:
+    score: 100 * current_player.pf_multiplier
+
+  s_top_25K_lane_active:
+    score: 100 * current_player.pf_multiplier
+
+
+  s_top_50K_lane_active:
+    score: 100 * current_player.pf_multiplier
+
+  s_left_rollover_active:
+    score: 100 * current_player.pf_multiplier
+
+  s_right_rollover_active:
+    score: 100 * current_player.pf_multiplier
+
+  s_left_25K_target_active:
+    score: 100 * current_player.pf_multiplier
+
+  s_right_25K_target_active:
+    score: 100 * crurent_player.pf_multiplier

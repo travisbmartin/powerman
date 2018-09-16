@@ -1,0 +1,68 @@
+#show_version=5
+- time: 0
+  lights:
+    l_bonus_1K: ff
+- time: '+1'
+  lights:
+    l_bonus_2K: ff
+- time: '+1'
+  lights:
+    l_bonus_4K: ff
+- time: '+1'
+  lights:
+    l_bonus_8K: ff
+- time: '+1'
+  lights:
+    l_bonus_16K: ff
+- time: '+1'
+  lights:
+    l_bonus_32K: ff
+- time: '+1'
+  lights:
+    l_bonus_128K: ff
+- time: '+1'
+  lights:
+     l_bonus_1K: 0
+     l_bonus_2K: 0
+     l_bonus_4K: 0
+     l_bonus_8K: 0
+     l_bonus_16K: 0
+     l_bonus_32K: 0
+     l_bonus_128K: 0
+- time: '+1'
+  lights:
+     l_bonus_1K: ff
+     l_bonus_2K: ff
+     l_bonus_4K: ff
+     l_bonus_8K: ff
+     l_bonus_16K: ff
+     l_bonus_32K: ff
+     l_bonus_128K: ff
+- time: '+1'
+  lights:
+     l_bonus_1K: 0
+     l_bonus_2K: 0
+     l_bonus_4K: 0
+     l_bonus_8K: 0
+     l_bonus_16K: 0
+     l_bonus_32K: 0
+     l_bonus_128K: 0
+- time: '+1'
+  lights:
+     l_bonus_1K: ff
+     l_bonus_2K: ff
+     l_bonus_4K: ff
+     l_bonus_8K: ff
+     l_bonus_16K: ff
+     l_bonus_32K: ff
+     l_bonus_128K: ff
+- time: '+1'
+  lights:
+     l_bonus_1K: 0
+     l_bonus_2K: 0
+     l_bonus_4K: 0
+     l_bonus_8K: 0
+     l_bonus_16K: 0
+     l_bonus_32K: 0
+     l_bonus_128K: 0
+- time: '+1'

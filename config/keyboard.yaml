@@ -1,0 +1,49 @@
+#config_version=5
+keyboard:
+  s:
+    switch: s_credit
+  1:
+    switch: s_trough_1
+    toggle: true
+  x:
+    switch: s_left_slingshot
+  z:
+    switch: s_left_flipper
+  /:
+    switch: s_right_flipper
+  .:
+    switch: s_right_slingshot
+  shift+1:
+    switch: s_center_target
+  shift+4:
+    switch: s_left_saucer
+  shift+5:
+    switch: s_right_saucer
+  shift+6:
+    switch: s_top_25K_lane
+  shift+7:
+    switch: s_top_50K_lane
+  shift+8:
+    switch: s_left_rollover
+  shift+9:
+    switch: s_right_rollover
+
+  v:
+    switch: s_eject_chamber
+  j:
+    switch: s_top_lane_J
+  a:
+    switch: s_top_lane_A
+  m:
+    switch: s_top_lane_M
+  h:
+    switch: s_heavy_target
+  k:
+    switch: s_metal_target
+  5:
+    switch: s_left_bumper
+  6:
+    switch: s_middle_bumper
+  7:
+    switch: s_right_bumper
+    

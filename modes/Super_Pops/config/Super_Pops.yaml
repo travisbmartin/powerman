@@ -1,0 +1,68 @@
+#config_version=5
+
+
+mode:
+  start_events: ball_starting
+  stop_events: ball_ended
+  priority: 500
+
+#slide_player:
+#  mode_bombshell_started: bombshell_startup
+
+#slides:
+#  bombshell_startup:
+#    type: text
+#    text: BOMBSHELL
+#    font_size: 30
+#    color: red
+#    y: 80%
+#    expire: 1s
+
+#sound_player:
+#  mode_bombshell_started:
+#    Bombshell_track:
+#      action: play
+#      loops: -1
+
+  #mode_bombshell_stopped:
+  #  Bombshell_track:
+  #    action: stop
+
+
+counters:
+  lb_Right_Pop_Shot_Complete_count:
+    count_events: sw_Right_Pop
+    events_when_hit: Right_Pop_done
+    starting_count: 75
+    count_complete_value: 0
+    direction: down
+    persist_state: True
+    events_when_complete: Super_Pop_R_Ready
+
+  lb_Left_Pop_Shot_Complete_count:
+    count_events: sw_Left_Pop
+    events_when_hit: Left_Pop_done
+    starting_count: 75
+    count_complete_value: 0
+    direction: down
+    persist_state: True
+    events_when_complete: Super_Pop_L_Ready
+
+  lb_Mid_Pop_Shot_Complete_count:
+    count_events: sw_Mid_Pop
+    events_when_hit: Mid_Pop_done
+    starting_count: 75
+    count_complete_value: 0
+    direction: down
+    persist_state: True
+    events_when_complete: Super_Pop_M_Ready
+
+shots:
+  Right_Pop:
+    switch: s_right_bumper
+
+  Left_Pop:
+    switch: s_left_bumper
+
+  Mid_Pop:
+    switch: s_middle_bumper

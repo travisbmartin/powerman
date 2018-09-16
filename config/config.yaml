@@ -1,0 +1,76 @@
+#config_version=5
+
+smart_virtual:
+  file_log: full
+
+mpf:
+  default_pulse_ms: 20
+
+game:
+  balls_per_game: 3
+  max_players: 4
+
+config:
+- hardware.yaml
+- keyboard.yaml
+
+modes:
+- base
+- JAM_rollover
+- AMP_Bonus_X
+- HEAVY_made
+- METAL_made
+- Super_Pops
+
+videos: 
+  spinning:
+    width: 200
+    height: 140
+    file: spinning.mp4
+
+  attract:
+    width: 150
+    height: 105
+    file: attract.mp4
+
+widget_styles:
+  text_default:
+    font_name: psycha3
+    font_size: 16
+    adjust_top: 2
+    adjust_bottom: 3
+  space title huge:
+    font_name: DEADJIM
+    font_size: 29
+    antialias: true
+    adjust_top: 3
+    adjust_bottom: 3
+  space title:
+    font_name: DEADJIM
+    font_size: 21
+    antialias: true
+    adjust_top: 2
+    adjust_bottom: 3
+  medium:
+    font_name: pixelmix
+    font_size: 8
+    adjust_top: 1
+    adjust_bottom: 1
+  small:
+    font_name: smallest_pixel-7
+    font_size: 9
+    adjust_top: 2
+    adjust_bottom: 3
+  tall title:
+    font_name: psycha3
+    font_size: 20
+
+
+player_vars:
+  pf_multiplier:
+    value_type: int
+    initial_value: 1
+
+  pf_Bonus_Multiplier:
+    value_type: int
+    initial_value: 1

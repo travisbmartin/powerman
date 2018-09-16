@@ -1,0 +1,52 @@
+#config_version=5
+show_player:
+  mode_attract_started:
+    attract_dmd_loop:
+      loops: -1
+      speed: 1
+
+    attract_lights_level:
+      loops: -1
+      speed: 3
+
+    attract_lights_heavy:
+      loops: -1
+      speed: 3
+
+    attract_lights_metal:
+      loops: -1
+      speed: 3
+
+    attract_lights_xvalue:
+      loops: -1
+      speed: 3
+
+    attract_lights_guitar:
+      loops: -1
+      speed: 3
+
+    attract_lights_pops:
+      loops: -1
+      speed: 5
+
+  mode_attract_stopped:
+    attract_dmd_loop:
+      action: stop
+
+    attract_lights_level:
+      action: stop
+
+    attract_lights_heavy:
+      action: stop
+
+    attract_lights_metal:
+      action: stop
+
+    attract_lights_xvalue:
+      action: stop
+
+    attract_lights_guitar:
+      action: stop
+
+    attract_lights_pops:
+      action: stop

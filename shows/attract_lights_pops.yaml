@@ -1,0 +1,17 @@
+#show_version=5
+- time: 0
+  lights:
+    l_right_bumper: ff
+    l_middle_bumper: 0
+    l_left_bumper: 0
+- time: '+1'
+  lights:
+    l_right_bumper: 0
+    l_middle_bumper: ff
+    l_left_bumper: 0
+- time: '+1'
+  lights:
+    l_right_bumper: 0
+    l_middle_bumper: 0
+    l_left_bumper: ff
+- time: '+1'

@@ -1,0 +1,20 @@
+#config_version=5
+
+shots:
+  Level_1:
+    switch: s_center_target
+    show_tokens:
+      light: l_extra_ball
+
+  Level_2:
+    switch: s_heavy_target
+
+  Level_3:
+    switch: s_metal_target
+
+  Level_4:
+    switch: s_left_saucer
+
+  Level_5:
+    switch: s_right_saucer
+
