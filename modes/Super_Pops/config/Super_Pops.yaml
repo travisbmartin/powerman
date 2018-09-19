@@ -32,8 +32,8 @@ mode:
 counters:
   lb_Right_Pop_Shot_Complete_count:
     count_events: sw_Right_Pop
-    events_when_hit: Right_Pop_done
-    starting_count: 75
+    events_when_hit: Right_Pop_hit
+    starting_count: 10
     count_complete_value: 0
     direction: down
     persist_state: True
@@ -41,8 +41,8 @@ counters:
 
   lb_Left_Pop_Shot_Complete_count:
     count_events: sw_Left_Pop
-    events_when_hit: Left_Pop_done
-    starting_count: 75
+    events_when_hit: Left_Pop_hit
+    starting_count: 10
     count_complete_value: 0
     direction: down
     persist_state: True
@@ -50,8 +50,8 @@ counters:
 
   lb_Mid_Pop_Shot_Complete_count:
     count_events: sw_Mid_Pop
-    events_when_hit: Mid_Pop_done
-    starting_count: 75
+    events_when_hit: Mid_Pop_hit
+    starting_count: 10
     count_complete_value: 0
     direction: down
     persist_state: True
@@ -66,3 +66,7 @@ shots:
 
   Mid_Pop:
     switch: s_middle_bumper
+
+variable_player:
+  Super_Pop_L_Ready:
+    score: 1000

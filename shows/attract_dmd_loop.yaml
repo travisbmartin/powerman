@@ -16,7 +16,6 @@
         type: move_out
         duration: 3s
         direction: top
-
       widgets:
       - type: image
         image: test

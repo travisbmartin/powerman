@@ -4,7 +4,6 @@ mode:
   start_events: ball_starting
   priority: 100
 
-
 sound_player:
   mode_base_started:
     Invade:
@@ -14,29 +13,53 @@ sound_player:
     Invade:
       action: stop
 
-
 slide_player:
   mode_base_started:
-    widgets:
-      - type: text
-        text: (score)
-        number_grouping: true
-        min_digits: 2
-        font_size: 20
-      - type: text
-        text: PLAYER (number)
-        y: 10
-        x: 10
-        font_size: 10
-        anchor_x: left
-        anchor_y: bottom
-      - type: text
-        text: BALL (ball)
-        y: 10
-        x: right-10
-        anchor_x: right
-        anchor_y: bottom
-        font_size: 10
+    machine_slide_01:
+      widgets:
+        - type: text
+          text: (score)
+          number_grouping: true
+          min_digits: 2
+          font_size: 20
+        - type: text
+          text: PLAYER (number)
+          y: 10
+          x: 10
+          font_size: 10
+          anchor_x: left
+          anchor_y: bottom
+        - type: text
+          text: BALL (ball)
+          y: 10
+          x: right-10
+          anchor_x: right
+          anchor_y: bottom
+          font_size: 10
+  Super_Pop_R_Ready:
+    Pop_Slide_1:
+      priority: 200
+      widgets:
+        - type: text
+          text: SUPER POPS R
+          font_size: 20
+          expire: 2s
+  Super_Pop_L_Ready:
+    Pop_Slide_2:
+      priority: 210
+      widgets:
+        - type: text
+          text: SUPER POPS L
+          font_size: 20
+          expire: 2s        
+  Super_Pop_M_Ready:
+    Pop_Slide_3:
+      priority: 220
+      widgets:
+        - type: text
+          text: SUPER POPS M
+          font_size: 20
+          expire: 2s
 
 variable_player:
   Level_1_my_first_profile_unlit_hit:
@@ -99,7 +122,6 @@ variable_player:
   s_top_25K_lane_active:
     score: 100 * current_player.pf_multiplier
 
-
   s_top_50K_lane_active:
     score: 100 * current_player.pf_multiplier
 
@@ -114,3 +136,49 @@ variable_player:
 
   s_right_25K_target_active:
     score: 100 * crurent_player.pf_multiplier
+
+counters:
+  lb_Right_Pop_count:
+    count_events: R_Pop_hit
+    events_when_hit: R_Pop_c
+    starting_count: 10
+    count_complete_value: 0
+    count_interval: 1
+    direction: down
+    persist_state: True
+    events_when_complete: Super_Pop_R_Ready
+    debug: true
+
+
+  lb_Left_Pop_count:
+    count_events: L_Pop_hit
+    events_when_hit: L_Pop_c
+    starting_count: 10
+    count_complete_value: 0
+    direction: down
+    count_interval: 1
+    persist_state: True
+    events_when_complete: Super_Pop_L_Ready
+    debug: true
+
+  lb_Mid_Pop_count:
+    count_events: M_Pop_hit
+    events_when_hit: M_Pop_c
+    starting_count: 10
+    count_complete_value: 0
+    direction: down
+    count_interval: 1
+    persist_state: True
+    events_when_complete: Super_Pop_M_Ready
+    debug: true
+
+shots:
+
+  R_Pop:
+    switch: s_right_bumper
+
+  L_Pop:
+    switch: s_left_bumper
+
+  M_Pop:
+    switch: s_middle_bumper
