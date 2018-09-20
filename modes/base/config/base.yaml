@@ -121,7 +121,6 @@ variable_player:
 counters:
   lb_Right_Pop_count:
     count_events: R_Pop_hit
-    events_when_hit: R_Pop_c
     starting_count: 10
     count_complete_value: 0
     count_interval: 1
@@ -130,10 +129,8 @@ counters:
     events_when_complete: Super_Pop_R_Ready
     debug: true
 
-
   lb_Left_Pop_count:
     count_events: L_Pop_hit
-    events_when_hit: L_Pop_c
     starting_count: 10
     count_complete_value: 0
     direction: down
@@ -144,7 +141,6 @@ counters:
 
   lb_Mid_Pop_count:
     count_events: M_Pop_hit
-    events_when_hit: M_Pop_c
     starting_count: 10
     count_complete_value: 0
     direction: down
@@ -153,13 +149,20 @@ counters:
     events_when_complete: Super_Pop_M_Ready
     debug: true
 
-shots:
+accruals:
+  lb_Super_Pops_Made:
+    events:
+      - lb_Mid_Pop_count.Super_Pop_M_Ready
+      - lb_Left_Pop_count.Super_Pop_L_Ready
+      - lb_Right_Pop_count.Super_Pop_R_Ready
+    events_when_complete: mode_Super_Pops_start
+    reset_on_complete: false
+    debug: true
 
+shots:
   R_Pop:
     switch: s_right_bumper
-
   L_Pop:
     switch: s_left_bumper
-
   M_Pop:
     switch: s_middle_bumper
