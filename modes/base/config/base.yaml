@@ -16,7 +16,7 @@ sound_player:
 slide_player:
   mode_base_started:
     machine_slide_01:
-      priority: 120
+      priority: 100
 
 
 slides:
@@ -121,43 +121,48 @@ variable_player:
 counters:
   lb_Right_Pop_count:
     count_events: R_Pop_hit
-    starting_count: 10
+    starting_count: 1
     count_complete_value: 0
     count_interval: 1
     direction: down
     persist_state: True
     events_when_complete: Super_Pop_R_Ready
     debug: true
-
+    reset_on_complete: false
   lb_Left_Pop_count:
     count_events: L_Pop_hit
-    starting_count: 10
+    starting_count: 1
     count_complete_value: 0
     direction: down
     count_interval: 1
     persist_state: True
     events_when_complete: Super_Pop_L_Ready
     debug: true
-
+    reset_on_complete: false
   lb_Mid_Pop_count:
     count_events: M_Pop_hit
-    starting_count: 10
+    starting_count: 1
     count_complete_value: 0
     direction: down
     count_interval: 1
     persist_state: True
     events_when_complete: Super_Pop_M_Ready
     debug: true
+    reset_on_complete: false
 
 accruals:
-  lb_Super_Pops_Made:
+  lb_Super_Pops_Enable:
     events:
-      - lb_Mid_Pop_count.Super_Pop_M_Ready
-      - lb_Left_Pop_count.Super_Pop_L_Ready
-      - lb_Right_Pop_count.Super_Pop_R_Ready
-    events_when_complete: mode_Super_Pops_start
+      - Super_Pop_R_Ready
+      - Super_Pop_M_Ready
+      - Super_Pop_L_Ready
+    events_when_complete: Super_Pops_Go
     reset_on_complete: false
     debug: true
+
+event_player:
+  Super_Pops_Go:
+    start_mode_Super_Pops
 
 shots:
   R_Pop:

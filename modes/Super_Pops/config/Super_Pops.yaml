@@ -1,21 +1,26 @@
 #config_version=5
 
 mode:
-  start_events: lb_Super_Pops_Made
+  start_events: Super_Pops_Go
   stop_events: ball_ended
   priority: 500
 
 slide_player:
-  mode_Super_Pops_started: bombshell_startup
+  mode_Super_Pops_started: 
+    bombshell_startup:
+      transition:
+        type: push
+        duration: 2s
+        direction: right
 
 slides:
   bombshell_startup:
     type: text
     text: BOMBSHELL
-    font_size: 30
+    font_size: 20
     color: red
     y: 80%
-    expire: 1s
+    expire: 4s
 
 sound_player:
   mode_Super_Pops_started:
