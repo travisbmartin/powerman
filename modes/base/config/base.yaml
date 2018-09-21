@@ -43,30 +43,18 @@ slides:
         font_size: 10
 
 variable_player:
-  Level_1_my_first_profile_unlit_hit:
-    score: 200 * current_player.pf_multiplier
-
-  Level_1_my_first_profile_flashing_hit:
-    score: 1000 * current_player.pf_multiplier
-
   s_left_saucer_active:
     score: 100 * current_player.pf_multiplier
-
   s_right_saucer_active:
     score: 100 * current_player.pf_multiplier
-
   s_load_chamber_active:
     score: 100 * current_player.pf_multiplier
-
   s_eject_chamer_active:
     score: 100 * current_player.pf_multiplier
-
   s_left_return_lane_active:
     score: 100 * current_player.pf_multiplier
-
   s_right_return_lane_active:
     score: 100 * current_player.pf_multiplier
-
   s_ramp_drop_target_active:
     score: 100 * current_player.pf_multiplier
 
@@ -125,7 +113,7 @@ counters:
     count_complete_value: 0
     count_interval: 1
     direction: down
-    persist_state: True
+    persist_state: false
     events_when_complete: Super_Pop_R_Ready
     debug: true
     reset_on_complete: false
@@ -135,7 +123,7 @@ counters:
     count_complete_value: 0
     direction: down
     count_interval: 1
-    persist_state: True
+    persist_state: false
     events_when_complete: Super_Pop_L_Ready
     debug: true
     reset_on_complete: false
@@ -145,7 +133,7 @@ counters:
     count_complete_value: 0
     direction: down
     count_interval: 1
-    persist_state: True
+    persist_state: false
     events_when_complete: Super_Pop_M_Ready
     debug: true
     reset_on_complete: false
@@ -157,6 +145,7 @@ accruals:
       - Super_Pop_M_Ready
       - Super_Pop_L_Ready
     events_when_complete: Super_Pops_Go
+    persist_state: false
     reset_on_complete: false
     debug: true
 

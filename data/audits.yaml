@@ -1,6 +1,6 @@
 events:
   game_ended: 1
-  game_started: 159
+  game_started: 166
 player:
   score:
     average: 1807.0
@@ -10,13 +10,13 @@ player:
 shots:
   Bombshell_Level_1: 7
   HEAVY: 22
-  L_Pop: 14
+  L_Pop: 27
   Level_1: 32
   Level_2: 22
   Level_3: 7
   METAL: 7
-  M_Pop: 12
-  R_Pop: 13
+  M_Pop: 28
+  R_Pop: 25
   eject_chamber: 8
   top_lane_A: 78
   top_lane_J: 64
@@ -32,7 +32,7 @@ switches:
   s_eject_chamber: 8
   s_heavy_target: 22
   s_left_25K_target: 0
-  s_left_bumper: 14
+  s_left_bumper: 27
   s_left_flipper: 0
   s_left_outlane: 0
   s_left_return_lane: 0
@@ -41,11 +41,11 @@ switches:
   s_left_slingshot: 0
   s_load_chamber: 0
   s_metal_target: 7
-  s_middle_bumper: 12
+  s_middle_bumper: 28
   s_outhole: 0
   s_ramp_drop_target: 0
   s_right_25K_target: 0
-  s_right_bumper: 13
+  s_right_bumper: 25
   s_right_flipper: 0
   s_right_outlane: 0
   s_right_return_lane: 0
@@ -59,7 +59,7 @@ switches:
   s_top_lane_A: 78
   s_top_lane_J: 64
   s_top_lane_M: 66
-  s_trough_1: 37
+  s_trough_1: 39
   s_trough_2: 0
   s_trough_3: 0
   s_trough_4: 0
