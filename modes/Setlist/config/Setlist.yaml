@@ -1,15 +1,15 @@
 #config_version=5
 
-acheivements:
+achievements:
   Song_01:
     show_tokens:
         lights: l_bonus_1K
-      show_when_selected: flash
-      show_when_completed: on
-      events_when_started: Thing_01
-      enable_events: initialize_setlist, reset_setlist
-      complete_events: award_Thing_01_song
-      reset_events: reset_setlist
+        show_when_selected: flash
+        show_when_completed: on
+        events_when_started: Thing_01
+        enable_events: initialize_setlist, reset_setlist
+        complete_events: award_Thing_01_song
+        reset_events: reset_setlist
   Song_02:
     show_tokens:
         lights: l_bonus_2K
@@ -75,7 +75,7 @@ acheivements:
         reset_events: reset_setlist
 
 achievement_groups:
-  mansion_awards:
+  Setlist_awards:
     achievements:
         - Song_01
         - Song_02
@@ -94,6 +94,6 @@ achievement_groups:
     select_random_achievement_events: sw_jet
     allow_selection_change_while_disabled: yes
     disable_while_achievement_started: yes
-    start_selected_events: balldevice_left_saucer
-    enable_events: Metal_Targets_Done{Count == 6}, Heavy_Targets_Done{Count == 6}
-    disable_events: Metal_Collected, Heavy_Collected
+    start_selected_events: balldevice_left_saucer_enter
+    enable_events: Setlist_Lit
+    disable_events: Setlist_Unlit

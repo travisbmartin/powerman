@@ -1,0 +1,326 @@
+2018-09-22 03:36:50,962 : INFO : Machine : Mission Pinball Framework Core Engine v0.50.14
+2018-09-22 03:36:50,962 : INFO : Machine : Command line arguments: {'no_load_cache': False, 'create_config_cache': True, 'bcp': True, 'configfile': ['config.yaml'], 'mpfconfigfile': 'c:\\program files\\python36\\lib\\site-packages\\mpf\\mpfconfig.yaml', 'force_assets_load': False, 'logfile': 'logs\\2018-09-22-03-36-50-mpf-Blitzwing.log', 'pause': False, 'production': False, 'text_ui': True, 'loglevel': 10, 'consoleloglevel': 10, 'force_platform': None, 'syslog_address': None, 'mc_file_name': None}
+2018-09-22 03:36:50,962 : INFO : Machine : MPF path: c:\program files\python36\lib\site-packages\mpf
+2018-09-22 03:36:50,962 : INFO : Machine : Machine path: c:\pinball\machine_files\powerman
+2018-09-22 03:36:50,962 : INFO : Machine : Platform: win32
+2018-09-22 03:36:50,962 : INFO : Machine : Python executable location: c:\program files\python36\python.exe
+2018-09-22 03:36:50,962 : INFO : Machine : Python version: 3.6.4 (64-bit)
+2018-09-22 03:36:51,337 : INFO : Machine : Machine config file #1: config.yaml
+2018-09-22 03:36:51,337 : INFO : ConfigProcessor : Loading config from cache: C:\Users\arsen\AppData\Local\Temp\6f80d79fba8d9e1499e064507f92ea30.mpf_cache
+2018-09-22 03:36:51,337 : DEBUG : asyncio : Using selector: SelectSelector
+2018-09-22 03:36:51,337 : INFO : Machine : Initialise MPF.
+2018-09-22 03:36:51,369 : DEBUG : Smart Virtual Platform : Configuring smart_virtual hardware interface.
+2018-09-22 03:36:51,570 : INFO : EventManager : Event: ======'machine_var_credits_string'====== Args={'value': 'FREE PLAY', 'prev_value': None, 'change': True}
+2018-09-22 03:36:51,622 : DEBUG : YAML File Interface : Loading file: c:\pinball\machine_files\powerman\data/machine_vars.yaml
+2018-09-22 03:36:51,622 : INFO : EventManager : Event: ======'machine_var_player1_score'====== Args={'value': 1807, 'prev_value': None, 'change': True}
+2018-09-22 03:36:51,622 : INFO : EventManager : Event: ======'machine_var_mpf_version'====== Args={'value': 'MPF v0.50.14', 'prev_value': None, 'change': True}
+2018-09-22 03:36:51,622 : INFO : EventManager : Event: ======'machine_var_mpf_extended_version'====== Args={'value': 'MPF v0.50.14, Config version:5, Show version: 5, BCP version:1.1', 'prev_value': None, 'change': True}
+2018-09-22 03:36:51,622 : INFO : EventManager : Event: ======'machine_var_python_version'====== Args={'value': '3.6.4', 'prev_value': None, 'change': True}
+2018-09-22 03:36:51,622 : INFO : EventManager : Event: ======'machine_var_platform'====== Args={'value': 'Windows-10-10.0.17134-SP0', 'prev_value': None, 'change': True}
+2018-09-22 03:36:51,622 : INFO : EventManager : Event: ======'machine_var_platform_system'====== Args={'value': 'Windows', 'prev_value': None, 'change': True}
+2018-09-22 03:36:51,622 : INFO : EventManager : Event: ======'machine_var_platform_release'====== Args={'value': '10', 'prev_value': None, 'change': True}
+2018-09-22 03:36:51,622 : INFO : EventManager : Event: ======'machine_var_platform_version'====== Args={'value': '10.0.17134', 'prev_value': None, 'change': True}
+2018-09-22 03:36:51,622 : INFO : EventManager : Event: ======'machine_var_platform_machine'====== Args={'value': 'AMD64', 'prev_value': None, 'change': True}
+2018-09-22 03:36:51,622 : INFO : EventManager : Event: ======'init_phase_1'====== Args={}
+2018-09-22 03:36:51,653 : INFO : ConfigProcessor : Loading config from cache: C:\Users\arsen\AppData\Local\Temp\54694e03b13373b8401f811b4432451e.mpf_cache
+2018-09-22 03:36:51,669 : DEBUG : ModeController : Loaded mode Super_Pops
+2018-09-22 03:36:51,669 : INFO : ConfigProcessor : Loading config from cache: C:\Users\arsen\AppData\Local\Temp\d808d2d72f296fd1aa34757ec3c2462e.mpf_cache
+2018-09-22 03:36:51,684 : DEBUG : ModeController : Loaded mode attract
+2018-09-22 03:36:51,684 : INFO : ConfigProcessor : Loading config from cache: C:\Users\arsen\AppData\Local\Temp\db9251e73a24ccf2b0615ac6d59528fd.mpf_cache
+2018-09-22 03:36:51,700 : DEBUG : ModeController : Loaded mode Light_Setlist
+2018-09-22 03:36:51,700 : INFO : ConfigProcessor : Loading config from cache: C:\Users\arsen\AppData\Local\Temp\8e1a6a6e716428615d3205ffe45b9b4d.mpf_cache
+2018-09-22 03:36:51,716 : DEBUG : ModeController : Loaded mode game
+2018-09-22 03:36:51,716 : INFO : ConfigProcessor : Loading config from cache: C:\Users\arsen\AppData\Local\Temp\e57854b60972a679be7db3119525e55c.mpf_cache
+2018-09-22 03:36:51,731 : DEBUG : ModeController : Loaded mode Light_Setlist_3s
+2018-09-22 03:36:51,733 : INFO : ConfigProcessor : Loading config from cache: C:\Users\arsen\AppData\Local\Temp\e5a35d9333ac02688f0ed8ba53b15bae.mpf_cache
+2018-09-22 03:36:51,735 : DEBUG : ModeController : Loaded mode HEAVY_made
+2018-09-22 03:36:51,735 : INFO : ConfigProcessor : Loading config from cache: C:\Users\arsen\AppData\Local\Temp\48e7067592bb707e458961d912bffce3.mpf_cache
+2018-09-22 03:36:51,737 : DEBUG : ModeController : Loaded mode base
+2018-09-22 03:36:51,737 : INFO : ConfigProcessor : Loading config from cache: C:\Users\arsen\AppData\Local\Temp\51b64cb8787c40172d21f2f188c7907f.mpf_cache
+2018-09-22 03:36:51,753 : DEBUG : ModeController : Loaded mode METAL_made
+2018-09-22 03:36:51,753 : INFO : ConfigProcessor : Loading config from cache: C:\Users\arsen\AppData\Local\Temp\ea56385d2ad68c586edc261f44c098fc.mpf_cache
+2018-09-22 03:36:51,768 : DEBUG : ModeController : Loaded mode AMP_Bonus_X
+2018-09-22 03:36:51,768 : WARNING : ConfigProcessor : Config file in cache changed: c:\pinball\machine_files\powerman\modes\Setlist\config\Setlist.yaml
+2018-09-22 03:36:51,768 : INFO : ConfigProcessor : Loading config from file c:\pinball\machine_files\powerman\modes\Setlist\config\Setlist.yaml.
+2018-09-22 03:36:51,768 : DEBUG : YAML File Interface : Loading file: c:\pinball\machine_files\powerman\modes\Setlist\config\Setlist.yaml
+2018-09-22 03:36:51,768 : INFO : ConfigProcessor : Loading config: c:\pinball\machine_files\powerman\modes\Setlist\config\Setlist.yaml
+2018-09-22 03:36:51,768 : INFO : ConfigProcessor : Config file cache created: C:\Users\arsen\AppData\Local\Temp\718593283757a5acb35ce8ebc92cc839.mpf_cache
+2018-09-22 03:36:51,800 : DEBUG : ModeController : Loaded mode Setlist
+2018-09-22 03:36:51,800 : INFO : ConfigProcessor : Loading config from cache: C:\Users\arsen\AppData\Local\Temp\4f091f2ddd9a437f138738e40fa1ecc6.mpf_cache
+2018-09-22 03:36:51,815 : DEBUG : ModeController : Loaded mode JAM_rollover
+2018-09-22 03:36:51,831 : DEBUG : counter.lb_Right_Pop_count : Configuring device with settings: '{'count_events': {'R_Pop_hit': 0}, 'starting_count': <mpf.core.placeholder_manager.NativeTypeTemplate object at 0x000001B64EA28358>, 'count_complete_value': <mpf.core.placeholder_manager.NativeTypeTemplate object at 0x000001B64EA28208>, 'count_interval': 1, 'direction': 'down', 'persist_state': False, 'events_when_complete': ['Super_Pop_R_Ready'], 'debug': True, 'reset_on_complete': False, 'events_when_hit': ['counter_lb_Right_Pop_count_hit', 'logicblock_lb_Right_Pop_count_hit'], 'enable_events': {}, 'disable_events': {}, 'reset_events': {}, 'restart_events': {}, 'disable_on_complete': True, 'start_enabled': None, 'console_log': 'full', 'file_log': 'full', 'label': '%', 'tags': [], 'multiple_hit_window': 0}'
+2018-09-22 03:36:51,831 : DEBUG : counter.lb_Left_Pop_count : Configuring device with settings: '{'count_events': {'L_Pop_hit': 0}, 'starting_count': <mpf.core.placeholder_manager.NativeTypeTemplate object at 0x000001B64EA28390>, 'count_complete_value': <mpf.core.placeholder_manager.NativeTypeTemplate object at 0x000001B64EA284E0>, 'direction': 'down', 'count_interval': 1, 'persist_state': False, 'events_when_complete': ['Super_Pop_L_Ready'], 'debug': True, 'reset_on_complete': False, 'events_when_hit': ['counter_lb_Left_Pop_count_hit', 'logicblock_lb_Left_Pop_count_hit'], 'enable_events': {}, 'disable_events': {}, 'reset_events': {}, 'restart_events': {}, 'disable_on_complete': True, 'start_enabled': None, 'console_log': 'full', 'file_log': 'full', 'label': '%', 'tags': [], 'multiple_hit_window': 0}'
+2018-09-22 03:36:51,831 : DEBUG : counter.lb_Mid_Pop_count : Configuring device with settings: '{'count_events': {'M_Pop_hit': 0}, 'starting_count': <mpf.core.placeholder_manager.NativeTypeTemplate object at 0x000001B64EA286A0>, 'count_complete_value': <mpf.core.placeholder_manager.NativeTypeTemplate object at 0x000001B64EA28518>, 'direction': 'down', 'count_interval': 1, 'persist_state': False, 'events_when_complete': ['Super_Pop_M_Ready'], 'debug': True, 'reset_on_complete': False, 'events_when_hit': ['counter_lb_Mid_Pop_count_hit', 'logicblock_lb_Mid_Pop_count_hit'], 'enable_events': {}, 'disable_events': {}, 'reset_events': {}, 'restart_events': {}, 'disable_on_complete': True, 'start_enabled': None, 'console_log': 'full', 'file_log': 'full', 'label': '%', 'tags': [], 'multiple_hit_window': 0}'
+2018-09-22 03:36:51,831 : DEBUG : accrual.lb_Super_Pops_Enable : Configuring device with settings: '{'events': ['Super_Pop_R_Ready', 'Super_Pop_M_Ready', 'Super_Pop_L_Ready'], 'events_when_complete': ['Super_Pops_Go'], 'persist_state': False, 'reset_on_complete': False, 'debug': True, 'events_when_hit': ['logicblock_lb_Super_Pops_Enable_hit'], 'enable_events': {}, 'disable_events': {}, 'reset_events': {}, 'restart_events': {}, 'disable_on_complete': True, 'start_enabled': None, 'console_log': 'full', 'file_log': 'full', 'label': '%', 'tags': []}'
+2018-09-22 03:36:51,851 : INFO : EventManager : Event: ======'init_phase_2'====== Args={}
+2018-09-22 03:36:51,867 : INFO : SwitchController : Found active switch: s_trough_5
+2018-09-22 03:36:51,867 : INFO : SwitchController : Found active switch: s_trough_4
+2018-09-22 03:36:51,867 : INFO : SwitchController : Found active switch: s_trough_3
+2018-09-22 03:36:51,867 : INFO : SwitchController : Found active switch: s_trough_2
+2018-09-22 03:36:51,867 : INFO : SwitchController : Found active switch: s_trough_1
+2018-09-22 03:36:51,914 : INFO : EventManager : Event: ======'bcp_connection_attempt'====== Args={'name': 'local_display', 'host': 'localhost', 'port': 5050}
+2018-09-22 03:36:51,914 : INFO : BCPClientSocket.local_display : Connecting BCP to 'local_display' at localhost:5050...
+2018-09-22 03:36:55,053 : INFO : BCPClientSocket.local_display : Connected BCP to 'local_display' localhost:5050
+2018-09-22 03:36:55,054 : INFO : EventManager : Event: ======'bcp_clients_connected'====== Args={}
+2018-09-22 03:36:55,067 : INFO : EventManager : Event: ======'machine_var_master_volume'====== Args={'value': 1.0, 'prev_value': None, 'change': True}
+2018-09-22 03:36:55,083 : DEBUG : YAML File Interface : Loading file: c:\pinball\machine_files\powerman\data/audits.yaml
+2018-09-22 03:36:55,104 : DEBUG : Machine : "info_lights:" section not found in machine configuration, so the Info Lights plugin will not be used.
+2018-09-22 03:36:55,110 : DEBUG : Machine : "switch_player:" section not found in machine configuration, so the Switch Playerplugin will not be used.
+2018-09-22 03:36:55,110 : INFO : EventManager : Event: ======'init_phase_3'====== Args={}
+2018-09-22 03:36:55,114 : INFO : AssetManager : Registering Asset: attract_dmd_loop, File: attract_dmd_loop.yaml, Default Group: default, Final Config: {'load': 'preload', 'file': 'c:\\pinball\\machine_files\\powerman\\shows\\attract_dmd_loop.yaml'}
+2018-09-22 03:36:55,114 : INFO : AssetManager : Registering Asset: attract_lights_guitar, File: attract_lights_guitar.yaml, Default Group: default, Final Config: {'load': 'preload', 'file': 'c:\\pinball\\machine_files\\powerman\\shows\\attract_lights_guitar.yaml'}
+2018-09-22 03:36:55,114 : INFO : AssetManager : Registering Asset: attract_lights_heavy, File: attract_lights_heavy.yaml, Default Group: default, Final Config: {'load': 'preload', 'file': 'c:\\pinball\\machine_files\\powerman\\shows\\attract_lights_heavy.yaml'}
+2018-09-22 03:36:55,114 : INFO : AssetManager : Registering Asset: attract_lights_level, File: attract_lights_level.yaml, Default Group: default, Final Config: {'load': 'preload', 'file': 'c:\\pinball\\machine_files\\powerman\\shows\\attract_lights_level.yaml'}
+2018-09-22 03:36:55,114 : INFO : AssetManager : Registering Asset: attract_lights_metal, File: attract_lights_metal.yaml, Default Group: default, Final Config: {'load': 'preload', 'file': 'c:\\pinball\\machine_files\\powerman\\shows\\attract_lights_metal.yaml'}
+2018-09-22 03:36:55,114 : INFO : AssetManager : Registering Asset: attract_lights_pops, File: attract_lights_pops.yaml, Default Group: default, Final Config: {'load': 'preload', 'file': 'c:\\pinball\\machine_files\\powerman\\shows\\attract_lights_pops.yaml'}
+2018-09-22 03:36:55,114 : INFO : AssetManager : Registering Asset: attract_lights_xvalue, File: attract_lights_xvalue.yaml, Default Group: default, Final Config: {'load': 'preload', 'file': 'c:\\pinball\\machine_files\\powerman\\shows\\attract_lights_xvalue.yaml'}
+2018-09-22 03:36:55,114 : INFO : AssetManager : Registering Asset: Bonus_2x_on, File: Bonus_2x_on.yaml, Default Group: default, Final Config: {'load': 'preload', 'file': 'c:\\pinball\\machine_files\\powerman\\shows\\Bonus_2x_on.yaml'}
+2018-09-22 03:36:55,115 : INFO : AssetManager : Registering Asset: Bonus_3x_on, File: Bonus_3x_on.yaml, Default Group: default, Final Config: {'load': 'preload', 'file': 'c:\\pinball\\machine_files\\powerman\\shows\\Bonus_3x_on.yaml'}
+2018-09-22 03:36:55,115 : INFO : AssetManager : Registering Asset: Bonus_4x_on, File: Bonus_4x_on.yaml, Default Group: default, Final Config: {'load': 'preload', 'file': 'c:\\pinball\\machine_files\\powerman\\shows\\Bonus_4x_on.yaml'}
+2018-09-22 03:36:55,115 : INFO : AssetManager : Registering Asset: Bonus_5x_on, File: Bonus_5x_on.yaml, Default Group: default, Final Config: {'load': 'preload', 'file': 'c:\\pinball\\machine_files\\powerman\\shows\\Bonus_5x_on.yaml'}
+2018-09-22 03:36:55,115 : INFO : AssetManager : Registering Asset: Bonus_6x_on, File: Bonus_6x_on.yaml, Default Group: default, Final Config: {'load': 'preload', 'file': 'c:\\pinball\\machine_files\\powerman\\shows\\Bonus_6x_on.yaml'}
+2018-09-22 03:36:55,115 : INFO : AssetManager : Registering Asset: Heavy_A_On, File: Heavy_A_On.yaml, Default Group: default, Final Config: {'load': 'preload', 'file': 'c:\\pinball\\machine_files\\powerman\\shows\\Heavy_A_On.yaml'}
+2018-09-22 03:36:55,115 : INFO : AssetManager : Registering Asset: Heavy_E_On, File: Heavy_E_On.yaml, Default Group: default, Final Config: {'load': 'preload', 'file': 'c:\\pinball\\machine_files\\powerman\\shows\\Heavy_E_On.yaml'}
+2018-09-22 03:36:55,115 : INFO : AssetManager : Registering Asset: Heavy_H_On, File: Heavy_H_On.yaml, Default Group: default, Final Config: {'load': 'preload', 'file': 'c:\\pinball\\machine_files\\powerman\\shows\\Heavy_H_On.yaml'}
+2018-09-22 03:36:55,115 : INFO : AssetManager : Registering Asset: Heavy_V_On, File: Heavy_V_On.yaml, Default Group: default, Final Config: {'load': 'preload', 'file': 'c:\\pinball\\machine_files\\powerman\\shows\\Heavy_V_On.yaml'}
+2018-09-22 03:36:55,115 : INFO : AssetManager : Registering Asset: Heavy_Y_On, File: Heavy_Y_On.yaml, Default Group: default, Final Config: {'load': 'preload', 'file': 'c:\\pinball\\machine_files\\powerman\\shows\\Heavy_Y_On.yaml'}
+2018-09-22 03:36:55,115 : INFO : AssetManager : Registering Asset: Metal_A_On, File: Metal_A_On.yaml, Default Group: default, Final Config: {'load': 'preload', 'file': 'c:\\pinball\\machine_files\\powerman\\shows\\Metal_A_On.yaml'}
+2018-09-22 03:36:55,115 : INFO : AssetManager : Registering Asset: Metal_E_On, File: Metal_E_On.yaml, Default Group: default, Final Config: {'load': 'preload', 'file': 'c:\\pinball\\machine_files\\powerman\\shows\\Metal_E_On.yaml'}
+2018-09-22 03:36:55,115 : INFO : AssetManager : Registering Asset: Metal_L_On, File: Metal_L_On.yaml, Default Group: default, Final Config: {'load': 'preload', 'file': 'c:\\pinball\\machine_files\\powerman\\shows\\Metal_L_On.yaml'}
+2018-09-22 03:36:55,115 : INFO : AssetManager : Registering Asset: Metal_M_On, File: Metal_M_On.yaml, Default Group: default, Final Config: {'load': 'preload', 'file': 'c:\\pinball\\machine_files\\powerman\\shows\\Metal_M_On.yaml'}
+2018-09-22 03:36:55,115 : INFO : AssetManager : Registering Asset: Metal_T_On, File: Metal_T_On.yaml, Default Group: default, Final Config: {'load': 'preload', 'file': 'c:\\pinball\\machine_files\\powerman\\shows\\Metal_T_On.yaml'}
+2018-09-22 03:36:55,115 : INFO : AssetManager : Registering Asset: Playfield_10x_on, File: Playfield_10x_on.yaml, Default Group: default, Final Config: {'load': 'preload', 'file': 'c:\\pinball\\machine_files\\powerman\\shows\\Playfield_10x_on.yaml'}
+2018-09-22 03:36:55,115 : INFO : AssetManager : Registering Asset: Playfield_2x_on, File: Playfield_2x_on.yaml, Default Group: default, Final Config: {'load': 'preload', 'file': 'c:\\pinball\\machine_files\\powerman\\shows\\Playfield_2x_on.yaml'}
+2018-09-22 03:36:55,115 : INFO : AssetManager : Registering Asset: Playfield_3x_on, File: Playfield_3x_on.yaml, Default Group: default, Final Config: {'load': 'preload', 'file': 'c:\\pinball\\machine_files\\powerman\\shows\\Playfield_3x_on.yaml'}
+2018-09-22 03:36:55,115 : INFO : AssetManager : Registering Asset: Playfield_4x_on, File: Playfield_4x_on.yaml, Default Group: default, Final Config: {'load': 'preload', 'file': 'c:\\pinball\\machine_files\\powerman\\shows\\Playfield_4x_on.yaml'}
+2018-09-22 03:36:55,116 : INFO : AssetManager : Registering Asset: Playfield_5x_on, File: Playfield_5x_on.yaml, Default Group: default, Final Config: {'load': 'preload', 'file': 'c:\\pinball\\machine_files\\powerman\\shows\\Playfield_5x_on.yaml'}
+2018-09-22 03:36:55,122 : WARNING : ConfigProcessor : Cache file not found: C:\Users\arsen\AppData\Local\Temp\c3f5e5a3d7065313f53c30b7f84dbd43.mpf_cache
+2018-09-22 03:36:55,122 : INFO : ConfigProcessor : Loading config from file c:\pinball\machine_files\powerman\shows\attract_dmd_loop.yaml.
+2018-09-22 03:36:55,123 : DEBUG : YAML File Interface : Loading file: c:\pinball\machine_files\powerman\shows\attract_dmd_loop.yaml
+2018-09-22 03:36:55,158 : INFO : ConfigProcessor : Loading config: c:\pinball\machine_files\powerman\shows\attract_dmd_loop.yaml
+2018-09-22 03:36:55,159 : INFO : ConfigProcessor : Config file cache created: C:\Users\arsen\AppData\Local\Temp\c3f5e5a3d7065313f53c30b7f84dbd43.mpf_cache
+2018-09-22 03:36:55,176 : INFO : EventManager : Event: ======'loading_assets'====== Args={'total': 27, 'loaded': 1, 'remaining': 26, 'percent': 4}
+2018-09-22 03:36:55,176 : INFO : AssetManager : Loading assets: 1/27 (4%)
+2018-09-22 03:36:55,176 : WARNING : ConfigProcessor : Cache file not found: C:\Users\arsen\AppData\Local\Temp\ba126cc6d7f32caf096cd1bd8ad03280.mpf_cache
+2018-09-22 03:36:55,176 : INFO : ConfigProcessor : Loading config from file c:\pinball\machine_files\powerman\shows\attract_lights_guitar.yaml.
+2018-09-22 03:36:55,177 : DEBUG : YAML File Interface : Loading file: c:\pinball\machine_files\powerman\shows\attract_lights_guitar.yaml
+2018-09-22 03:36:55,191 : INFO : ConfigProcessor : Loading config: c:\pinball\machine_files\powerman\shows\attract_lights_guitar.yaml
+2018-09-22 03:36:55,192 : INFO : ConfigProcessor : Config file cache created: C:\Users\arsen\AppData\Local\Temp\ba126cc6d7f32caf096cd1bd8ad03280.mpf_cache
+2018-09-22 03:36:55,196 : WARNING : ConfigProcessor : Cache file not found: C:\Users\arsen\AppData\Local\Temp\13946cd02d991921f68b46ed32d886db.mpf_cache
+2018-09-22 03:36:55,196 : INFO : ConfigProcessor : Loading config from file c:\pinball\machine_files\powerman\shows\attract_lights_heavy.yaml.
+2018-09-22 03:36:55,196 : DEBUG : YAML File Interface : Loading file: c:\pinball\machine_files\powerman\shows\attract_lights_heavy.yaml
+2018-09-22 03:36:55,208 : INFO : ConfigProcessor : Loading config: c:\pinball\machine_files\powerman\shows\attract_lights_heavy.yaml
+2018-09-22 03:36:55,208 : INFO : ConfigProcessor : Config file cache created: C:\Users\arsen\AppData\Local\Temp\13946cd02d991921f68b46ed32d886db.mpf_cache
+2018-09-22 03:36:55,215 : WARNING : ConfigProcessor : Cache file not found: C:\Users\arsen\AppData\Local\Temp\38e5efe4ec62ba17f188a009f289faa5.mpf_cache
+2018-09-22 03:36:55,215 : INFO : ConfigProcessor : Loading config from file c:\pinball\machine_files\powerman\shows\attract_lights_level.yaml.
+2018-09-22 03:36:55,216 : DEBUG : YAML File Interface : Loading file: c:\pinball\machine_files\powerman\shows\attract_lights_level.yaml
+2018-09-22 03:36:55,227 : INFO : ConfigProcessor : Loading config: c:\pinball\machine_files\powerman\shows\attract_lights_level.yaml
+2018-09-22 03:36:55,228 : INFO : ConfigProcessor : Config file cache created: C:\Users\arsen\AppData\Local\Temp\38e5efe4ec62ba17f188a009f289faa5.mpf_cache
+2018-09-22 03:36:55,248 : WARNING : ConfigProcessor : Cache file not found: C:\Users\arsen\AppData\Local\Temp\18208eb908c28d9f73c09f3feced17ae.mpf_cache
+2018-09-22 03:36:55,248 : INFO : ConfigProcessor : Loading config from file c:\pinball\machine_files\powerman\shows\attract_lights_metal.yaml.
+2018-09-22 03:36:55,248 : DEBUG : YAML File Interface : Loading file: c:\pinball\machine_files\powerman\shows\attract_lights_metal.yaml
+2018-09-22 03:36:55,260 : INFO : ConfigProcessor : Loading config: c:\pinball\machine_files\powerman\shows\attract_lights_metal.yaml
+2018-09-22 03:36:55,261 : INFO : ConfigProcessor : Config file cache created: C:\Users\arsen\AppData\Local\Temp\18208eb908c28d9f73c09f3feced17ae.mpf_cache
+2018-09-22 03:36:55,265 : WARNING : ConfigProcessor : Cache file not found: C:\Users\arsen\AppData\Local\Temp\98e452ef6d040e62d22bf00e4676d6c0.mpf_cache
+2018-09-22 03:36:55,265 : INFO : ConfigProcessor : Loading config from file c:\pinball\machine_files\powerman\shows\attract_lights_pops.yaml.
+2018-09-22 03:36:55,265 : DEBUG : YAML File Interface : Loading file: c:\pinball\machine_files\powerman\shows\attract_lights_pops.yaml
+2018-09-22 03:36:55,271 : INFO : ConfigProcessor : Loading config: c:\pinball\machine_files\powerman\shows\attract_lights_pops.yaml
+2018-09-22 03:36:55,272 : INFO : ConfigProcessor : Config file cache created: C:\Users\arsen\AppData\Local\Temp\98e452ef6d040e62d22bf00e4676d6c0.mpf_cache
+2018-09-22 03:36:55,278 : WARNING : ConfigProcessor : Cache file not found: C:\Users\arsen\AppData\Local\Temp\ae17dfe8ae8a0147d34b6f5a93a83fb1.mpf_cache
+2018-09-22 03:36:55,278 : INFO : ConfigProcessor : Loading config from file c:\pinball\machine_files\powerman\shows\attract_lights_xvalue.yaml.
+2018-09-22 03:36:55,279 : DEBUG : YAML File Interface : Loading file: c:\pinball\machine_files\powerman\shows\attract_lights_xvalue.yaml
+2018-09-22 03:36:55,292 : INFO : ConfigProcessor : Loading config: c:\pinball\machine_files\powerman\shows\attract_lights_xvalue.yaml
+2018-09-22 03:36:55,293 : INFO : ConfigProcessor : Config file cache created: C:\Users\arsen\AppData\Local\Temp\ae17dfe8ae8a0147d34b6f5a93a83fb1.mpf_cache
+2018-09-22 03:36:55,296 : WARNING : ConfigProcessor : Cache file not found: C:\Users\arsen\AppData\Local\Temp\8df3313d46a1153600112d38879c3293.mpf_cache
+2018-09-22 03:36:55,296 : INFO : ConfigProcessor : Loading config from file c:\pinball\machine_files\powerman\shows\Bonus_2x_on.yaml.
+2018-09-22 03:36:55,296 : DEBUG : YAML File Interface : Loading file: c:\pinball\machine_files\powerman\shows\Bonus_2x_on.yaml
+2018-09-22 03:36:55,300 : INFO : ConfigProcessor : Loading config: c:\pinball\machine_files\powerman\shows\Bonus_2x_on.yaml
+2018-09-22 03:36:55,301 : INFO : ConfigProcessor : Config file cache created: C:\Users\arsen\AppData\Local\Temp\8df3313d46a1153600112d38879c3293.mpf_cache
+2018-09-22 03:36:55,306 : WARNING : ConfigProcessor : Cache file not found: C:\Users\arsen\AppData\Local\Temp\4a6504ee1af1a3c9371d3b5e9d09cea8.mpf_cache
+2018-09-22 03:36:55,306 : INFO : ConfigProcessor : Loading config from file c:\pinball\machine_files\powerman\shows\Bonus_3x_on.yaml.
+2018-09-22 03:36:55,306 : DEBUG : YAML File Interface : Loading file: c:\pinball\machine_files\powerman\shows\Bonus_3x_on.yaml
+2018-09-22 03:36:55,311 : INFO : ConfigProcessor : Loading config: c:\pinball\machine_files\powerman\shows\Bonus_3x_on.yaml
+2018-09-22 03:36:55,312 : INFO : ConfigProcessor : Config file cache created: C:\Users\arsen\AppData\Local\Temp\4a6504ee1af1a3c9371d3b5e9d09cea8.mpf_cache
+2018-09-22 03:36:55,317 : WARNING : ConfigProcessor : Cache file not found: C:\Users\arsen\AppData\Local\Temp\df5e2c5cc4abfc84da6ff2f917a72a72.mpf_cache
+2018-09-22 03:36:55,317 : INFO : ConfigProcessor : Loading config from file c:\pinball\machine_files\powerman\shows\Bonus_4x_on.yaml.
+2018-09-22 03:36:55,318 : DEBUG : YAML File Interface : Loading file: c:\pinball\machine_files\powerman\shows\Bonus_4x_on.yaml
+2018-09-22 03:36:55,323 : INFO : ConfigProcessor : Loading config: c:\pinball\machine_files\powerman\shows\Bonus_4x_on.yaml
+2018-09-22 03:36:55,323 : INFO : ConfigProcessor : Config file cache created: C:\Users\arsen\AppData\Local\Temp\df5e2c5cc4abfc84da6ff2f917a72a72.mpf_cache
+2018-09-22 03:36:55,325 : WARNING : ConfigProcessor : Cache file not found: C:\Users\arsen\AppData\Local\Temp\0a7a1dca7a82c5db766d9871f465f579.mpf_cache
+2018-09-22 03:36:55,325 : INFO : ConfigProcessor : Loading config from file c:\pinball\machine_files\powerman\shows\Bonus_5x_on.yaml.
+2018-09-22 03:36:55,325 : DEBUG : YAML File Interface : Loading file: c:\pinball\machine_files\powerman\shows\Bonus_5x_on.yaml
+2018-09-22 03:36:55,331 : INFO : ConfigProcessor : Loading config: c:\pinball\machine_files\powerman\shows\Bonus_5x_on.yaml
+2018-09-22 03:36:55,332 : INFO : ConfigProcessor : Config file cache created: C:\Users\arsen\AppData\Local\Temp\0a7a1dca7a82c5db766d9871f465f579.mpf_cache
+2018-09-22 03:36:55,336 : WARNING : ConfigProcessor : Cache file not found: C:\Users\arsen\AppData\Local\Temp\fcc0fb8f313c2f0c0835791c8875c50b.mpf_cache
+2018-09-22 03:36:55,336 : INFO : ConfigProcessor : Loading config from file c:\pinball\machine_files\powerman\shows\Bonus_6x_on.yaml.
+2018-09-22 03:36:55,337 : DEBUG : YAML File Interface : Loading file: c:\pinball\machine_files\powerman\shows\Bonus_6x_on.yaml
+2018-09-22 03:36:55,343 : INFO : ConfigProcessor : Loading config: c:\pinball\machine_files\powerman\shows\Bonus_6x_on.yaml
+2018-09-22 03:36:55,344 : INFO : ConfigProcessor : Config file cache created: C:\Users\arsen\AppData\Local\Temp\fcc0fb8f313c2f0c0835791c8875c50b.mpf_cache
+2018-09-22 03:36:55,346 : WARNING : ConfigProcessor : Cache file not found: C:\Users\arsen\AppData\Local\Temp\ad427b76ee5dafc3c6701a51cd64233f.mpf_cache
+2018-09-22 03:36:55,346 : INFO : ConfigProcessor : Loading config from file c:\pinball\machine_files\powerman\shows\Heavy_A_On.yaml.
+2018-09-22 03:36:55,346 : DEBUG : YAML File Interface : Loading file: c:\pinball\machine_files\powerman\shows\Heavy_A_On.yaml
+2018-09-22 03:36:55,352 : INFO : ConfigProcessor : Loading config: c:\pinball\machine_files\powerman\shows\Heavy_A_On.yaml
+2018-09-22 03:36:55,353 : INFO : ConfigProcessor : Config file cache created: C:\Users\arsen\AppData\Local\Temp\ad427b76ee5dafc3c6701a51cd64233f.mpf_cache
+2018-09-22 03:36:55,358 : WARNING : ConfigProcessor : Cache file not found: C:\Users\arsen\AppData\Local\Temp\f3818bbc63260e40f965d6b32aa7c14c.mpf_cache
+2018-09-22 03:36:55,358 : INFO : ConfigProcessor : Loading config from file c:\pinball\machine_files\powerman\shows\Heavy_E_On.yaml.
+2018-09-22 03:36:55,358 : DEBUG : YAML File Interface : Loading file: c:\pinball\machine_files\powerman\shows\Heavy_E_On.yaml
+2018-09-22 03:36:55,362 : INFO : ConfigProcessor : Loading config: c:\pinball\machine_files\powerman\shows\Heavy_E_On.yaml
+2018-09-22 03:36:55,363 : INFO : ConfigProcessor : Config file cache created: C:\Users\arsen\AppData\Local\Temp\f3818bbc63260e40f965d6b32aa7c14c.mpf_cache
+2018-09-22 03:36:55,367 : WARNING : ConfigProcessor : Cache file not found: C:\Users\arsen\AppData\Local\Temp\d35e52f49a35aca4381ab33767aa79fe.mpf_cache
+2018-09-22 03:36:55,367 : INFO : ConfigProcessor : Loading config from file c:\pinball\machine_files\powerman\shows\Heavy_H_On.yaml.
+2018-09-22 03:36:55,368 : DEBUG : YAML File Interface : Loading file: c:\pinball\machine_files\powerman\shows\Heavy_H_On.yaml
+2018-09-22 03:36:55,373 : INFO : ConfigProcessor : Loading config: c:\pinball\machine_files\powerman\shows\Heavy_H_On.yaml
+2018-09-22 03:36:55,374 : INFO : ConfigProcessor : Config file cache created: C:\Users\arsen\AppData\Local\Temp\d35e52f49a35aca4381ab33767aa79fe.mpf_cache
+2018-09-22 03:36:55,378 : WARNING : ConfigProcessor : Cache file not found: C:\Users\arsen\AppData\Local\Temp\4e69f79d7de8aa93c313121c78f7b727.mpf_cache
+2018-09-22 03:36:55,379 : INFO : ConfigProcessor : Loading config from file c:\pinball\machine_files\powerman\shows\Heavy_V_On.yaml.
+2018-09-22 03:36:55,379 : DEBUG : YAML File Interface : Loading file: c:\pinball\machine_files\powerman\shows\Heavy_V_On.yaml
+2018-09-22 03:36:55,385 : INFO : ConfigProcessor : Loading config: c:\pinball\machine_files\powerman\shows\Heavy_V_On.yaml
+2018-09-22 03:36:55,385 : INFO : ConfigProcessor : Config file cache created: C:\Users\arsen\AppData\Local\Temp\4e69f79d7de8aa93c313121c78f7b727.mpf_cache
+2018-09-22 03:36:55,391 : INFO : EventManager : Event: ======'loading_assets'====== Args={'total': 27, 'loaded': 16, 'remaining': 11, 'percent': 59}
+2018-09-22 03:36:55,391 : INFO : AssetManager : Loading assets: 16/27 (59%)
+2018-09-22 03:36:55,392 : WARNING : ConfigProcessor : Cache file not found: C:\Users\arsen\AppData\Local\Temp\25732ff6b115c8c8b5af93805ad8c8a7.mpf_cache
+2018-09-22 03:36:55,392 : INFO : ConfigProcessor : Loading config from file c:\pinball\machine_files\powerman\shows\Heavy_Y_On.yaml.
+2018-09-22 03:36:55,392 : DEBUG : YAML File Interface : Loading file: c:\pinball\machine_files\powerman\shows\Heavy_Y_On.yaml
+2018-09-22 03:36:55,397 : INFO : ConfigProcessor : Loading config: c:\pinball\machine_files\powerman\shows\Heavy_Y_On.yaml
+2018-09-22 03:36:55,397 : INFO : ConfigProcessor : Config file cache created: C:\Users\arsen\AppData\Local\Temp\25732ff6b115c8c8b5af93805ad8c8a7.mpf_cache
+2018-09-22 03:36:55,402 : WARNING : ConfigProcessor : Cache file not found: C:\Users\arsen\AppData\Local\Temp\1508ffe213ff325a350fac2be1a621b0.mpf_cache
+2018-09-22 03:36:55,402 : INFO : ConfigProcessor : Loading config from file c:\pinball\machine_files\powerman\shows\Metal_A_On.yaml.
+2018-09-22 03:36:55,402 : DEBUG : YAML File Interface : Loading file: c:\pinball\machine_files\powerman\shows\Metal_A_On.yaml
+2018-09-22 03:36:55,407 : INFO : ConfigProcessor : Loading config: c:\pinball\machine_files\powerman\shows\Metal_A_On.yaml
+2018-09-22 03:36:55,408 : INFO : ConfigProcessor : Config file cache created: C:\Users\arsen\AppData\Local\Temp\1508ffe213ff325a350fac2be1a621b0.mpf_cache
+2018-09-22 03:36:55,413 : WARNING : ConfigProcessor : Cache file not found: C:\Users\arsen\AppData\Local\Temp\2ba2f4ac77624f6196b1e86bb46a5859.mpf_cache
+2018-09-22 03:36:55,413 : INFO : ConfigProcessor : Loading config from file c:\pinball\machine_files\powerman\shows\Metal_E_On.yaml.
+2018-09-22 03:36:55,413 : DEBUG : YAML File Interface : Loading file: c:\pinball\machine_files\powerman\shows\Metal_E_On.yaml
+2018-09-22 03:36:55,418 : INFO : ConfigProcessor : Loading config: c:\pinball\machine_files\powerman\shows\Metal_E_On.yaml
+2018-09-22 03:36:55,419 : INFO : ConfigProcessor : Config file cache created: C:\Users\arsen\AppData\Local\Temp\2ba2f4ac77624f6196b1e86bb46a5859.mpf_cache
+2018-09-22 03:36:55,423 : WARNING : ConfigProcessor : Cache file not found: C:\Users\arsen\AppData\Local\Temp\d946486f299226199632360e2b42816d.mpf_cache
+2018-09-22 03:36:55,423 : INFO : ConfigProcessor : Loading config from file c:\pinball\machine_files\powerman\shows\Metal_L_On.yaml.
+2018-09-22 03:36:55,424 : DEBUG : YAML File Interface : Loading file: c:\pinball\machine_files\powerman\shows\Metal_L_On.yaml
+2018-09-22 03:36:55,429 : INFO : ConfigProcessor : Loading config: c:\pinball\machine_files\powerman\shows\Metal_L_On.yaml
+2018-09-22 03:36:55,429 : INFO : ConfigProcessor : Config file cache created: C:\Users\arsen\AppData\Local\Temp\d946486f299226199632360e2b42816d.mpf_cache
+2018-09-22 03:36:55,433 : WARNING : ConfigProcessor : Cache file not found: C:\Users\arsen\AppData\Local\Temp\e6ed7560c5fa2df3d4183ea0a3d4ddff.mpf_cache
+2018-09-22 03:36:55,434 : INFO : ConfigProcessor : Loading config from file c:\pinball\machine_files\powerman\shows\Metal_M_On.yaml.
+2018-09-22 03:36:55,434 : DEBUG : YAML File Interface : Loading file: c:\pinball\machine_files\powerman\shows\Metal_M_On.yaml
+2018-09-22 03:36:55,440 : INFO : ConfigProcessor : Loading config: c:\pinball\machine_files\powerman\shows\Metal_M_On.yaml
+2018-09-22 03:36:55,441 : INFO : ConfigProcessor : Config file cache created: C:\Users\arsen\AppData\Local\Temp\e6ed7560c5fa2df3d4183ea0a3d4ddff.mpf_cache
+2018-09-22 03:36:55,442 : WARNING : ConfigProcessor : Cache file not found: C:\Users\arsen\AppData\Local\Temp\292050a8149b9e79958203db58d4cb5f.mpf_cache
+2018-09-22 03:36:55,442 : INFO : ConfigProcessor : Loading config from file c:\pinball\machine_files\powerman\shows\Metal_T_On.yaml.
+2018-09-22 03:36:55,443 : DEBUG : YAML File Interface : Loading file: c:\pinball\machine_files\powerman\shows\Metal_T_On.yaml
+2018-09-22 03:36:55,447 : INFO : ConfigProcessor : Loading config: c:\pinball\machine_files\powerman\shows\Metal_T_On.yaml
+2018-09-22 03:36:55,448 : INFO : ConfigProcessor : Config file cache created: C:\Users\arsen\AppData\Local\Temp\292050a8149b9e79958203db58d4cb5f.mpf_cache
+2018-09-22 03:36:55,453 : WARNING : ConfigProcessor : Cache file not found: C:\Users\arsen\AppData\Local\Temp\f14df10f17c18c4b03721705f807af6f.mpf_cache
+2018-09-22 03:36:55,453 : INFO : ConfigProcessor : Loading config from file c:\pinball\machine_files\powerman\shows\Playfield_10x_on.yaml.
+2018-09-22 03:36:55,454 : DEBUG : YAML File Interface : Loading file: c:\pinball\machine_files\powerman\shows\Playfield_10x_on.yaml
+2018-09-22 03:36:55,459 : INFO : ConfigProcessor : Loading config: c:\pinball\machine_files\powerman\shows\Playfield_10x_on.yaml
+2018-09-22 03:36:55,459 : INFO : ConfigProcessor : Config file cache created: C:\Users\arsen\AppData\Local\Temp\f14df10f17c18c4b03721705f807af6f.mpf_cache
+2018-09-22 03:36:55,464 : WARNING : ConfigProcessor : Cache file not found: C:\Users\arsen\AppData\Local\Temp\d3c8715a0504ff88ae10c550f2d51b41.mpf_cache
+2018-09-22 03:36:55,465 : INFO : ConfigProcessor : Loading config from file c:\pinball\machine_files\powerman\shows\Playfield_2x_on.yaml.
+2018-09-22 03:36:55,465 : DEBUG : YAML File Interface : Loading file: c:\pinball\machine_files\powerman\shows\Playfield_2x_on.yaml
+2018-09-22 03:36:55,469 : INFO : ConfigProcessor : Loading config: c:\pinball\machine_files\powerman\shows\Playfield_2x_on.yaml
+2018-09-22 03:36:55,470 : INFO : ConfigProcessor : Config file cache created: C:\Users\arsen\AppData\Local\Temp\d3c8715a0504ff88ae10c550f2d51b41.mpf_cache
+2018-09-22 03:36:55,472 : WARNING : ConfigProcessor : Cache file not found: C:\Users\arsen\AppData\Local\Temp\ba192a93de7e6f9766faee617b3a4c82.mpf_cache
+2018-09-22 03:36:55,472 : INFO : ConfigProcessor : Loading config from file c:\pinball\machine_files\powerman\shows\Playfield_3x_on.yaml.
+2018-09-22 03:36:55,472 : DEBUG : YAML File Interface : Loading file: c:\pinball\machine_files\powerman\shows\Playfield_3x_on.yaml
+2018-09-22 03:36:55,478 : INFO : ConfigProcessor : Loading config: c:\pinball\machine_files\powerman\shows\Playfield_3x_on.yaml
+2018-09-22 03:36:55,478 : INFO : ConfigProcessor : Config file cache created: C:\Users\arsen\AppData\Local\Temp\ba192a93de7e6f9766faee617b3a4c82.mpf_cache
+2018-09-22 03:36:55,482 : WARNING : ConfigProcessor : Cache file not found: C:\Users\arsen\AppData\Local\Temp\5a668521fd0d02807163f20da887c009.mpf_cache
+2018-09-22 03:36:55,482 : INFO : ConfigProcessor : Loading config from file c:\pinball\machine_files\powerman\shows\Playfield_4x_on.yaml.
+2018-09-22 03:36:55,483 : DEBUG : YAML File Interface : Loading file: c:\pinball\machine_files\powerman\shows\Playfield_4x_on.yaml
+2018-09-22 03:36:55,489 : INFO : ConfigProcessor : Loading config: c:\pinball\machine_files\powerman\shows\Playfield_4x_on.yaml
+2018-09-22 03:36:55,489 : INFO : ConfigProcessor : Config file cache created: C:\Users\arsen\AppData\Local\Temp\5a668521fd0d02807163f20da887c009.mpf_cache
+2018-09-22 03:36:55,491 : WARNING : ConfigProcessor : Cache file not found: C:\Users\arsen\AppData\Local\Temp\1e6f2aa1751432b2ad2c1ea0cf122cc4.mpf_cache
+2018-09-22 03:36:55,491 : INFO : ConfigProcessor : Loading config from file c:\pinball\machine_files\powerman\shows\Playfield_5x_on.yaml.
+2018-09-22 03:36:55,491 : DEBUG : YAML File Interface : Loading file: c:\pinball\machine_files\powerman\shows\Playfield_5x_on.yaml
+2018-09-22 03:36:55,496 : INFO : ConfigProcessor : Loading config: c:\pinball\machine_files\powerman\shows\Playfield_5x_on.yaml
+2018-09-22 03:36:55,496 : INFO : ConfigProcessor : Config file cache created: C:\Users\arsen\AppData\Local\Temp\1e6f2aa1751432b2ad2c1ea0cf122cc4.mpf_cache
+2018-09-22 03:36:55,498 : INFO : EventManager : Event: ======'loading_assets'====== Args={'total': 27, 'loaded': 27, 'remaining': 0, 'percent': 100}
+2018-09-22 03:36:55,499 : INFO : EventManager : Event: ======'asset_loading_complete'====== Args={}
+2018-09-22 03:36:55,499 : INFO : AssetManager : Loading assets: 27/27 (100%)
+2018-09-22 03:36:55,499 : INFO : EventManager : Event: ======'init_phase_4'====== Args={}
+2018-09-22 03:36:55,526 : INFO : EventManager : Event: ======'slide_asset_status_removed'====== Args={'_from_bcp': True}
+2018-09-22 03:36:55,527 : INFO : EventManager : Event: ======'slide_asset_status_created'====== Args={'_from_bcp': True}
+2018-09-22 03:36:55,527 : INFO : EventManager : Event: ======'slide_asset_status_removed'====== Args={'_from_bcp': True}
+2018-09-22 03:36:55,527 : INFO : EventManager : Event: ======'slide_asset_status_created'====== Args={'_from_bcp': True}
+2018-09-22 03:36:55,528 : INFO : EventManager : Event: ======'machine_var_audits_events_game_ended'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2018-09-22 03:36:55,528 : INFO : EventManager : Event: ======'machine_var_audits_events_game_started'====== Args={'value': 166, 'prev_value': None, 'change': True}
+2018-09-22 03:36:55,529 : INFO : EventManager : Event: ======'machine_var_audits_player_score'====== Args={'value': {'average': 1807.0, 'top': [1807], 'total': 1}, 'prev_value': None, 'change': True}
+2018-09-22 03:36:55,529 : INFO : EventManager : Event: ======'machine_var_audits_shots_bombshell_level_1'====== Args={'value': 7, 'prev_value': None, 'change': True}
+2018-09-22 03:36:55,530 : INFO : EventManager : Event: ======'machine_var_audits_shots_heavy'====== Args={'value': 22, 'prev_value': None, 'change': True}
+2018-09-22 03:36:55,530 : INFO : EventManager : Event: ======'machine_var_audits_shots_l_pop'====== Args={'value': 27, 'prev_value': None, 'change': True}
+2018-09-22 03:36:55,530 : INFO : EventManager : Event: ======'machine_var_audits_shots_level_1'====== Args={'value': 32, 'prev_value': None, 'change': True}
+2018-09-22 03:36:55,531 : INFO : EventManager : Event: ======'machine_var_audits_shots_level_2'====== Args={'value': 22, 'prev_value': None, 'change': True}
+2018-09-22 03:36:55,531 : INFO : EventManager : Event: ======'machine_var_audits_shots_level_3'====== Args={'value': 7, 'prev_value': None, 'change': True}
+2018-09-22 03:36:55,532 : INFO : EventManager : Event: ======'machine_var_audits_shots_metal'====== Args={'value': 7, 'prev_value': None, 'change': True}
+2018-09-22 03:36:55,532 : INFO : EventManager : Event: ======'machine_var_audits_shots_m_pop'====== Args={'value': 28, 'prev_value': None, 'change': True}
+2018-09-22 03:36:55,532 : INFO : EventManager : Event: ======'machine_var_audits_shots_r_pop'====== Args={'value': 25, 'prev_value': None, 'change': True}
+2018-09-22 03:36:55,532 : INFO : EventManager : Event: ======'machine_var_audits_shots_eject_chamber'====== Args={'value': 8, 'prev_value': None, 'change': True}
+2018-09-22 03:36:55,533 : INFO : EventManager : Event: ======'machine_var_audits_shots_top_lane_a'====== Args={'value': 78, 'prev_value': None, 'change': True}
+2018-09-22 03:36:55,533 : INFO : EventManager : Event: ======'machine_var_audits_shots_top_lane_j'====== Args={'value': 64, 'prev_value': None, 'change': True}
+2018-09-22 03:36:55,533 : INFO : EventManager : Event: ======'machine_var_audits_shots_top_lane_m'====== Args={'value': 66, 'prev_value': None, 'change': True}
+2018-09-22 03:36:55,534 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_cabinet_left'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2018-09-22 03:36:55,534 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_cabinet_right'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2018-09-22 03:36:55,534 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_center_target'====== Args={'value': 39, 'prev_value': None, 'change': True}
+2018-09-22 03:36:55,535 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_coins_left'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2018-09-22 03:36:55,535 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_coins_middle'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2018-09-22 03:36:55,536 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_coins_right'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2018-09-22 03:36:55,536 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_credit'====== Args={'value': 5, 'prev_value': None, 'change': True}
+2018-09-22 03:36:55,536 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_eject_chamber'====== Args={'value': 8, 'prev_value': None, 'change': True}
+2018-09-22 03:36:55,537 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_heavy_target'====== Args={'value': 22, 'prev_value': None, 'change': True}
+2018-09-22 03:36:55,537 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_25k_target'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2018-09-22 03:36:55,538 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_bumper'====== Args={'value': 27, 'prev_value': None, 'change': True}
+2018-09-22 03:36:55,538 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2018-09-22 03:36:55,539 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_outlane'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2018-09-22 03:36:55,539 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_return_lane'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2018-09-22 03:36:55,540 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_rollover'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2018-09-22 03:36:55,541 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_saucer'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2018-09-22 03:36:55,542 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_slingshot'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2018-09-22 03:36:55,542 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_load_chamber'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2018-09-22 03:36:55,542 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_metal_target'====== Args={'value': 7, 'prev_value': None, 'change': True}
+2018-09-22 03:36:55,543 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_middle_bumper'====== Args={'value': 28, 'prev_value': None, 'change': True}
+2018-09-22 03:36:55,543 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_outhole'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2018-09-22 03:36:55,543 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_ramp_drop_target'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2018-09-22 03:36:55,544 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_25k_target'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2018-09-22 03:36:55,544 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_bumper'====== Args={'value': 25, 'prev_value': None, 'change': True}
+2018-09-22 03:36:55,544 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_flipper'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2018-09-22 03:36:55,545 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_outlane'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2018-09-22 03:36:55,545 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_return_lane'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2018-09-22 03:36:55,545 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_rollover'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2018-09-22 03:36:55,546 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_saucer'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2018-09-22 03:36:55,546 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_slingshot'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2018-09-22 03:36:55,546 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_slam'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2018-09-22 03:36:55,547 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_tilt'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2018-09-22 03:36:55,547 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_top_25k_lane'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2018-09-22 03:36:55,547 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_top_50k_lane'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2018-09-22 03:36:55,548 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_top_lane_a'====== Args={'value': 78, 'prev_value': None, 'change': True}
+2018-09-22 03:36:55,548 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_top_lane_j'====== Args={'value': 64, 'prev_value': None, 'change': True}
+2018-09-22 03:36:55,549 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_top_lane_m'====== Args={'value': 66, 'prev_value': None, 'change': True}
+2018-09-22 03:36:55,549 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough_1'====== Args={'value': 39, 'prev_value': None, 'change': True}
+2018-09-22 03:36:55,549 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough_2'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2018-09-22 03:36:55,550 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough_3'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2018-09-22 03:36:55,550 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough_4'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2018-09-22 03:36:55,551 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough_5'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2018-09-22 03:36:55,551 : INFO : EventManager : Event: ======'init_phase_5'====== Args={}
+2018-09-22 03:36:55,552 : INFO : EventManager : Event: ======'slide_asset_status_removed'====== Args={'_from_bcp': True}
+2018-09-22 03:36:55,552 : INFO : EventManager : Event: ======'slide_asset_status_created'====== Args={'_from_bcp': True}
+2018-09-22 03:36:55,553 : INFO : EventManager : Event: ======'slide_asset_status_active'====== Args={'_from_bcp': True}
+2018-09-22 03:36:55,555 : INFO : EventManager : Event: ======'init_done'====== Args={}
+2018-09-22 03:36:55,556 : INFO : BcpServer : New client connected.
+2018-09-22 03:36:55,558 : INFO : EventManager : Event: ======'machine_reset_phase_1'====== Args={}
+2018-09-22 03:36:55,578 : INFO : EventManager : Event: ======'machine_reset_phase_2'====== Args={}
+2018-09-22 03:36:55,579 : INFO : EventManager : Event: ======'machine_reset_phase_3'====== Args={}
+2018-09-22 03:36:55,579 : INFO : EventManager : Event: ======'reset_complete'====== Args={}
+2018-09-22 03:36:55,580 : INFO : EventManager : Event: ======'mode_attract_will_start'====== Args={}
+2018-09-22 03:36:55,581 : INFO : EventManager : Event: ======'mode_attract_starting'====== Args={}
+2018-09-22 03:36:55,581 : INFO : Mode.attract : Started. Priority: 10
+2018-09-22 03:36:55,582 : INFO : EventManager : Event: ======'mode_attract_started'====== Args={}
+2018-09-22 03:36:55,608 : INFO : EventManager : Event: ======'collecting_balls_complete'====== Args={}
+2018-09-22 03:36:55,609 : INFO : EventManager : Event: ======'slide_attract_dmd_loop_slide_1_created'====== Args={'_from_bcp': True}
+2018-09-22 03:36:55,610 : INFO : EventManager : Event: ======'slide_attract_dmd_loop_slide_1_active'====== Args={'_from_bcp': True}
+2018-09-22 03:36:55,611 : INFO : Machine : Starting the main run loop.
+2018-09-22 03:36:57,593 : INFO : EventManager : Event: ======'slide_attract_dmd_loop_slide_2_created'====== Args={'_from_bcp': True}
+2018-09-22 03:36:57,594 : INFO : EventManager : Event: ======'slide_attract_dmd_loop_slide_2_active'====== Args={'_from_bcp': True}
+2018-09-22 03:37:00,610 : INFO : EventManager : Event: ======'slide_attract_dmd_loop_slide_2.5_created'====== Args={'_from_bcp': True}
+2018-09-22 03:37:00,612 : INFO : EventManager : Event: ======'slide_attract_dmd_loop_slide_2.5_active'====== Args={'_from_bcp': True}
+2018-09-22 03:37:02,394 : INFO : Machine : Shutting down...
+2018-09-22 03:37:02,394 : INFO : EventManager : Event: ======'shutdown'====== Args={}
+2018-09-22 03:37:02,404 : INFO : root : MPF run loop ended.

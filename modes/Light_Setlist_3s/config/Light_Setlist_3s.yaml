@@ -1,1 +1,18 @@
 #config_version=5
+
+mode:
+  priority: 151
+  start_events: right_inlane_active
+  stop_events:
+    SetList_Unlit
+    balldevice_Left_Saucer_Enter
+    cancel_Setlist_timer
+
+event_player:
+  mode_chair_lit_3s_started: SetList_Lit
+  timer_unlight_chair_complete: SetList_Unlit
+
+timers:
+  SetList_Unlit:
+    end_value: 3
+    start_running: yes
