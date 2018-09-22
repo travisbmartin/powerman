@@ -104,15 +104,15 @@ switches:
 
     s_left_bumper:
         number: 17
-        tags: 
+        tags:  jet
 
     s_middle_bumper:
         number: 18
-        tags: 
+        tags: jet
 
     s_right_bumper:
         number: 19
-        tags: 
+        tags: jet
 
     s_right_slingshot:
         number: 20

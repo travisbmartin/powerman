@@ -1,0 +1,99 @@
+#config_version=5
+
+acheivements:
+  Song_01:
+    show_tokens:
+        lights: l_bonus_1K
+      show_when_selected: flash
+      show_when_completed: on
+      events_when_started: Thing_01
+      enable_events: initialize_setlist, reset_setlist
+      complete_events: award_Thing_01_song
+      reset_events: reset_setlist
+  Song_02:
+    show_tokens:
+        lights: l_bonus_2K
+        show_when_selected: flash
+        show_when_completed: on
+        events_when_started: Thing_02
+        enable_events: initialize_setlist, reset_setlist
+        complete_events: award_Thing_02_song
+        reset_events: reset_setlist
+  Song_03:
+    show_tokens:
+        lights: l_bonus_4K
+        show_when_selected: flash
+        show_when_completed: on
+        events_when_started: Thing_03
+        enable_events: initialize_setlist, reset_setlist
+        complete_events: award_Thing_03_song
+        reset_events: reset_setlist
+  Song_04:
+    show_tokens:
+        lights: l_bonus_8K
+        show_when_selected: flash
+        show_when_completed: on
+        events_when_started: Thing_04
+        enable_events: initialize_setlist, reset_setlist
+        complete_events: award_Thing_04_song
+        reset_events: reset_setlist
+  Song_05:
+    show_tokens:
+        lights: l_bonus_16K
+        show_when_selected: flash
+        show_when_completed: on
+        events_when_started: Thing_05
+        enable_events: initialize_setlist, reset_setlist
+        complete_events: award_Thing_05_song
+        reset_events: reset_setlist
+  Song_06:
+    show_tokens:
+        lights: l_bonus_32K
+        show_when_selected: flash
+        show_when_completed: on
+        events_when_started: Thing_06
+        enable_events: initialize_setlist, reset_setlist
+        complete_events: award_Thing_06_song
+        reset_events: reset_setlist
+  Song_07:
+    show_tokens:
+        lights: l_bonus_64K
+        show_when_selected: flash
+        show_when_completed: on
+        events_when_started: Thing_07
+        enable_events: initialize_setlist, reset_setlist
+        complete_events: award_Thing_07_song
+        reset_events: reset_setlist
+  Encore:
+    show_tokens:
+        lights: l_bonus_128K
+        show_when_selected: flash
+        show_when_completed: on
+        events_when_started: Thing_Encore
+        enable_events: initialize_setlist, reset_setlist
+        complete_events: award_Thing_Encore_song
+        reset_events: reset_setlist
+
+achievement_groups:
+  mansion_awards:
+    achievements:
+        - Song_01
+        - Song_02
+        - Song_03
+        - Song_04
+        - Song_05
+        - Song_06
+        - Song_07
+        - Encore
+    show_tokens:
+      lights: l_bonus_held, l_left_collect_bonus
+    auto_select: yes
+    events_when_all_completed: select_red_stage
+    enable_while_no_achievement_started: no
+    show_when_enabled: on
+    select_random_achievement_events: sw_jet
+    allow_selection_change_while_disabled: yes
+    disable_while_achievement_started: yes
+    start_selected_events: balldevice_left_saucer
+    enable_events: Metal_Targets_Done{Count == 6}, Heavy_Targets_Done{Count == 6}
+    disable_events: Metal_Collected, Heavy_Collected
