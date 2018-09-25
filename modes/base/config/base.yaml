@@ -4,14 +4,49 @@ mode:
   start_events: ball_starting
   priority: 100
 
-sound_player:
-  mode_base_started:
-    Invade:
-      loops: -1
+shots:
+  R_Pop:
+    switch: s_right_bumper
+  L_Pop:
+    switch: s_left_bumper
+  M_Pop:
+    switch: s_middle_bumper
 
-  ball_ended:
-    Invade:
-      action: stop
+slide_player:
+  mode_base_started: score_slide
+  player_added:
+    new_player_slide:
+      priority: 1000
+      
+slides:
+  score_slide:
+    widgets:
+      - type: text
+        text: (score)
+        number_grouping: true
+        min_digits: 2
+        font_size: 20
+        y: 18
+      - type: text
+        text: PLAYER (number)
+        y: 0
+        x: 10
+        font_size: 10
+        anchor_x: left
+        anchor_y: bottom
+      - type: text
+        text: BALL (ball)
+        y: 0
+        x: right-10
+        anchor_x: right
+        anchor_y: bottom
+        font_size: 10
+  new_player_slide:
+    expire: 1s
+    widgets:
+      - type: text
+        text: PLAYER (num) ADDED
+        font_size: 10
 
 variable_player:
   s_left_saucer_active:
@@ -77,6 +112,15 @@ variable_player:
   s_right_25K_target_active:
     score: 100 * crurent_player.pf_multiplier
 
+sound_player:
+  mode_base_started:
+    Invade:
+      loops: -1
+
+  ball_ended:
+    Invade:
+      action: stop
+
 counters:
   lb_Right_Pop_count:
     count_events: R_Pop_hit
@@ -124,10 +168,3 @@ event_player:
   Super_Pops_Go:
     start_mode_Super_Pops
 
-shots:
-  R_Pop:
-    switch: s_right_bumper
-  L_Pop:
-    switch: s_left_bumper
-  M_Pop:
-    switch: s_middle_bumper

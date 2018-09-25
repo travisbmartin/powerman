@@ -5,23 +5,6 @@ mode:
   stop_events: ball_ended
   priority: 500
 
-slide_player:
-  mode_Super_Pops_started: 
-    bombshell_startup:
-      transition:
-        type: push
-        duration: 2s
-        direction: right
-
-slides:
-  bombshell_startup:
-    type: text
-    text: BOMBSHELL
-    font_size: 20
-    color: red
-    y: 80%
-    expire: 4s
-
 sound_player:
   mode_Super_Pops_started:
     Bombshell_track:
@@ -43,3 +26,9 @@ variable_player:
     score: 5000 * current_player.pf_multiplier|block
   s_middle_bumper_active:
     score: 5000 * current_player.pf_multiplier|block
+
+
+show_player:
+  mode_Super_Pops_started: 
+    bombshell_startup:
+      loops: 0
