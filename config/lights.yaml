@@ -1,0 +1,229 @@
+#config_version=5
+
+lights:
+    l_rock_again:
+        number: 1
+
+    l_bonus_128K:
+        number: 2
+
+    l_bonus_held:
+        number: 3
+
+    l_bonus_64K:
+        number: 4
+
+    l_right_rollover:
+        number: 5
+
+    l_bonus_32K:
+        number: 6
+
+    l_left_rollover:
+        number: 7
+
+    l_bonus_16K:
+        number: 8
+
+    l_right_return:
+        number: 9
+
+    l_bonus_8K:
+        number: 10
+
+    l_left_return:
+        number: 11
+
+    l_bonus_4K:
+        number: 12
+
+    l_right_outlane:
+        number: 13
+
+    l_bonus_2K:
+        number: 14
+
+    l_left_outlane:
+        number: 15
+
+    l_bonus_1K:
+        number: 16
+
+    l_power_amp_3_top:
+        number: 17
+        tags: AMP_Bonus_X
+
+    l_meltdown:
+        number: 18
+
+    l_power_amp_2_mid:
+        number: 19
+        tags: AMP_Bonus_X
+
+    l_ramp_100K:
+        number: 20
+
+    l_power_amp_1_bottom:
+        number: 21
+        tags: AMP_Bonus_X
+
+    l_bonus_6X:
+        number: 22
+        tags: Bonus_6X
+
+    l_bonus_5X:
+        number: 23
+        tags: Bonus_5X
+
+    l_bonus_4X:
+        number: 24
+        tags: Bonus_4X
+
+    l_snare_drum_3_right:
+        number: 25
+        tags: Snare_Drum_3
+
+    l_bonus_3X:
+        number: 26
+        tags: Bonus_3X
+
+    l_snare_drum_2_mid:
+        number: 27
+
+    l_bonus_2X:
+        number: 28
+        tags: Bonus_2X
+
+    l_snare_drum_1_left:
+        number: 29
+
+    l_booster_3_top:
+        number: 30
+
+    l_jam_M:
+        number: 31
+        tags: JAM_lanes
+
+    l_booster_2_mid:
+        number: 32
+
+    l_jam_A:
+        number: 33
+        tags: JAM_lanes
+
+    l_booster_1_bottom:
+        number: 34
+
+    l_jam_J:
+        number: 35
+        tags: JAM_lanes
+
+    l_value_10X:
+        number: 36
+        tags: Playfield_10X
+
+    l_top_box_right:
+        number: 37
+
+    l_value_5X:
+        number: 38
+        tags: Playfield_5X
+
+    l_value_4X:
+        number: 39
+        tags: Playfield_4X
+
+    l_right_bumper:
+        number: 40
+
+    l_value_3X:
+        number: 41
+        tags: Playfield_3X
+
+    l_middle_bumper:
+        number: 42
+
+    l_value_2X:
+        number: 43
+        tags: Playfield_2X
+
+    l_left_bumper:
+        number: 44
+
+    l_top_box_mid:
+        number: 45
+
+    l_special:
+        number: 46
+
+    l_top_box_left:
+        number: 47
+
+    l_extra_ball:
+        number: 48
+
+    l_top_lane_50K:
+        number: 49
+
+    l_qualify_hold_bonus:
+        number: 50
+
+    l_top_lane_25K:
+        number: 51
+
+    l_level_5:
+        number: 52
+
+    l_right_collect_bonus:
+        number: 53
+
+    l_level_4:
+        number: 54
+
+    l_left_collect_bonus:
+        number: 55
+
+    l_level_3:
+        number: 56
+
+    l_right_25K_target:
+        number: 57
+
+    l_level_2:
+        number: 58
+
+    l_left_25K_target:
+        number: 59
+
+    l_level_1:
+        number: 60
+
+    l_heavy_y:
+        number: 61
+
+    l_metal_l:
+        number: 62
+
+    l_heavy_v:
+        number: 63
+
+    l_metal_a:
+        number: 64
+
+    l_heavy_a:
+        number: 65
+
+    l_metal_t:
+        number: 66
+
+    l_heavy_e:
+        number: 67
+
+    l_metal_e:
+        number: 68
+
+    l_heavy_h:
+        number: 69
+
+    l_metal_m:
+        number: 70

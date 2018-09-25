@@ -13,35 +13,6 @@ sound_player:
     Invade:
       action: stop
 
-slide_player:
-  mode_base_started:
-    machine_slide_01:
-      priority: 100
-
-
-slides:
-  machine_slide_01:
-    widgets:
-      - type: text
-        text: (score)
-        number_grouping: true
-        min_digits: 2
-        font_size: 20
-      - type: text
-        text: PLAYER (number)
-        y: 10
-        x: 10
-        font_size: 10
-        anchor_x: left
-        anchor_y: bottom
-      - type: text
-        text: BALL (ball)
-        y: 10
-        x: right-10
-        anchor_x: right
-        anchor_y: bottom
-        font_size: 10
-
 variable_player:
   s_left_saucer_active:
     score: 100 * current_player.pf_multiplier

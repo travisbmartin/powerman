@@ -1,0 +1,10 @@
+#config_version=5
+
+sounds:
+    Invade:
+        file: Invade.flac
+        priority: 100
+
+    Bombshell_track:
+        file: Bombshell.flac
+        priority: 200

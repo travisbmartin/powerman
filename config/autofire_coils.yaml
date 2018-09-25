@@ -1,0 +1,22 @@
+#config_version=5
+
+autofire_coils:
+    left_slingshot:
+        coil: c_left_slingshot
+        switch: s_left_slingshot
+
+    right_slingshot:
+        coil: c_right_slingshot
+        switch: s_right_slingshot
+
+    left_jet:
+        coil: c_left_bumper
+        switch: s_left_bumper
+
+    mid_jet:
+        coil: c_middle_bumper
+        switch: s_middle_bumper
+
+    right_jet:
+        coil: c_right_bumper
+        switch: s_right_bumper

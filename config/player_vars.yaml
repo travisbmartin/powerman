@@ -1,0 +1,10 @@
+#config_version=5
+
+player_vars:
+  pf_multiplier:
+    value_type: int
+    initial_value: 1
+
+  pf_Bonus_Multiplier:
+    value_type: int
+    initial_value: 1

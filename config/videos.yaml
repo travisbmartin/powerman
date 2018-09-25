@@ -1,0 +1,12 @@
+#config_version=5
+
+videos: 
+  spinning:
+    width: 200
+    height: 140
+    file: spinning.mp4
+
+  attract:
+    width: 150
+    height: 105
+    file: attract.mp4

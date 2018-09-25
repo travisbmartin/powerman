@@ -13,28 +13,20 @@ game:
 config:
 - hardware.yaml
 - keyboard.yaml
-
-modes:
-- base
-- JAM_rollover
-- AMP_Bonus_X
-- HEAVY_made
-- METAL_made
-- Super_Pops
-- Setlist
-- Light_Setlist_3s
-- Light_Setlist
-
-videos: 
-  spinning:
-    width: 200
-    height: 140
-    file: spinning.mp4
-
-  attract:
-    width: 150
-    height: 105
-    file: attract.mp4
+- autofire_coils.yaml
+- flippers.yaml
+- switches.yaml
+- lights.yaml
+- coils.yaml
+- ball_devices.yaml
+- machine.yaml
+- modes.yaml
+- player_vars.yaml
+- playfields.yaml
+- sequence_shots.yaml
+- graphics.yaml
+- sounds.yaml
+- videos.yaml
 
 widget_styles:
   text_default:
@@ -67,13 +59,3 @@ widget_styles:
   tall title:
     font_name: psycha3
     font_size: 20
-
-
-player_vars:
-  pf_multiplier:
-    value_type: int
-    initial_value: 1
-
-  pf_Bonus_Multiplier:
-    value_type: int
-    initial_value: 1
