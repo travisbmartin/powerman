@@ -122,7 +122,7 @@ switches:
     number: 33
     tags: playfield_active
 
-  s_metal_target:
+  s_album_target:
     number: 34
     tags: playfield_active
 

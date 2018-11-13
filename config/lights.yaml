@@ -186,29 +186,29 @@ lights:
   l_PM5K_P:
     number: 61
 
-  l_metal_l:
+  l_album_m:
     number: 62
 
   l_PM5K_M:
     number: 63
 
-  l_metal_a:
+  l_album_u:
     number: 64
 
   l_PM5K_Skull:
     number: 65
 
-  l_metal_t:
+  l_album_b:
     number: 66
 
   l_PM5K_5:
     number: 67
 
-  l_metal_e:
+  l_album_l:
     number: 68
 
   l_PM5K_K:
     number: 69
 
-  l_metal_m:
+  l_album_a:
     number: 70

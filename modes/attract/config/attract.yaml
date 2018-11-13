@@ -39,7 +39,7 @@ show_player:
     attract_lights_PM5K:
       action: stop
 
-    attract_lights_metal:
+    attract_lights_album:
       action: stop
 
     attract_lights_xvalue:

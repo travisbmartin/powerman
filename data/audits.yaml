@@ -1,6 +1,6 @@
 events:
   game_ended: 1
-  game_started: 173
+  game_started: 174
 player:
   score:
     average: 1807.0
@@ -24,6 +24,7 @@ shots:
   top_lane_M: 68
 switches:
   s_PM5K_target: 0
+  s_album_target: 0
   s_cabinet_left: 0
   s_cabinet_right: 0
   s_center_target: 39
