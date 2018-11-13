@@ -3,49 +3,34 @@
 lights:
     l_rock_again:
         number: 1
-
     l_bonus_128K:
         number: 2
-
     l_bonus_held:
         number: 3
-
     l_bonus_64K:
         number: 4
-
     l_right_rollover:
         number: 5
-
     l_bonus_32K:
         number: 6
-
     l_left_rollover:
         number: 7
-
     l_bonus_16K:
         number: 8
-
     l_right_return:
         number: 9
-
     l_bonus_8K:
         number: 10
-
     l_left_return:
         number: 11
-
     l_bonus_4K:
         number: 12
-
     l_right_outlane:
         number: 13
-
     l_bonus_2K:
         number: 14
-
     l_left_outlane:
         number: 15
-
     l_bonus_1K:
         number: 16
 
@@ -53,7 +38,7 @@ lights:
         number: 17
         tags: AMP_Bonus_X
 
-    l_meltdown:
+    l_collide:
         number: 18
 
     l_power_amp_2_mid:
@@ -100,23 +85,23 @@ lights:
     l_booster_3_top:
         number: 30
 
-    l_jam_M:
+    l_Skull_L:
         number: 31
-        tags: JAM_lanes
+        tags: Skull_lanes
 
     l_booster_2_mid:
         number: 32
 
-    l_jam_A:
+    l_Skull_C:
         number: 33
-        tags: JAM_lanes
+        tags: Skull_lanes
 
     l_booster_1_bottom:
         number: 34
 
-    l_jam_J:
+    l_Skull_R:
         number: 35
-        tags: JAM_lanes
+        tags: Skull_lanes
 
     l_value_10X:
         number: 36

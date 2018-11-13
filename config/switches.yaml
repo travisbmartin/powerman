@@ -5,23 +5,18 @@ switches:
     s_left_flipper:
         number: 0 
         tags: left_flipper
-
     s_right_flipper:
         number: 71
         tags: right_flipper
-
     s_left_saucer:
         number: 1
         tags: 
-
     s_right_saucer:
         number: 2
         tags: 
-
     s_load_chamber:
         number: 3
         tags: 
-
     s_eject_chamber:
         number: 4
         tags: playfield_active, Bonus_Multiplier
@@ -41,15 +36,12 @@ switches:
     s_outhole:
         number: 8
         tags: 
-
     s_coins_right:
         number: 9
         tags: playfield_active
-
     s_coins_left:
         number: 10
         tags: playfield_active
-
     s_coins_middle:
         number: 11
         tags: playfield_active
@@ -57,54 +49,45 @@ switches:
     s_left_return_lane:
         number: 12
         tags: playfield_active
-
     s_right_return_lane:
         number: 13
         tags: playfield_active
-
     s_slam:
         number: 14
         tags: playfield_active
-
     s_tilt:
         number: 15
         tags: playfield_active
-
     s_ramp_drop_target:
         number: 16
         tags: 
-
     s_left_bumper:
         number: 17
         tags:  jet
-
     s_middle_bumper:
         number: 18
         tags: jet
-
     s_right_bumper:
         number: 19
         tags: jet
-
     s_right_slingshot:
         number: 20
         tags: 
-
     s_left_slingshot:
         number: 21
         tags: 
 
-    s_top_lane_J:
+    s_top_lane_R:
         number: 22
-        tags: playfield_active, JAM_lanes
+        tags: playfield_active, Skull_lanes
 
-    s_top_lane_A:
+    s_top_lane_C:
         number: 23
-        tags: playfield_active, JAM_lanes
+        tags: playfield_active, Skull_lanes
 
-    s_top_lane_M:
+    s_top_lane_L:
         number: 24
-        tags: playfield_active, JAM_lanes
+        tags: playfield_active, Skull_lanes
 
     s_left_outlane:
         number: 25
