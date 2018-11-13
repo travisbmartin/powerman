@@ -1,0 +1,52 @@
+#show_version=5
+- time: 0
+  lights:
+    l_PM5K_P: ff
+- time: '+1'
+  lights:
+    l_PM5K_M: ff
+- time: '+1'
+  lights:
+    l_PM5K_Skull: ff
+- time: '+1'
+  lights:
+    l_PM5K_5: ff
+- time: '+1'
+  lights:
+    l_PM5K_K: ff
+- time: '+1'
+  lights:
+    l_PM5K_P: 0
+    l_PM5K_M: 0
+    l_PM5K_Skull: 0
+    l_PM5K_5: 0
+    l_PM5K_K: 0
+- time: '+1'
+  lights:
+    l_PM5K_P: ff
+    l_PM5K_M: ff
+    l_PM5K_Skull: ff
+    l_PM5K_5: ff
+    l_PM5K_K: ff
+- time: '+1'
+  lights:
+    l_PM5K_P: 0
+    l_PM5K_M: 0
+    l_PM5K_Skull: 0
+    l_PM5K_5: 0
+    l_PM5K_K: 0
+- time: '+1'
+  lights:
+    l_PM5K_P: ff
+    l_PM5K_M: ff
+    l_PM5K_Skull: ff
+    l_PM5K_5: ff
+    l_PM5K_K: ff
+- time: '+1'
+  lights:
+    l_PM5K_P: 0
+    l_PM5K_M: 0
+    l_PM5K_Skull: 0
+    l_PM5K_5: 0
+    l_PM5K_K: 0
+- time: '+1'

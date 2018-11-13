@@ -76,15 +76,12 @@ switches:
   s_left_slingshot:
     number: 21
     tags: 
-
   s_top_lane_R:
     number: 22
     tags: playfield_active, Skull_lanes
-
   s_top_lane_C:
     number: 23
     tags: playfield_active, Skull_lanes
-
   s_top_lane_L:
     number: 24
     tags: playfield_active, Skull_lanes
@@ -129,26 +126,22 @@ switches:
     number: 34
     tags: playfield_active
 
-  s_heavy_target:
+  s_PM5K_target:
     number: 35
     tags: playfield_active
 
   s_trough_5:
     number: 36
     tags: 
-
   s_trough_4:
     number: 37
     tags: 
-
   s_trough_3:
     number: 38
     tags: 
-
   s_trough_2:
     number: 39
     tags:
-
   s_trough_1:
     number: 40
     tags: 

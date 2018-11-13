@@ -183,31 +183,31 @@ lights:
   l_level_1:
     number: 60
 
-  l_heavy_y:
+  l_PM5K_P:
     number: 61
 
   l_metal_l:
     number: 62
 
-  l_heavy_v:
+  l_PM5K_M:
     number: 63
 
   l_metal_a:
     number: 64
 
-  l_heavy_a:
+  l_PM5K_Skull:
     number: 65
 
   l_metal_t:
     number: 66
 
-  l_heavy_e:
+  l_PM5K_5:
     number: 67
 
   l_metal_e:
     number: 68
 
-  l_heavy_h:
+  l_PM5K_K:
     number: 69
 
   l_metal_m:
