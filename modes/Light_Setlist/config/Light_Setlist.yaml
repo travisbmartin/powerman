@@ -12,8 +12,8 @@ event_player:
   mode_Light_Setlist_3s_started: cancel_Setlist_timer
 
 counters:
-   initialize_setlist:
-      count_events: mode_Light_Setlist_started
-      events_when_complete: initialize_setlist
-      count_complete_value: 1
-      persist_state: true
+  initialize_setlist:
+    count_events: mode_Light_Setlist_started
+    events_when_complete: initialize_setlist
+    count_complete_value: 1
+    persist_state: true

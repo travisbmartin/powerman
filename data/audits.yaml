@@ -1,6 +1,6 @@
 events:
   game_ended: 1
-  game_started: 171
+  game_started: 172
 player:
   score:
     average: 1807.0

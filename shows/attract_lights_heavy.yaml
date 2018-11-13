@@ -16,37 +16,37 @@
     l_heavy_y: ff
 - time: '+1'
   lights:
-     l_heavy_h: 0
-     l_heavy_e: 0
-     l_heavy_a: 0
-     l_heavy_v: 0
-     l_heavy_y: 0
+    l_heavy_h: 0
+    l_heavy_e: 0
+    l_heavy_a: 0
+    l_heavy_v: 0
+    l_heavy_y: 0
 - time: '+1'
   lights:
-     l_heavy_h: ff
-     l_heavy_e: ff
-     l_heavy_a: ff
-     l_heavy_v: ff
-     l_heavy_y: ff
+    l_heavy_h: ff
+    l_heavy_e: ff
+    l_heavy_a: ff
+    l_heavy_v: ff
+    l_heavy_y: ff
 - time: '+1'
   lights:
-     l_heavy_h: 0
-     l_heavy_e: 0
-     l_heavy_a: 0
-     l_heavy_v: 0
-     l_heavy_y: 0
+    l_heavy_h: 0
+    l_heavy_e: 0
+    l_heavy_a: 0
+    l_heavy_v: 0
+    l_heavy_y: 0
 - time: '+1'
   lights:
-     l_heavy_h: ff
-     l_heavy_e: ff
-     l_heavy_a: ff
-     l_heavy_v: ff
-     l_heavy_y: ff
+    l_heavy_h: ff
+    l_heavy_e: ff
+    l_heavy_a: ff
+    l_heavy_v: ff
+    l_heavy_y: ff
 - time: '+1'
   lights:
-     l_heavy_h: 0
-     l_heavy_e: 0
-     l_heavy_a: 0
-     l_heavy_v: 0
-     l_heavy_y: 0
+    l_heavy_h: 0
+    l_heavy_e: 0
+    l_heavy_a: 0
+    l_heavy_v: 0
+    l_heavy_y: 0
 - time: '+1'
