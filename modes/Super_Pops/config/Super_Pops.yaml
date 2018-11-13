@@ -27,7 +27,6 @@ variable_player:
   s_middle_bumper_active:
     score: 5000 * current_player.pf_multiplier|block
 
-
 show_player:
   mode_Super_Pops_started: 
     bombshell_startup:

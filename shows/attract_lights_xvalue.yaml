@@ -16,37 +16,37 @@
     l_value_10X: ff
 - time: '+1'
   lights:
-     l_value_2X: 0
-     l_value_3X: 0
-     l_value_4X: 0
-     l_value_5X: 0
-     l_value_10X: 0
+    l_value_2X: 0
+    l_value_3X: 0
+    l_value_4X: 0
+    l_value_5X: 0
+    l_value_10X: 0
 - time: '+1'
   lights:
-     l_value_2X: ff
-     l_value_3X: ff
-     l_value_4X: ff
-     l_value_5X: ff
-     l_value_10X: ff
+    l_value_2X: ff
+    l_value_3X: ff
+    l_value_4X: ff
+    l_value_5X: ff
+    l_value_10X: ff
 - time: '+1'
   lights:
-     l_value_2X: 0
-     l_value_3X: 0
-     l_value_4X: 0
-     l_value_5X: 0
-     l_value_10X: 0
+    l_value_2X: 0
+    l_value_3X: 0
+    l_value_4X: 0
+    l_value_5X: 0
+    l_value_10X: 0
 - time: '+1'
   lights:
-     l_value_2X: ff
-     l_value_3X: ff
-     l_value_4X: ff
-     l_value_5X: ff
-     l_value_10X: ff
+    l_value_2X: ff
+    l_value_3X: ff
+    l_value_4X: ff
+    l_value_5X: ff
+    l_value_10X: ff
 - time: '+1'
   lights:
-     l_value_2X: 0
-     l_value_3X: 0
-     l_value_4X: 0
-     l_value_5X: 0
-     l_value_10X: 0
+    l_value_2X: 0
+    l_value_3X: 0
+    l_value_4X: 0
+    l_value_5X: 0
+    l_value_10X: 0
 - time: '+1'

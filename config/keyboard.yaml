@@ -37,9 +37,9 @@ keyboard:
   l:
     switch: s_top_lane_L
   h:
-    switch: s_heavy_target
+    switch: s_PM5K_target
   k:
-    switch: s_metal_target
+    switch: s_album_target
   5:
     switch: s_left_bumper
   6:
