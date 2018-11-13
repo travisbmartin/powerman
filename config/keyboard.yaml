@@ -30,12 +30,12 @@ keyboard:
 
   v:
     switch: s_eject_chamber
-  j:
-    switch: s_top_lane_J
-  a:
-    switch: s_top_lane_A
-  m:
-    switch: s_top_lane_M
+  r:
+    switch: s_top_lane_R
+  c:
+    switch: s_top_lane_C
+  l:
+    switch: s_top_lane_L
   h:
     switch: s_heavy_target
   k:

@@ -14,7 +14,7 @@ ball_devices:
         tags: trough, home
 
     bd_left_saucer:
-        tags: left saucer, meltdown, collect 
+        tags: left saucer, collide, collect 
         ball_switches: s_left_saucer
         eject_coil: c_left_saucer
         eject_timeouts: 2s

@@ -12,7 +12,7 @@ displays:
 window:
   width: 600
   height: 200
-  title: Mission Pinball Framework - Powerman 5000
+  title: Powerman 5000 - Choose Your Destructor
   resizable: true
   fullscreen: false
   borderless: false
