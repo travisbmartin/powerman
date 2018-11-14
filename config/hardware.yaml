@@ -19,7 +19,10 @@ sound_system:
       preload: true
       simultaneous_sounds: 7
     music:
-      volume: 0.5
+      volume: 1
+      simultaneous_sounds: 1
+    playlist:
+      volume: 1
       simultaneous_sounds: 1
   buffer: 2048  # previous value was 512
   frequency: 44100
@@ -29,16 +32,19 @@ sound_system:
 
 assets:
   sounds:
-    default:
-      preload: yes
+    #default:
     music:
       track: music
+      load: on_demand
     sfx:
       track: sfx
       load: on_demand
     voice:
       track: voice
       load: on_demand
+    playlist:
+      load: on_demand
+      track: music
 
 slide_player:
   mc_ready:

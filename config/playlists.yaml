@@ -1,0 +1,59 @@
+#config_version = 5
+
+playlists:
+  attract_music:
+    sounds: Footsteps, Free, Sid, Show
+    shuffle: False
+    repeat: False
+    events_when_played: attract_music_played
+    events_when_stopped: attract_music_stopped
+    events_when_looping: attract_music_looping
+    events_when_sound_changed: attract_music_sound_changed
+    events_when_sound_stopped: attract_music_sound_stopped
+
+#  base_music:
+#    sounds:
+#      - Apathy
+#      - Bombshell
+#      - Cult
+#      - Danger
+#      - Destroy
+#      - Footsteps
+#      - Free
+#     # - Heroes
+#     # - Hey
+#     # - Human
+#     # - Invade
+#      - Mega
+#      - Nobody
+#      - Organizized
+#      - Riot
+#      - Show
+#      - Sid
+#      - Supernova
+#      - Villain
+#      - Everything
+#      - Revolution
+#      - Vampire
+#      - Sky
+#      - Worlds
+#      - Wild
+#      - Love
+#    shuffle: true
+#    repeat: true
+#    events_when_played: base_music_played
+#    events_when_stopped: base_music_stopped
+#    events_when_looping: base_music_looping
+#    events_when_sound_changed: base_music_sound_changed
+#    events_when_sound_stopped: base_music_sound_stopped
+
+playlist_player:
+  play_attract_music:
+    playlist:
+      playlist: attract_music
+      action: play
+
+#  play_base_music:
+#      playlist: 
+#        playlist: base_music
+#        action: play

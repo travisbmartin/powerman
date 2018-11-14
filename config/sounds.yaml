@@ -1,10 +1,81 @@
 #config_version=5
 
 sounds:
-  Invade:
-    file: Invade.flac
-    priority: 100
-
+  Apathy_track:
+    file: A Is For Apathy.flac
+    priority: 200
   Bombshell_track:
     file: Bombshell.flac
+    priority: 200
+  Cult_track:
+    file: Cult Leader.flac
+    priority: 200
+  Danger_track:
+    file: Danger Is Go.flac
+    priority: 200
+  Destroy_track:
+    file: Destroy What You Enjoy.flac
+    priority: 200
+  Footsteps_track:
+    file: Footsteps and Voices.flac
+    priority: 200
+  Free_track:
+    file: Free.flac
+    priority: 200
+  Heroes_track:
+    file: Heroes and Villains.flac
+    priority: 200
+  Hey_track:
+    file: Hey All You People.flac
+    priority: 200
+  Human_track:
+    file: How To Be a Human.flac
+    priority: 200
+  Invade_track:
+    file: Invade, Destroy, Repeat.flac
+    priority: 100
+  Mega_track:
+    file: Mega Kung Fu Radio.flac
+    priority: 200
+  Nobody_track:
+    file: Nobody's Real.flac
+    priority: 200
+  Organizized_track:
+    file: Organizized.flac
+    priority: 200
+  Riot_track:
+    file: Riot Time.flac
+    priority: 200
+  Show_track:
+    file: Show Me What You've Got.flac
+    priority: 200
+  Sid_track:
+    file: Sid Vicious in a Dress.flac
+    priority: 200
+  Supernova_track:
+    file: Super Nova Goes Pop.flac
+    priority: 200
+  Villain_track:
+    file: Super Villain.flac
+    priority: 200
+  Everything_track:
+    file: The End Of Everything.flac
+    priority: 200
+  Revolution_track:
+    file: Theme To A Fake Revolution.flac
+    priority: 200
+  Vampire_track:
+    file: V Is For Vampire.flac
+    priority: 200
+  Sky_track:
+    file: Watch the Sky for Me.flac
+    priority: 200
+  Worlds_track:
+    file: When Worlds Collide.flac
+    priority: 200
+  Wild_track:
+    file: Wild World.flac
+    priority: 200
+  Love_track:
+    file: You're Gonna Love It, If You Like.flac
     priority: 200
