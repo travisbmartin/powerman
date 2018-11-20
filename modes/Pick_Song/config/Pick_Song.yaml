@@ -1,0 +1,16 @@
+#config_version=5
+
+mode:
+  start_events: balldevice_bd_right_saucer_ball_entered
+  stop_events: mode_Song_1_Carousel_ended
+  priority: 195
+
+queue_relay_player:
+  balldevice_bd_right_saucer_ball_eject_attempt:
+    post: start_mode_Song_1_Carousel
+    wait_for: mode_Song_1_starting, mode_Song_2_starting, mode_Song_3_starting
+
+sound_player:
+  mode_Pick_Song_started:
+    Instrumental_track:
+      action: stop

@@ -4,7 +4,7 @@
 mpf-mc:
   fps: 60
 
-virtual_platform_start_active_switches: s_trough_1 s_trough_2 s_trough_3 s_trough_4 s_trough_5
+virtual_platform_start_active_switches: s_trough_1, s_trough_2, s_trough_3, s_trough_4, s_trough_5
 
 sound_system:
   tracks:
@@ -19,9 +19,6 @@ sound_system:
       preload: true
       simultaneous_sounds: 7
     music:
-      volume: 1
-      simultaneous_sounds: 1
-    playlist:
       volume: 1
       simultaneous_sounds: 1
   buffer: 2048  # previous value was 512
@@ -42,9 +39,8 @@ assets:
     voice:
       track: voice
       load: on_demand
-    playlist:
-      load: on_demand
-      track: music
+    trackplaylist:
+      track: trackplaylist
 
 slide_player:
   mc_ready:

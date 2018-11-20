@@ -79,3 +79,24 @@ sounds:
   Love_track:
     file: You're Gonna Love It, If You Like.flac
     priority: 200
+  Hostage_track:
+    file: Hostage.flac
+    priority: 200
+  Match_track:
+    file: Strike The Match.flac
+    priority: 200
+  Walking_track:
+    file: Walking Disaster.flac
+    priority: 200
+  Return_track:
+    file: Return To The City Of The Dead.flac
+    priority: 200
+  City_track:
+    file: City Lights.flac
+    priority: 200
+  Ultra_track:
+    file: Ultra Mega.flac
+    priority: 200
+  Instrumental_track:
+    file: Heroes and Villains Instrumental.flac
+    priority: 200

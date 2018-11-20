@@ -1,0 +1,12 @@
+#config_version=5
+
+mode:
+  start_events: mode_Song_1_started
+  stop_events: ball_ended
+  priority: 205
+
+sound_player:
+  mode_Song_1_started:
+    Footsteps_track:
+      action: play
+      loops: -1

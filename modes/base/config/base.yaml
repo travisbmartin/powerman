@@ -4,6 +4,12 @@ mode:
   start_events: ball_starting
   priority: 100
 
+sound_player:
+  mode_base_started:
+    Instrumental_track:
+      action: play
+      loops: -1
+
 shots:
   R_Pop:
     switch: s_right_bumper
@@ -63,117 +69,81 @@ variable_player:
     score: 100 * current_player.pf_multiplier
   s_ramp_drop_target_active:
     score: 100 * current_player.pf_multiplier
-
   s_left_bumper_active:
     score: 100 * current_player.pf_multiplier
-
   s_middle_bumper_active:
     score: 100 * current_player.pf_multiplier
-
   s_right_bumper_active:
     score: 100 * current_player.pf_multiplier
-
   s_right_slingshot_active:
     score: 100 * current_player.pf_multiplier
-
   s_left_slingshot_active:
     score: 100 * current_player.pf_multiplier
-
-  s_top_lane_J_active:
+  s_top_lane_R_active:
     score: 100 * current_player.pf_multiplier
-
-  s_top_lane_A_active:
+  s_top_lane_C_active:
     score: 100 * current_player.pf_multiplier
-
-  s_top_lane_M_active:
+  s_top_lane_L_active:
     score: 100 * current_player.pf_multiplier
-
   s_left_outlane_active:
     score: 100 * current_player.pf_multiplier
-
   s_right_outlane_active:
     score: 100 * current_player.pf_multiplier
-
   s_top_25K_lane_active:
     score: 100 * current_player.pf_multiplier
-
   s_top_50K_lane_active:
     score: 100 * current_player.pf_multiplier
-
   s_left_rollover_active:
     score: 100 * current_player.pf_multiplier
-
   s_right_rollover_active:
     score: 100 * current_player.pf_multiplier
-
   s_left_25K_target_active:
     score: 100 * current_player.pf_multiplier
-
   s_right_25K_target_active:
     score: 100 * crurent_player.pf_multiplier
 
-counters:
-  lb_Right_Pop_count:
-    count_events: R_Pop_hit
-    starting_count: 1
-    count_complete_value: 0
-    count_interval: 1
-    direction: down
-    persist_state: false
-    events_when_complete: Super_Pop_R_Ready
-    debug: true
-    reset_on_complete: false
-  lb_Left_Pop_count:
-    count_events: L_Pop_hit
-    starting_count: 1
-    count_complete_value: 0
-    direction: down
-    count_interval: 1
-    persist_state: false
-    events_when_complete: Super_Pop_L_Ready
-    debug: true
-    reset_on_complete: false
-  lb_Mid_Pop_count:
-    count_events: M_Pop_hit
-    starting_count: 1
-    count_complete_value: 0
-    direction: down
-    count_interval: 1
-    persist_state: false
-    events_when_complete: Super_Pop_M_Ready
-    debug: true
-    reset_on_complete: false
+#counters:
+#  lb_Right_Pop_count:
+#    count_events: R_Pop_hit
+#    starting_count: 1
+#    count_complete_value: 0
+#    count_interval: 1
+#    direction: down
+#    persist_state: false
+#    events_when_complete: Super_Pop_R_Ready
+#    debug: true
+#    reset_on_complete: false
+#  lb_Left_Pop_count:
+#    count_events: L_Pop_hit
+#    starting_count: 1
+#    count_complete_value: 0
+#    direction: down
+#    count_interval: 1
+#    persist_state: false
+#    events_when_complete: Super_Pop_L_Ready
+#    debug: true
+#    reset_on_complete: false
+#  lb_Mid_Pop_count:
+#    count_events: M_Pop_hit
+#    starting_count: 1
+#    count_complete_value: 0
+#    direction: down
+#    count_interval: 1
+#    persist_state: false
+#    events_when_complete: Super_Pop_M_Ready
+#    debug: true
+#    reset_on_complete: false
 
-accruals:
-  lb_Super_Pops_Enable:
-    events:
-      - Super_Pop_R_Ready
-      - Super_Pop_M_Ready
-      - Super_Pop_L_Ready
-    events_when_complete: Super_Pops_Go
-    persist_state: false
-    reset_on_complete: false
-    debug: true
+#accruals:
+#  lb_Super_Pops_Enable:
+#    events:
+#      - Super_Pop_R_Ready
+#      - Super_Pop_M_Ready
+#      - Super_Pop_L_Ready
+#    events_when_complete: Super_Pops_Go
+#    persist_state: false
+#    reset_on_complete: false
+#    debug: true
 
-event_player:
-  Super_Pops_Go: start_mode_Super_Pops
-
-playlists:
-  base_music:
-    sounds:
-      - Apathy
-      - Bombshell
-      - Cult
-      - Danger
-    shuffle: true
-    repeat: true
-    events_when_played: base_music_played
-    events_when_stopped: base_music_stopped
-    events_when_looping: base_music_looping
-    events_when_sound_changed: base_music_sound_changed
-    events_when_sound_stopped: base_music_sound_stopped
-
-playlist_player:
-  play_base_music:
-    base_music:
-      action: play
+#event_player:
+#  Super_Pops_Go: start_mode_Super_Pops

@@ -2,12 +2,21 @@
 
 modes:
 - base
-- Skull_rollover #changed
-- AMP_Bonus_X #changed
-- PM5K_made #changed
-- ALBUM_made #changed
+- Skull_rollover 
+- AMP_Bonus_X 
+- PM5K_made 
+- ALBUM_made 
 - Super_Pops
-- Setlist
-- Light_Setlist_3s
-- Light_Setlist
-# - carousel
+- Pick_Song
+- Song_1_Carousel
+- Song_1
+- Song_2
+- Song_3
+
+#- Song_4_Carousel
+#- Song_7_Carousel
+#- Song_10_Carousel
+#- Song_13_Carousel
+#- Song_16_Carousel
+#- Song_19_Carousel
+#- Song_22_Carousel

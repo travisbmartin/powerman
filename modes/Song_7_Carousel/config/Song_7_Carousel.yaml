@@ -1,0 +1,51 @@
+#config_version=5
+
+mode:
+  start_events: start_mode_Song_7_Carousel
+  stop_events: mode_Song_7_start, mode_Song_8_start, mode_Song_9_start
+  code: mpf.modes.carousel.code.carousel.Carousel
+  priority: 300
+
+mode_settings:
+  selectable_items: Song7, Song8, Song9, 
+  select_item_events: sw_Both_Flippers
+  next_item_events: sw_right_flipper_active
+  previous_item_events: sw_left_flipper_active
+
+queue_relay_player:
+  balldevice_bd_right_saucer_eject_attempt:
+    post: start_mode_Song_7_Carousel
+    wait_for: mode_Song_7_start, mode_Song_8_start, mode_Song_9_start
+
+slide_player:
+  carousel_Song7_highlighted: select_Song7
+  carousel_Song8_highlighted: select_Song8
+  carousel_Song9_highlighted: select_Song9
+
+slides:
+  select_Song7: #Cult Leader
+    widgets:
+      - type: image
+        image: nw
+    transition:
+      type: move_in
+      direction: right
+  select_Song8: #Wild World
+    widgets:
+      - type: image
+        image: dwye
+    transition:
+      type: move_in
+      direction: right
+  select_Song9: #Oranizized
+    widgets:
+      - type: image
+        image: mkfr
+    transition:
+      type: move_in
+      direction: right
+ 
+event_player:
+  select_Song7: mode_Song_7_start
+  select_Song8: mode_Song_8_start
+  select_Song9: mode_Song_9_start  

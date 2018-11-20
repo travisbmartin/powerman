@@ -8,3 +8,7 @@ player_vars:
   pf_Bonus_Multiplier:
     value_type: int
     initial_value: 1
+
+  pf_setlist:
+    value_type: int
+    initial_value: 1
