@@ -14,17 +14,8 @@ sound_player:
     Walking_track:
       action: stop
 
-slides:
-  pick_Song21_slide: #Walking Disaster
-    widgets:
-      - type: image
-        image: dwye
-    transition:
-      type: move_in
-      direction: right
-
-slide_player:
+show_player:
   mode_Song_21_started: 
-    pick_Song21_slide:
-      expire: 5s
-      target: dmd
+    walking_track:
+      loops: 0
+      speed: 1

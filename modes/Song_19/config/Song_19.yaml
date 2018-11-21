@@ -14,17 +14,8 @@ sound_player:
     Love_track:
       action: stop
 
-slides:
-  pick_Song19_slide: #You're Gonna Love It If You Like It Or Not
-    widgets:
-      - type: image
-        image: botf
-    transition:
-      type: move_in
-      direction: right
-
-slide_player:
+show_player:
   mode_Song_19_started: 
-    pick_Song19_slide:
-      expire: 5s
-      target: dmd
+    love_track:
+      loops: 0
+      speed: 1

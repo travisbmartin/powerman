@@ -14,17 +14,8 @@ sound_player:
     Vampire_track:
       action: stop
 
-slides:
-  pick_Song10_slide: #V is for Vampire
-    widgets:
-      - type: image
-        image: sotoson
-    transition:
-      type: move_in
-      direction: right
-
-slide_player:
+show_player:
   mode_Song_10_started: 
-    pick_Song10_slide:
-      expire: 5s
-      target: dmd
+    vampire_track:
+      loops: 0
+      speed: 1

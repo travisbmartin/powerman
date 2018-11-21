@@ -14,17 +14,8 @@ sound_player:
     Hey_track:
       action: stop
 
-slides:
-  pick_Song13_slide: #Hey All You People
-    widgets:
-      - type: image
-        image: botf
-    transition:
-      type: move_in
-      direction: right
-
-slide_player:
+show_player:
   mode_Song_13_started: 
-    pick_Song13_slide:
-      expire: 5s
-      target: dmd
+    hey_track:
+      loops: 0
+      speed: 1

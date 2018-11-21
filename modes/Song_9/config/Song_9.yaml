@@ -14,14 +14,8 @@ sound_player:
     Organizized_track:
       action: stop
 
-slides:
-  pick_Song9_slide: #Organizized
-    - type: video
-      video: organizized_track
-      control_events:
-        - event: bd_right_saucer_ball_eject_success
-          action: stop
-slide_player:
+show_player:
   mode_Song_9_started: 
-    pick_Song9_slide:
-      target: dmd
+    organizized_track:
+      loops: 0
+      speed: 1

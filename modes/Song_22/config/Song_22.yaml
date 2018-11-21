@@ -14,17 +14,8 @@ sound_player:
     Riot_track:
       action: stop
 
-slides:
-  pick_Song22_slide: #Riot Time
-    widgets:
-      - type: image
-        image: dwye
-    transition:
-      type: move_in
-      direction: right
-
-slide_player:
+show_player:
   mode_Song_22_started: 
-    pick_Song22_slide:
-      expire: 5s
-      target: dmd
+    riot_track:
+      loops: 0
+      speed: 1

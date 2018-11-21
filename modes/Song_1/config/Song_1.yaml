@@ -17,15 +17,8 @@ sound_player:
     Voices_track:
       action: stop
 
-slides:
-  pick_Song1_slide: #Footsteps and Voices
-    - type: video
-      video: footsteps_track
-      control_events:
-        - event: bd_right_saucer_ball_eject_success
-          action: stop
-
-slide_player:
+show_player:
   mode_Song_1_started: 
-    pick_Song1_slide:
-      target: dmd
+    footsteps_track:
+      loops: 0
+      speed: 1

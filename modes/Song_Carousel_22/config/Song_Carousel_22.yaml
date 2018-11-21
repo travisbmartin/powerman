@@ -24,7 +24,7 @@ sound_player:
       action: stop
     Nobody_track:
       action: stop
-    Walkingh_track:
+    Walking_track:
       action: stop
 
   mode_Song_Carousel_22_ending:

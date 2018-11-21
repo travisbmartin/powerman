@@ -14,17 +14,8 @@ sound_player:
     Revolution_track:
       action: stop
 
-slides:
-  pick_Song18_slide: #Theme to a Fake Revolution
-    widgets:
-      - type: image
-        image: transform
-    transition:
-      type: move_in
-      direction: right
-
-slide_player:
+show_player:
   mode_Song_18_started: 
-    pick_Song18_slide:
-      expire: 5s
-      target: dmd
+    revolution_track:
+      loops: 0
+      speed: 1

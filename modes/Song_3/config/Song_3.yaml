@@ -17,15 +17,8 @@ sound_player:
     Showme_track:
       action: stop
 
-slides:
-  pick_Song3_slide: #Show Me What You've Got
-    - type: video
-      video: showme_track
-      control_events:
-        - event: bd_right_saucer_ball_eject_success
-          action: stop
-
-slide_player:
+show_player:
   mode_Song_3_started: 
-    pick_Song3_slide:
-      target: dmd
+    showme_track:
+      loops: 0
+      speed: 1

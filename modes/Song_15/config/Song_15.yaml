@@ -14,17 +14,8 @@ sound_player:
     Sid_track:
       action: stop
 
-slides:
-  pick_Song15_slide: #Sid Vicious In A Dress
-    widgets:
-      - type: image
-        image: nw
-    transition:
-      type: move_in
-      direction: right
-
-slide_player:
+show_player:
   mode_Song_15_started: 
-    pick_Song15_slide:
-      expire: 5s
-      target: dmd
+    sid_track:
+      loops: 0
+      speed: 1

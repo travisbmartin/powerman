@@ -14,14 +14,8 @@ sound_player:
     Human_track:
       action: stop
 
-slides:
-  pick_Song4_slide: #How To Be A Human
-    - type: video
-      video: human_track
-      control_events:
-        - event: bd_right_saucer_ball_eject_success
-          action: stop
-slide_player:
+show_player:
   mode_Song_4_started: 
-    pick_Song4_slide:
-      target: dmd
+    human_track:
+      loops: 0
+      speed: 1

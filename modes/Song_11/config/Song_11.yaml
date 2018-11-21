@@ -14,17 +14,8 @@ sound_player:
     Destroy_track:
       action: stop
 
-slides:
-  pick_Song11_slide: #Destroy What You Enjoy
-    widgets:
-      - type: image
-        image: dwye
-    transition:
-      type: move_in
-      direction: right
-
-slide_player:
+show_player:
   mode_Song_11_started: 
-    pick_Song11_slide:
-      expire: 5s
-      target: dmd
+    destroy_track:
+      loops: 0
+      speed: 1

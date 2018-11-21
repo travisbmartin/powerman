@@ -14,17 +14,8 @@ sound_player:
     Return_track:
       action: stop
 
-slides:
-  pick_Song24_slide: #Return to the city of the Dead
-    widgets:
-      - type: image
-        image: dwye
-    transition:
-      type: move_in
-      direction: right
-
-slide_player:
+show_player:
   mode_Song_24_started: 
-    pick_Song24_slide:
-      expire: 5s
-      target: dmd
+    return_track:
+      loops: 0
+      speed: 1

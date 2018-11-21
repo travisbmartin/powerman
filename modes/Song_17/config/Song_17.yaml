@@ -14,17 +14,8 @@ sound_player:
     Ultra_track:
       action: stop
 
-slides:
-  pick_Song17_slide: #Ultra Mega
-    widgets:
-      - type: image
-        image: afd
-    transition:
-      type: move_in
-      direction: right
-
-slide_player:
+show_player:
   mode_Song_17_started: 
-    pick_Song17_slide:
-      expire: 5s
-      target: dmd
+    ultra_track:
+      loops: 0
+      speed: 1

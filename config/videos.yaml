@@ -16,8 +16,8 @@ videos:
     height: 105
     file: supernova_track.mp4
   showme_track:
-    width: 200
-    height: 140
+    width: 150
+    height: 105
     file: showme_track.mp4
   invade_track:
     width: 100
@@ -32,19 +32,78 @@ videos:
     height: 70
     file: human_track.mp4
   free_track:
-    width: 200
-    height: 140
+    width: 120
+    height: 82
     file: free_track.mp4
   wild_track:
-    width: 200
-    height: 140
-    file: wild_track.mp4
-  cult_track:
     width: 150
     height: 105
+    file: wild_track.mp4
+  cult_track:
+    width: 100
+    height: 70
     file: cult_track.mp4
-
   organizized_track:
     width: 200
     height: 140
     file: organizized_track.mp4
+  vampire_track:
+    width: 150
+    height: 105
+    file: vampire_track.mp4
+  destroy_track:
+    width: 150
+    height: 105
+    file: destroy_track.mp4
+  danger_track:
+    width: 150
+    height: 105
+    file: danger_track.mp4
+  hey_track:
+    width: 100
+    height: 70
+    file: hey_track.mp4
+  villain_track:
+    width: 100
+    height: 70
+    file: villain_track.mp4
+  sid_track:
+    width: 100
+    height: 70
+    file: sid_track.mp4
+  everything_track:
+    width: 150
+    height: 105
+    file: everything_track.mp4
+  ultra_track:
+    width: 150
+    height: 105
+    file: ultra_track.mp4
+  revolution_track:
+    width: 100
+    height: 70
+    file: revolution_track.mp4
+  love_track:
+    width: 105
+    height: 80
+    file: love_track.mp4
+  nobodys_track:
+    width: 100
+    height: 70
+    file: nobodys_track.mp4
+  walking_track:
+    width: 100
+    height: 70
+    file: walking_track.mp4
+  riot_track:
+    width: 150
+    height: 105
+    file: riot_track.mp4
+  apathy_track:
+    width: 100
+    height: 70
+    file: apathy_track.mp4
+  return_track:
+    width: 150
+    height: 105
+    file: return_track.mp4

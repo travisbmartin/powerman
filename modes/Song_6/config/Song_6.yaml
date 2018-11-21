@@ -14,15 +14,8 @@ sound_player:
     Free_track:
       action: stop
 
-slides:
-  pick_Song6_slide: #Free
-    - type: video
-      video: free_track
-      control_events:
-        - event: bd_right_saucer_ball_eject_success
-          action: stop
-
-slide_player:
+show_player:
   mode_Song_6_started: 
-    pick_Song6_slide:
-      target: dmd
+    free_track:
+      loops: 0
+      speed: 1

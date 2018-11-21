@@ -14,17 +14,8 @@ sound_player:
     Nobody_track:
       action: stop
 
-slides:
-  pick_Song20_slide: #Nobody's Real
-    widgets:
-      - type: image
-        image: ttsr
-    transition:
-      type: move_in
-      direction: right
-
-slide_player:
+show_player:
   mode_Song_20_started: 
-    pick_Song20_slide:
-      expire: 5s
-      target: dmd
+    nobodys_track:
+      loops: 0
+      speed: 1

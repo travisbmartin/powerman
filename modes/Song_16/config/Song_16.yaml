@@ -14,17 +14,8 @@ sound_player:
     Everything_track:
       action: stop
 
-slides:
-  pick_Song16_slide: #The End of Everything
-    widgets:
-      - type: image
-        image: afd
-    transition:
-      type: move_in
-      direction: right
-
-slide_player:
+show_player:
   mode_Song_16_started: 
-    pick_Song16_slide:
-      expire: 5s
-      target: dmd
+    everything_track:
+      loops: 0
+      speed: 1

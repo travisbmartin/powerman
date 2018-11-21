@@ -17,15 +17,8 @@ sound_player:
     Invade_track:
       action: stop
 
-slides:
-  pick_Song2_slide: #Invade, Destroy, Repeat
-    - type: video
-      video: invade_track
-      control_events:
-        - event: bd_right_saucer_ball_eject_success
-          action: stop
-
-slide_player:
+show_player:
   mode_Song_2_started: 
-    pick_Song2_slide:
-      target: dmd
+    invade_track:
+      loops: 0
+      speed: 1

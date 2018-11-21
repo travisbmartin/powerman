@@ -14,15 +14,8 @@ sound_player:
     Supernova_track:
       action: stop
 
-slides:
-  pick_Song5_slide: #Supernova Goes Pop
-    - type: video
-      video: supernova_track
-      control_events:
-        - event: bd_right_saucer_ball_eject_success
-          action: stop
-
-slide_player:
+show_player:
   mode_Song_5_started: 
-    pick_Song5_slide:
-      target: dmd
+    supernova_track:
+      loops: 0
+      speed: 1

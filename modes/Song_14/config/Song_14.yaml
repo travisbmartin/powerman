@@ -14,17 +14,8 @@ sound_player:
     Villain_track:
       action: stop
 
-slides:
-  pick_Song14_slide: #Super Villain
-    widgets:
-      - type: image
-        image: sotoson
-    transition:
-      type: move_in
-      direction: right
-
-slide_player:
+show_player:
   mode_Song_14_started: 
-    pick_Song14_slide:
-      expire: 5s
-      target: dmd
+    villain_track:
+      loops: 0
+      speed: 1

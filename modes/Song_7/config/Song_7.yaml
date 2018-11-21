@@ -14,14 +14,8 @@ sound_player:
     Wild_track:
       action: stop
 
-slides:
-  pick_Song7_slide: #Wild World
-    - type: video
-      video: wild_track
-      control_events:
-        - event: bd_right_saucer_ball_eject_success
-          action: stop
-slide_player:
+show_player:
   mode_Song_7_started: 
-    pick_Song7_slide:
-      target: dmd
+    wild_track:
+      loops: 0
+      speed: 1
