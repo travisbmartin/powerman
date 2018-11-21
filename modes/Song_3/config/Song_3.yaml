@@ -2,13 +2,30 @@
 
 mode:
   start_events: start_mode_Song_3
-  stop_events: ball_ended
+  stop_events: ball_ended, mode_Song_Carousel_4_starting
   priority: 200
 
 sound_player:
-  mode_Setlist_started:
-    Hostage_track:
-      action: stop
-    Invade_track:
+  mode_Song_3_started:
+    Showme_track:
       action: play
       loops: -1
+  ball_ending:
+    Showme_track:
+      action: stop
+  mode_Song_3_ending:
+    Showme_track:
+      action: stop
+
+slides:
+  pick_Song3_slide: #Show Me What You've Got
+    - type: video
+      video: showme_track
+      control_events:
+        - event: bd_right_saucer_ball_eject_success
+          action: stop
+
+slide_player:
+  mode_Song_3_started: 
+    pick_Song3_slide:
+      target: dmd

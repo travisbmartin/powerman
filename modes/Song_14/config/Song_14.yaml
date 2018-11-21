@@ -1,0 +1,30 @@
+#config_version=5
+
+mode:
+  start_events: start_mode_Song_14
+  stop_events: ball_ended, mode_Song_Carousel_16_starting
+  priority: 200
+
+sound_player:
+  mode_Song_14_started:
+    Villain_track:
+      action: play
+      loops: -1
+  ball_ending:
+    Villain_track:
+      action: stop
+
+slides:
+  pick_Song14_slide: #Super Villain
+    widgets:
+      - type: image
+        image: sotoson
+    transition:
+      type: move_in
+      direction: right
+
+slide_player:
+  mode_Song_14_started: 
+    pick_Song14_slide:
+      expire: 5s
+      target: dmd

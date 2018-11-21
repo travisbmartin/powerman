@@ -1,0 +1,30 @@
+#config_version=5
+
+mode:
+  start_events: start_mode_Song_11
+  stop_events: ball_ended, mode_Song_Carousel_13_starting
+  priority: 200
+
+sound_player:
+  mode_Song_11_started:
+    Destroy_track:
+      action: play
+      loops: -1
+  ball_ending:
+    Destroy_track:
+      action: stop
+
+slides:
+  pick_Song11_slide: #Destroy What You Enjoy
+    widgets:
+      - type: image
+        image: dwye
+    transition:
+      type: move_in
+      direction: right
+
+slide_player:
+  mode_Song_11_started: 
+    pick_Song11_slide:
+      expire: 5s
+      target: dmd

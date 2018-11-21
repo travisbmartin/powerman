@@ -1,14 +1,31 @@
 #config_version=5
 
 mode:
-  start_events: start_mode_Song_3
-  stop_events: ball_ended
+  start_events: start_mode_Song_2
+  stop_events: ball_ended, mode_Song_Carousel_4_starting
   priority: 200
 
 sound_player:
-  mode_Setlist_started:
-    Hostage_track:
-      action: stop
+  mode_Song_2_started:
     Invade_track:
       action: play
       loops: -1
+  ball_ending:
+    Invade_track:
+      action: stop
+  mode_Song_2_ending:
+    Invade_track:
+      action: stop
+
+slides:
+  pick_Song2_slide: #Invade, Destroy, Repeat
+    - type: video
+      video: invade_track
+      control_events:
+        - event: bd_right_saucer_ball_eject_success
+          action: stop
+
+slide_player:
+  mode_Song_2_started: 
+    pick_Song2_slide:
+      target: dmd

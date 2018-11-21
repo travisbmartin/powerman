@@ -1,0 +1,28 @@
+#config_version=5
+
+mode:
+  start_events: start_mode_Song_6
+  stop_events: ball_ended, mode_Song_Carousel_7_starting
+  priority: 200
+
+sound_player:
+  mode_Song_6_started:
+    Free_track:
+      action: play
+      loops: -1
+  ball_ending:
+    Free_track:
+      action: stop
+
+slides:
+  pick_Song6_slide: #Free
+    - type: video
+      video: free_track
+      control_events:
+        - event: bd_right_saucer_ball_eject_success
+          action: stop
+
+slide_player:
+  mode_Song_6_started: 
+    pick_Song6_slide:
+      target: dmd

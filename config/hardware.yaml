@@ -21,6 +21,7 @@ sound_system:
     music:
       volume: 1
       simultaneous_sounds: 1
+      preload: true
   buffer: 2048  # previous value was 512
   frequency: 44100
   channels: 1

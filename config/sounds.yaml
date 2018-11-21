@@ -16,7 +16,7 @@ sounds:
   Destroy_track:
     file: Destroy What You Enjoy.flac
     priority: 200
-  Footsteps_track:
+  Voices_track:
     file: Footsteps and Voices.flac
     priority: 200
   Free_track:
@@ -38,7 +38,7 @@ sounds:
     file: Mega Kung Fu Radio.flac
     priority: 200
   Nobody_track:
-    file: Nobody's Real.flac
+    file: Nobodys Real.flac
     priority: 200
   Organizized_track:
     file: Organizized.flac
@@ -46,7 +46,7 @@ sounds:
   Riot_track:
     file: Riot Time.flac
     priority: 200
-  Show_track:
+  Showme_track:
     file: Show Me What You've Got.flac
     priority: 200
   Sid_track:

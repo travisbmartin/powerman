@@ -1,27 +1,31 @@
 events:
-  game_ended: 3
-  game_started: 361
+  game_ended: 7
+  game_started: 488
 player:
   score:
-    average: 869.0
+    average: 672.4285714285714
     top:
     - 1807
+    - 800
+    - 600
     - 500
+    - 400
     - 300
-    total: 3
+    - 300
+    total: 7
 shots:
   Bombshell_Level_1: 7
   HEAVY: 22
-  L_Pop: 42
+  L_Pop: 43
   Level_1: 32
   Level_2: 22
   Level_3: 7
   METAL: 7
-  M_Pop: 42
-  R_Pop: 31
+  M_Pop: 44
+  R_Pop: 33
   eject_chamber: 9
   top_lane_A: 80
-  top_lane_C: 13
+  top_lane_C: 17
   top_lane_J: 66
   top_lane_L: 1
   top_lane_M: 68
@@ -34,41 +38,41 @@ switches:
   s_coins_left: 0
   s_coins_middle: 0
   s_coins_right: 0
-  s_credit: 6
+  s_credit: 11
   s_eject_chamber: 9
   s_heavy_target: 22
   s_left_25K_target: 0
-  s_left_bumper: 42
+  s_left_bumper: 43
   s_left_flipper: 0
   s_left_outlane: 0
   s_left_return_lane: 0
   s_left_rollover: 0
   s_left_saucer: 1
-  s_left_slingshot: 0
+  s_left_slingshot: 30
   s_load_chamber: 0
   s_metal_target: 7
-  s_middle_bumper: 42
+  s_middle_bumper: 44
   s_outhole: 0
   s_ramp_drop_target: 0
   s_right_25K_target: 0
-  s_right_bumper: 31
+  s_right_bumper: 33
   s_right_flipper: 0
   s_right_outlane: 0
   s_right_return_lane: 0
   s_right_rollover: 0
-  s_right_saucer: 23
+  s_right_saucer: 74
   s_right_slingshot: 0
   s_slam: 0
   s_tilt: 0
   s_top_25K_lane: 0
   s_top_50K_lane: 0
   s_top_lane_A: 80
-  s_top_lane_C: 13
+  s_top_lane_C: 17
   s_top_lane_J: 66
   s_top_lane_L: 1
   s_top_lane_M: 68
   s_top_lane_R: 0
-  s_trough_1: 79
+  s_trough_1: 117
   s_trough_2: 0
   s_trough_3: 0
   s_trough_4: 0

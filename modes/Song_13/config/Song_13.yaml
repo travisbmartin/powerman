@@ -1,0 +1,30 @@
+#config_version=5
+
+mode:
+  start_events: start_mode_Song_13
+  stop_events: ball_ended, mode_Song_Carousel_16_starting
+  priority: 200
+
+sound_player:
+  mode_Song_13_started:
+    Hey_track:
+      action: play
+      loops: -1
+  ball_ending:
+    Hey_track:
+      action: stop
+
+slides:
+  pick_Song13_slide: #Hey All You People
+    widgets:
+      - type: image
+        image: botf
+    transition:
+      type: move_in
+      direction: right
+
+slide_player:
+  mode_Song_13_started: 
+    pick_Song13_slide:
+      expire: 5s
+      target: dmd

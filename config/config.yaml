@@ -28,6 +28,14 @@ config:
 - sounds.yaml
 - videos.yaml
 
+random_event_player:
+  play_random_event_global:
+    scope: machine
+    events:
+      - mode_start_Song_1
+      - mode_start_Song_2
+      - mode_start_Song_3
+
 widget_styles:
   text_default:
     font_name: psycha3

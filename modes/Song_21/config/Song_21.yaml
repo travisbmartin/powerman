@@ -1,0 +1,30 @@
+#config_version=5
+
+mode:
+  start_events: start_mode_Song_21
+  stop_events: ball_ended, mode_Song_Carousel_22_starting
+  priority: 200
+
+sound_player:
+  mode_Song_21_started:
+    Walking_track:
+      action: play
+      loops: -1
+  ball_ending:
+    Walking_track:
+      action: stop
+
+slides:
+  pick_Song21_slide: #Walking Disaster
+    widgets:
+      - type: image
+        image: dwye
+    transition:
+      type: move_in
+      direction: right
+
+slide_player:
+  mode_Song_21_started: 
+    pick_Song21_slide:
+      expire: 5s
+      target: dmd

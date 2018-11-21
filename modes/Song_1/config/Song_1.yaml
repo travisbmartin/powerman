@@ -1,12 +1,31 @@
 #config_version=5
 
 mode:
-  start_events: mode_Song_1_started
-  stop_events: ball_ended
-  priority: 205
+  start_events: start_mode_Song_1
+  stop_events: ball_ended, mode_Song_Carousel_4_starting
+  priority: 200
 
 sound_player:
   mode_Song_1_started:
-    Footsteps_track:
+    Voices_track:
       action: play
       loops: -1
+  ball_ending:
+    Voices_track:
+      action: stop
+  mode_Song_1_ending:
+    Voices_track:
+      action: stop
+
+slides:
+  pick_Song1_slide: #Footsteps and Voices
+    - type: video
+      video: footsteps_track
+      control_events:
+        - event: bd_right_saucer_ball_eject_success
+          action: stop
+
+slide_player:
+  mode_Song_1_started: 
+    pick_Song1_slide:
+      target: dmd

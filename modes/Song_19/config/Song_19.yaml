@@ -1,0 +1,30 @@
+#config_version=5
+
+mode:
+  start_events: start_mode_Song_19
+  stop_events: ball_ended, mode_Song_Carousel_22_starting
+  priority: 200
+
+sound_player:
+  mode_Song_19_started:
+    Love_track:
+      action: play
+      loops: -1
+  ball_ending:
+    Love_track:
+      action: stop
+
+slides:
+  pick_Song19_slide: #You're Gonna Love It If You Like It Or Not
+    widgets:
+      - type: image
+        image: botf
+    transition:
+      type: move_in
+      direction: right
+
+slide_player:
+  mode_Song_19_started: 
+    pick_Song19_slide:
+      expire: 5s
+      target: dmd

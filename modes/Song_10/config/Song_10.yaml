@@ -1,0 +1,30 @@
+#config_version=5
+
+mode:
+  start_events: start_mode_Song_10
+  stop_events: ball_ended, mode_Song_Carousel_13_starting
+  priority: 200
+
+sound_player:
+  mode_Song_10_started:
+    Vampire_track:
+      action: play
+      loops: -1
+  ball_ending:
+    Vampire_track:
+      action: stop
+
+slides:
+  pick_Song10_slide: #V is for Vampire
+    widgets:
+      - type: image
+        image: sotoson
+    transition:
+      type: move_in
+      direction: right
+
+slide_player:
+  mode_Song_10_started: 
+    pick_Song10_slide:
+      expire: 5s
+      target: dmd

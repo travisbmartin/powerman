@@ -10,3 +10,41 @@ videos:
     width: 150
     height: 105
     file: attract.mp4
+
+  supernova_track:
+    width: 150
+    height: 105
+    file: supernova_track.mp4
+  showme_track:
+    width: 200
+    height: 140
+    file: showme_track.mp4
+  invade_track:
+    width: 100
+    height: 70
+    file: invade_track.mp4
+  footsteps_track:
+    width: 100
+    height: 70
+    file: footsteps_track.mp4
+  human_track:
+    width: 100
+    height: 70
+    file: human_track.mp4
+  free_track:
+    width: 200
+    height: 140
+    file: free_track.mp4
+  wild_track:
+    width: 200
+    height: 140
+    file: wild_track.mp4
+  cult_track:
+    width: 150
+    height: 105
+    file: cult_track.mp4
+
+  organizized_track:
+    width: 200
+    height: 140
+    file: organizized_track.mp4

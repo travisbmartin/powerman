@@ -1,0 +1,30 @@
+#config_version=5
+
+mode:
+  start_events: start_mode_Song_12
+  stop_events: ball_ended, mode_Song_Carousel_13_starting
+  priority: 200
+
+sound_player:
+  mode_Song_12_started:
+    Danger_track:
+      action: play
+      loops: -1
+  ball_ending:
+    Danger_track:
+      action: stop
+
+slides:
+  pick_Song12_slide: #Danger Is Go
+    widgets:
+      - type: image
+        image: afd
+    transition:
+      type: move_in
+      direction: right
+
+slide_player:
+  mode_Song_12_started: 
+    pick_Song12_slide:
+      expire: 5s
+      target: dmd
