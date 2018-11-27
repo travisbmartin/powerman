@@ -5,19 +5,19 @@ mode:
   stop_events: ball_ended
   priority: 500
 
-sound_player:
-  mode_Super_Pops_started:
-    Bombshell_track:
-      action: play
-      loops: -1
+#sound_player:
+#  mode_Super_Pops_started:
+#    Bombshell_track:
+#      action: play
+#      loops: -1
 
-  mode_Super_Pops_stopped:
-    Bombshell_track:
-      action: stop
+#  mode_Super_Pops_stopped:
+#    Bombshell_track:
+#      action: stop
 
-  ball_ended:
-    Bombshell_track:
-      action: stop
+#  ball_ended:
+#    Bombshell_track:
+#      action: stop
 
 variable_player:
   s_left_bumper_active:

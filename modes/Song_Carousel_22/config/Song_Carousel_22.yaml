@@ -1,7 +1,7 @@
 #config_version=5
 
 mode:
-  start_events: balldevice_bd_right_saucer_ball_entered{current_player.pf_setlist==8}
+  start_events: reset_PM5K{current_player.pf_setlist==8}
   stop_events: ball_ended, mode_Red_starting
   priority: 200
 
@@ -39,4 +39,7 @@ variable_player:
   mode_Song_Carousel_22_started:
     pf_setlist:
       int: 9
+      action: set
+    pf_Album_8_Ready:
+      int: 0
       action: set

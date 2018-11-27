@@ -11,6 +11,11 @@ videos:
     height: 105
     file: attract.mp4
 
+  radar:
+    width: 150
+    height: 105
+    file: radar.mp4
+
   supernova_track:
     width: 150
     height: 105

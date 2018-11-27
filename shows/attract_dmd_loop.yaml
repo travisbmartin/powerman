@@ -34,6 +34,11 @@
     attract_dmd_loop_slide_3:
     - type: text
       text: (machine|credits_string)
+    - type: video
+      video: radar
+      volume: 0
+      auto_play: true
+      end_behavior: stop
 
 - time: '+2'
   slides:
@@ -125,7 +130,7 @@
         y: top
       - type: text
         text: (machine|loops1_name)
-        style: tall title
+        style: tall
       - type: text
         text: (machine|loops1_value) LOOPS
         anchor_y: bottom

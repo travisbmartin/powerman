@@ -47,12 +47,24 @@ slides:
         anchor_x: right
         anchor_y: bottom
         font_size: 10
+      - type: video
+        video: radar
+        volume: 0
+        auto_play: true
+        end_behavior: loop
+
   new_player_slide:
     expire: 1s
     widgets:
       - type: text
         text: PLAYER (num) ADDED
         font_size: 10
+      - type: video
+        video: radar
+        volume: 0  
+        auto_play: true
+        end_behavior: stop
+
 
 variable_player:
   s_left_saucer_active:
@@ -100,50 +112,44 @@ variable_player:
   s_left_25K_target_active:
     score: 100 * current_player.pf_multiplier
   s_right_25K_target_active:
-    score: 100 * crurent_player.pf_multiplier
+    score: 100 * current_player.pf_multiplier
 
-#counters:
-#  lb_Right_Pop_count:
-#    count_events: R_Pop_hit
-#    starting_count: 1
-#    count_complete_value: 0
-#    count_interval: 1
-#    direction: down
-#    persist_state: false
-#    events_when_complete: Super_Pop_R_Ready
-#    debug: true
-#    reset_on_complete: false
-#  lb_Left_Pop_count:
-#    count_events: L_Pop_hit
-#    starting_count: 1
-#    count_complete_value: 0
-#    direction: down
-#    count_interval: 1
-#    persist_state: false
-#    events_when_complete: Super_Pop_L_Ready
-#    debug: true
-#    reset_on_complete: false
-#  lb_Mid_Pop_count:
-#    count_events: M_Pop_hit
-#    starting_count: 1
-#    count_complete_value: 0
-#    direction: down
-#    count_interval: 1
-#    persist_state: false
-#    events_when_complete: Super_Pop_M_Ready
-#    debug: true
-#    reset_on_complete: false
+counters:
+  lb_Right_Pop_count:
+    count_events: R_Pop_hit
+    starting_count: 1
+    count_complete_value: 0
+    count_interval: 1
+    direction: down
+    persist_state: false
+    events_when_complete: Super_Pop_R_Ready
+    debug: true
+    reset_on_complete: false
+  lb_Left_Pop_count:
+    count_events: L_Pop_hit
+    starting_count: 1
+    count_complete_value: 0
+    direction: down
+    count_interval: 1
+    persist_state: false
+    events_when_complete: Super_Pop_L_Ready
+    debug: true
+    reset_on_complete: false
+  lb_Mid_Pop_count:
+    count_events: M_Pop_hit
+    starting_count: 1
+    count_complete_value: 0
+    direction: down
+    count_interval: 1
+    persist_state: false
+    events_when_complete: Super_Pop_M_Ready
+    debug: true
+    reset_on_complete: false
 
-#accruals:
-#  lb_Super_Pops_Enable:
-#    events:
-#      - Super_Pop_R_Ready
-#      - Super_Pop_M_Ready
-#      - Super_Pop_L_Ready
-#    events_when_complete: Super_Pops_Go
-#    persist_state: false
-#    reset_on_complete: false
-#    debug: true
-
-#event_player:
-#  Super_Pops_Go: start_mode_Super_Pops
+accruals:
+  lb_Super_Pops_Enable:
+    events:
+      - Super_Pop_R_Ready
+      - Super_Pop_M_Ready
+      - Super_Pop_L_Ready
+    events_when_complete: Super_Pops_Go
