@@ -1,0 +1,30 @@
+#config_version=5
+
+mode:
+  start_events: balldevice_bd_left_saucer_ball_entered{current_player.pf_album==4}  
+  stop_events: ball_ended, mode_Album_Award_05_starting
+  priority: 200
+
+event_player:
+  mode_Album_Award_04_started: award_random_album_4
+
+random_event_player:
+  award_random_album_4:
+    force_different: true
+    events:
+      - start_mode_album_10
+      - start_mode_album_11
+      - start_mode_album_12
+
+variable_player:
+  mode_Album_Award_04_started:
+    pf_album:
+      int: 5
+      action: set
+
+  balldevice_bd_left_saucer_ball_entered:
+    score: 4000 * current_player.pf_multiplier
+
+#korea EP
+#copies clones
+#somewhere

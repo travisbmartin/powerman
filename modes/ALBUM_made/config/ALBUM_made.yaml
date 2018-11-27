@@ -41,8 +41,7 @@ variable_player:
     score: 400 * current_player.pf_multiplier|block
   ALBUM_Targets_done{count==5}:
     score: 1000 * current_player.pf_multiplier|block
-  ALBUM_Targets_done{device.sequences.lb_Next_Album.value>=1}:
-    score: 50 * current_player.pf_multiplier
+  
 show_player:
   ALBUM_Targets_done{count==1}:
     Album_A_On:
@@ -74,19 +73,3 @@ sequences:
       - balldevice_bd_left_saucer_ball_enter
     events_when_complete: 
       - reset_ALBUM
-
-
-#True Force
-#Blood Splat Rating System
-#Mega! Kung Fu Radio
-#Tonight The Stars Revolt
-#Backstage and Beyond the Infinite
-#Anyone For Doomsday?
-#Transform
-#The Good, The Bad, and the Ugly, Vol 1
-#Destroy What You Enjoy
-#Copies Clones and Replicants
-#The Korea EP
-#Somewhere on the other side of nowhere
-#Builders of the Future
-#New Wave

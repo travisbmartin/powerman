@@ -16,6 +16,11 @@ videos:
     height: 105
     file: radar.mp4
 
+  lightning:
+    width: 150
+    height: 105
+    file: lightning.mp4
+
   supernova_track:
     width: 150
     height: 105

@@ -32,3 +32,6 @@ keyboard:
   0:
     switch: s_right_saucer
     toggle: true
+  9:
+    switch: s_left_saucer
+    toggle: true

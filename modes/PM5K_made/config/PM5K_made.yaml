@@ -41,8 +41,7 @@ variable_player:
     score: 400 * current_player.pf_multiplier|block
   PM5K_Targets_done{count==5}:
     score: 1000 * current_player.pf_multiplier|block
-  PM5K_Targets_done{device.sequences.lb_Next_Song.value>=1}:
-    score: 50 * current_player.pf_multiplier
+
 show_player:
   PM5K_Targets_done{count==1}:
     PM5K_P_On:

@@ -1,0 +1,30 @@
+#config_version=5
+
+mode:
+  start_events: balldevice_bd_left_saucer_ball_entered{current_player.pf_album==3}  
+  stop_events: ball_ended, mode_Album_Award_04_starting
+  priority: 200
+
+event_player:
+  mode_Album_Award_03_started: award_random_album_3
+
+random_event_player:
+  award_random_album_3:
+    force_different: true
+    events:
+      - start_mode_album_7
+      - start_mode_album_8
+      - start_mode_album_9
+
+variable_player:
+  mode_Album_Award_03_started:
+    pf_album:
+      int: 4
+      action: set
+
+  balldevice_bd_left_saucer_ball_entered:
+    score: 3000 * current_player.pf_multiplier
+
+#Transform
+#The Good, The Bad, and the Ugly, Vol 1
+#Destroy What You Enjoy
