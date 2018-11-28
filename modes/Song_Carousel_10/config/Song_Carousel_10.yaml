@@ -1,0 +1,44 @@
+#config_version=5
+
+mode:
+  start_events: reset_PM5K{current_player.pf_setlist==4}
+  stop_events: ball_ended, mode_Song_Carousel_13_starting
+  priority: 200
+
+event_player:
+  mode_Song_Carousel_10_started: play_random_song_4
+
+random_event_player:
+  play_random_song_4:
+    force_different: true
+    events:
+      - start_mode_Song_10
+      - start_mode_Song_11
+      - start_mode_Song_12
+
+sound_player:
+  mode_Song_Carousel_10_starting:
+    Instrumental_track:
+      action: stop
+    Cult_track:
+      action: stop
+    Wild_track:
+      action: stop
+    Organizized_track:
+      action: stop
+  mode_Song_Carousel_10_ending:
+    Vampire:
+      action: stop
+    Destroy:
+      action: stop
+    Danger_track:
+      action: stop
+
+variable_player:
+  mode_Song_Carousel_10_started:
+    pf_setlist:
+      int: 5
+      action: set
+    pf_Album_4_Ready:
+      int: 0
+      action: set

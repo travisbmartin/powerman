@@ -1,0 +1,12 @@
+#show_version=5
+
+- time: 0
+  slides:
+    BSRS_Album:
+      - type: video
+        video: BSRSystem
+        volume: 0
+        auto_play: True
+        end_behavior: stop
+
+- time: +5

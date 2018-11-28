@@ -2,22 +2,27 @@
 
 mode:
   start_events: ball_starting
+  stop_events: game_ending
   priority: 125
 
 counters:
   lb_ALBUM_complete_count:
     count_events: ALBUM_Targets_complete
     events_when_hit: ALBUM_Targets_done
+    count_complete_value: 5
     starting_count: 0
     direction: up
     persist_state: false
+    reset_on_complete: True
+    events_when_complete: ALBUM_ready
+    enable_events: mode_ALBUM_made_started, reset_ALBUM
+    debug: true
 
 shots:
   ALBUM:
     switch: s_album_target
     show_tokens:
       light: l_right_25K_target
-   
 
 shot_groups:
   ALBUM_Targets:
@@ -36,33 +41,35 @@ variable_player:
     score: 400 * current_player.pf_multiplier|block
   ALBUM_Targets_done{count==5}:
     score: 1000 * current_player.pf_multiplier|block
-  ALBUM_Targets_done{count>=6}:
-    score: 50 * current_player.pf_multiplier|block
-
+  
 show_player:
   ALBUM_Targets_done{count==1}:
-    Album_M_On:
+    Album_A_On:
       show_tokens:
         lights: Album_a
   ALBUM_Targets_done{count==2}:
-    Album_E_On:
+    Album_L_On:
       show_tokens:
         lights: Album_a, Album_l
   ALBUM_Targets_done{count==3}:
-    Album_T_On:
+    Album_B_On:
       show_tokens:
         lights: Album_a, Album_l, Album_b
   ALBUM_Targets_done{count==4}:
-    Album_A_On:
+    Album_U_On:
       show_tokens:
         lights: Album_a, Album_l, Album_b, Album_u
   ALBUM_Targets_done{count==5}:
-    Album_L_On:
+    Album_M_On:
       show_tokens:
         lights: Album_a, Album_l, Album_b, Album_u, Album_m
-  ALBUM_Targets_done{count>=6}:
-    flash:
-      loops: -1
-      speed: 10
-      show_tokens:
-        lights: l_album_m, l_album_e, l_album_t, l_album_a, l_album_l
+
+sequences:
+  lb_Next_Album:
+    debug: true
+    enable_events: mode_ALBUM_made_started, reset_ALBUM
+    events:
+      - ALBUM_ready
+      - balldevice_bd_left_saucer_ball_enter
+    events_when_complete: 
+      - reset_ALBUM

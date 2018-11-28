@@ -1,0 +1,45 @@
+#config_version=5
+
+mode:
+  start_events: reset_PM5K{current_player.pf_setlist==8}
+  stop_events: ball_ended, mode_Red_starting
+  priority: 200
+
+event_player:
+  mode_Song_Carousel_22_started: play_random_song_8
+
+random_event_player:
+  play_random_song_8:
+    force_different: true
+    events:
+      - start_mode_Song_22
+      - start_mode_Song_23
+      - start_mode_Song_24
+
+sound_player:
+  mode_Song_Carousel_22_starting:
+    Instrumental_track:
+      action: stop
+    Love_track:
+      action: stop
+    Nobody_track:
+      action: stop
+    Walking_track:
+      action: stop
+
+  mode_Song_Carousel_22_ending:
+    Riot_track:
+      action: stop
+    Apathy_track:
+      action: stop
+    Return_track:
+      action: stop
+
+variable_player:
+  mode_Song_Carousel_22_started:
+    pf_setlist:
+      int: 9
+      action: set
+    pf_Album_8_Ready:
+      int: 0
+      action: set

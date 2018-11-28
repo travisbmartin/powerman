@@ -2,15 +2,21 @@
 
 mode:
   start_events: ball_starting
-  priority: 120
+  stop_events: game_ending
+  priority: 125
 
 counters:
   lb_PM5K_complete_count:
     count_events: PM5K_Targets_complete
     events_when_hit: PM5K_Targets_done
+    count_complete_value: 5
     starting_count: 0
     direction: up
     persist_state: false
+    reset_on_complete: True
+    events_when_complete: PM5K_ready
+    enable_events: mode_PM5K_made_started, reset_PM5K
+    debug: true
 
 shots:
   PM5K:
@@ -35,8 +41,6 @@ variable_player:
     score: 400 * current_player.pf_multiplier|block
   PM5K_Targets_done{count==5}:
     score: 1000 * current_player.pf_multiplier|block
-  PM5K_Targets_done{count>=6}:
-    score: 50 * current_player.pf_multiplier|block
 
 show_player:
   PM5K_Targets_done{count==1}:
@@ -59,9 +63,13 @@ show_player:
     PM5K_K_On:
       show_tokens:
         lights: PM5K_P, PM5K_M, PM5K_Skull, PM5K_5, PM5K_K
-  PM5K_Targets_done{count>=6}:
-    flash:
-      loops: -1
-      speed: 10
-      show_tokens:
-        lights: l_PM5K_P, l_PM5K_M, l_PM5K_Skull, l_PM5K_5, l_PM5K_K
+
+sequences:
+  lb_Next_Song:
+    debug: true
+    enable_events: mode_PM5K_made_started, reset_PM5K
+    events:
+      - PM5K_ready
+      - balldevice_bd_right_saucer_ball_enter
+    events_when_complete: 
+      - reset_PM5K

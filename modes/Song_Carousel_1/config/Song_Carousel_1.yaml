@@ -1,0 +1,42 @@
+#config_version=5
+
+mode:
+  start_events: balldevice_bd_right_saucer_ball_entered{current_player.pf_setlist==1}  
+  stop_events: ball_ended, mode_Song_Carousel_4_starting
+  priority: 200
+
+event_player:
+  mode_Song_Carousel_1_started: play_random_song_1
+
+random_event_player:
+  play_random_song_1:
+    force_different: true
+    events:
+      - start_mode_Song_1
+      - start_mode_Song_2
+      - start_mode_Song_3
+
+sound_player:
+  mode_Song_Carousel_1_starting:
+    Instrumental_track:
+      action: stop
+    Apathy_track:
+      action: stop
+    Riot_track:
+      action: stop
+    Return_track:
+      action: stop
+      
+  mode_Song_Carousel_1_ending:
+    Voices_track:
+      action: stop
+    Showme_track:
+      action: stop
+    Invade_track:
+      action: stop
+
+variable_player:
+  mode_Song_Carousel_1_started:
+    pf_setlist:
+      int: 2
+      action: set

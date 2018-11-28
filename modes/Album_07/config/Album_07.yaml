@@ -1,0 +1,12 @@
+#config_version=5
+
+mode:
+  start_events: start_mode_Album_07
+  stop_events: ball_ended, mode_Album_Award_04_starting
+  priority: 200
+
+show_player:
+  mode_Album_07_started: 
+    DWYE_Album:
+      loops: 0
+      speed: 1

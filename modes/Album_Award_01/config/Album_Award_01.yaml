@@ -1,0 +1,26 @@
+#config_version=5
+
+mode:
+  start_events: balldevice_bd_left_saucer_ball_entered{current_player.pf_album==1}  
+  stop_events: ball_ended, mode_Album_Award_02_starting
+  priority: 200
+
+event_player:
+  mode_Album_Award_01_started: award_random_album_1
+
+random_event_player:
+  award_random_album_1:
+    force_different: true
+    events:
+      - start_mode_Album_01
+      - start_mode_Album_02
+      - start_mode_Album_03
+
+variable_player:
+  mode_Album_Award_01_started:
+    pf_album:
+      int: 2
+      action: set
+
+  balldevice_bd_left_saucer_ball_entered:
+    score: 1000 * current_player.pf_multiplier

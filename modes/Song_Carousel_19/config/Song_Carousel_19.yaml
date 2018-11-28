@@ -1,0 +1,45 @@
+#config_version=5
+
+mode:
+  start_events: reset_PM5K{current_player.pf_setlist==7}  
+  stop_events: ball_ended, mode_Song_Carousel_22_starting
+  priority: 200
+
+event_player:
+  mode_Song_Carousel_19_started: play_random_song_7
+
+random_event_player:
+  play_random_song_7:
+    force_different: true
+    events:
+      - start_mode_Song_19
+      - start_mode_Song_20
+      - start_mode_Song_21
+
+sound_player:
+  mode_Song_Carousel_19_starting:
+    Instrumental_track:
+      action: stop
+    Everything_track:
+      action: stop
+    Ultra_track:
+      action: stop
+    Revolution_track:
+      action: stop
+
+  mode_Song_Carousel_19_ending:
+    Love_track:
+      action: stop
+    Nobody_track:
+      action: stop
+    Walking_track:
+      action: stop
+
+variable_player:
+  mode_Song_Carousel_19_started:
+    pf_setlist:
+      int: 8
+      action: set
+    pf_Album_7_Ready:
+      int: 0
+      action: set

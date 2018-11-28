@@ -44,10 +44,12 @@ coils:
     max_hold_power: 0.5
   c_left_saucer:
     number: c06
+    default_pulse_ms: 20
     label:
     tags:
   c_right_saucer:
     number: c07
+    default_pulse_ms: 20
     label:
     tags:
   c_drop_target:

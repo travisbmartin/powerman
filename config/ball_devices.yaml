@@ -6,20 +6,24 @@ ball_devices:
     eject_coil: c_outhole
     eject_targets: bd_trough
     tags: drain, outhole
+    
   bd_trough:
     ball_switches: s_trough_1, s_trough_2, s_trough_3, s_trough_4, s_trough_5
     eject_coil: c_ball_eject
     tags: trough, home
-  bd_left_saucer:
-    tags: left saucer, collide, collect 
+
+  bd_left_saucer: 
     ball_switches: s_left_saucer
     eject_coil: c_left_saucer
     eject_timeouts: 2s
+    tags: saucer
+
   bd_right_saucer:
-    tags: right saucer, hold bonus, collect 
     ball_switches: s_right_saucer
     eject_coil: c_right_saucer
     eject_timeouts: 2s
+    tags: saucer
+
   bd_ramp_drop_target:
     tags: drop, ramp
     ball_switches: s_ramp_drop_target

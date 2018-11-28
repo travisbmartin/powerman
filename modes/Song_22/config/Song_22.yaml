@@ -1,0 +1,21 @@
+#config_version=5
+
+mode:
+  start_events: start_mode_Song_22
+  stop_events: ball_ended, mode_Red_starting
+  priority: 200
+
+sound_player:
+  mode_Song_22_started:
+    Riot_track:
+      action: play
+      loops: -1
+  ball_ending:
+    Riot_track:
+      action: stop
+
+show_player:
+  mode_Song_22_started: 
+    riot_track:
+      loops: 0
+      speed: 1

@@ -1,0 +1,21 @@
+#config_version=5
+
+mode:
+  start_events: balldevice_bd_right_saucer_ball_entered{current_player.pf_setlist==9}
+  stop_events: ball_ended, mode_Song_Carousel_1_starting
+  priority: 200
+
+sound_player:
+  mode_SRed_starting:
+    Love_track:
+      action: stop
+    Nobody_track:
+      action: stop
+    Disaster_track:
+      action: stop
+
+variable_player:
+  mode_Red_started:
+    pf_setlist:
+      int: 1
+      action: set

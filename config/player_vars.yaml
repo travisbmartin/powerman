@@ -8,3 +8,15 @@ player_vars:
   pf_Bonus_Multiplier:
     value_type: int
     initial_value: 1
+
+  pf_setlist:
+    value_type: int
+    initial_value: 1
+
+  pf_Album_Saucer_Ready:
+    value_type: int
+    initial_value: 0
+
+  pf_album:
+    value_type: int
+    initial_value: 1

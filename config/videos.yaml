@@ -10,3 +10,165 @@ videos:
     width: 150
     height: 105
     file: attract.mp4
+
+  radar:
+    width: 150
+    height: 105
+    file: radar.mp4
+
+  supernova_track:
+    width: 150
+    height: 105
+    file: supernova_track.mp4
+  showme_track:
+    width: 150
+    height: 105
+    file: showme_track.mp4
+  invade_track:
+    width: 100
+    height: 70
+    file: invade_track.mp4
+  footsteps_track:
+    width: 100
+    height: 70
+    file: footsteps_track.mp4
+  human_track:
+    width: 100
+    height: 70
+    file: human_track.mp4
+  free_track:
+    width: 120
+    height: 82
+    file: free_track.mp4
+  wild_track:
+    width: 150
+    height: 105
+    file: wild_track.mp4
+  cult_track:
+    width: 100
+    height: 70
+    file: cult_track.mp4
+  organizized_track:
+    width: 200
+    height: 140
+    file: organizized_track.mp4
+  vampire_track:
+    width: 150
+    height: 105
+    file: vampire_track.mp4
+  destroy_track:
+    width: 150
+    height: 105
+    file: destroy_track.mp4
+  danger_track:
+    width: 150
+    height: 105
+    file: danger_track.mp4
+  hey_track:
+    width: 100
+    height: 70
+    file: hey_track.mp4
+  villain_track:
+    width: 100
+    height: 70
+    file: villain_track.mp4
+  sid_track:
+    width: 100
+    height: 70
+    file: sid_track.mp4
+  everything_track:
+    width: 150
+    height: 105
+    file: everything_track.mp4
+  ultra_track:
+    width: 150
+    height: 105
+    file: ultra_track.mp4
+  revolution_track:
+    width: 100
+    height: 70
+    file: revolution_track.mp4
+  love_track:
+    width: 105
+    height: 80
+    file: love_track.mp4
+  nobodys_track:
+    width: 100
+    height: 70
+    file: nobodys_track.mp4
+  walking_track:
+    width: 100
+    height: 70
+    file: walking_track.mp4
+  riot_track:
+    width: 150
+    height: 105
+    file: riot_track.mp4
+  apathy_track:
+    width: 100
+    height: 70
+    file: apathy_track.mp4
+  return_track:
+    width: 150
+    height: 105
+    file: return_track.mp4
+
+  True_Force:
+    width: 150
+    height: 105
+    file: True_Force.mp4
+
+  BSRSystem:
+    width: 150
+    height: 105
+    file: BSRSystem.mp4
+
+  MKFR:
+    width: 150
+    height: 105
+    file: MKFR.mp4
+
+  TTSR:
+    width: 150
+    height: 105
+    file: TTSR.mp4
+
+  AFD:
+    width: 150
+    height: 105
+    file: AFD.mp4
+
+  Transform:
+    width: 150
+    height: 105
+    file: Transform.mp4
+
+  DWYE:
+    width: 150
+    height: 105
+    file: DWYE.mp4
+
+  TGTBTUV1:
+    width: 150
+    height: 105
+    file: TGTBTUV1.mp4
+
+  SOTOSON:
+    width: 150
+    height: 105
+    file: SOTOSON.mp4
+
+  CCR:
+    width: 150
+    height: 105
+    file: CCR.mp4
+
+  BOF:
+    width: 150
+    height: 105
+    file: BOF.mp4
+
+  NW:
+    width: 150
+    height: 105
+    file: NW.mp4

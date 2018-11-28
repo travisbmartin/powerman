@@ -4,6 +4,12 @@ mode:
   start_events: ball_starting
   priority: 100
 
+sound_player:
+  mode_base_started:
+    Instrumental_track:
+      action: play
+      loops: -1
+
 shots:
   R_Pop:
     switch: s_right_bumper
@@ -41,12 +47,24 @@ slides:
         anchor_x: right
         anchor_y: bottom
         font_size: 10
+      - type: video
+        video: radar
+        volume: 0
+        auto_play: true
+        end_behavior: loop
+
   new_player_slide:
     expire: 1s
     widgets:
       - type: text
         text: PLAYER (num) ADDED
         font_size: 10
+      - type: video
+        video: radar
+        volume: 0  
+        auto_play: true
+        end_behavior: stop
+
 
 variable_player:
   s_left_saucer_active:
@@ -63,63 +81,38 @@ variable_player:
     score: 100 * current_player.pf_multiplier
   s_ramp_drop_target_active:
     score: 100 * current_player.pf_multiplier
-
   s_left_bumper_active:
     score: 100 * current_player.pf_multiplier
-
   s_middle_bumper_active:
     score: 100 * current_player.pf_multiplier
-
   s_right_bumper_active:
     score: 100 * current_player.pf_multiplier
-
   s_right_slingshot_active:
     score: 100 * current_player.pf_multiplier
-
   s_left_slingshot_active:
     score: 100 * current_player.pf_multiplier
-
-  s_top_lane_J_active:
+  s_top_lane_R_active:
     score: 100 * current_player.pf_multiplier
-
-  s_top_lane_A_active:
+  s_top_lane_C_active:
     score: 100 * current_player.pf_multiplier
-
-  s_top_lane_M_active:
+  s_top_lane_L_active:
     score: 100 * current_player.pf_multiplier
-
   s_left_outlane_active:
     score: 100 * current_player.pf_multiplier
-
   s_right_outlane_active:
     score: 100 * current_player.pf_multiplier
-
   s_top_25K_lane_active:
     score: 100 * current_player.pf_multiplier
-
   s_top_50K_lane_active:
     score: 100 * current_player.pf_multiplier
-
   s_left_rollover_active:
     score: 100 * current_player.pf_multiplier
-
   s_right_rollover_active:
     score: 100 * current_player.pf_multiplier
-
   s_left_25K_target_active:
     score: 100 * current_player.pf_multiplier
-
   s_right_25K_target_active:
-    score: 100 * crurent_player.pf_multiplier
-
-sound_player:
-  mode_base_started:
-    Invade:
-      loops: -1
-
-  ball_ended:
-    Invade:
-      action: stop
+    score: 100 * current_player.pf_multiplier
 
 counters:
   lb_Right_Pop_count:
@@ -160,11 +153,3 @@ accruals:
       - Super_Pop_M_Ready
       - Super_Pop_L_Ready
     events_when_complete: Super_Pops_Go
-    persist_state: false
-    reset_on_complete: false
-    debug: true
-
-event_player:
-  Super_Pops_Go:
-    start_mode_Super_Pops
-
