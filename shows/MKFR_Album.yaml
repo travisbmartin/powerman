@@ -3,10 +3,9 @@
 - time: 0
   slides:
     MKFR_Album:
-    - type: video
-      video: lightning
-      volume: 0
-      auto_play: True
-      end_behavior: stop
-
-- time: +3
+      - type: video
+        video: MKFR
+        volume: 0
+        auto_play: True
+        end_behavior: stop
+- time: +5

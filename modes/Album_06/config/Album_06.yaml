@@ -7,6 +7,6 @@ mode:
 
 show_player:
   mode_Album_06_started: 
-    BABTI_Album:
+    Transform_Album:
       loops: 0
       speed: 1

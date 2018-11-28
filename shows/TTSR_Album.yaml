@@ -3,10 +3,10 @@
 - time: 0
   slides:
     TTSR_Album:
-    - type: video
-      video: lightning
-      volume: 0
-      auto_play: True
-      end_behavior: stop
+      - type: video
+        video: TTSR
+        volume: 0
+        auto_play: True
+        end_behavior: stop
 
-- time: +3
+- time: +5

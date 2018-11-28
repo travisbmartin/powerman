@@ -3,10 +3,10 @@
 - time: 0
   slides:
     True_Force_Album:
-    - type: video
-      video: lightning
-      volume: 0
-      auto_play: True
-      end_behavior: stop
+      - type: video
+        video: True_Force
+        volume: 0
+        auto_play: True
+        end_behavior: stop
 
-- time: +3
+- time: +5

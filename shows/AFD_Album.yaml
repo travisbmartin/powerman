@@ -4,7 +4,7 @@
   slides:
     AFD_Album:
     - type: video
-      video: lightning
+      video: AFD
       volume: 0
       auto_play: True
       end_behavior: stop

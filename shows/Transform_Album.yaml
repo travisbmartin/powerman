@@ -4,7 +4,7 @@
   slides:
     Transform_Album:
     - type: video
-      video: lightning
+      video: Transform
       volume: 0
       auto_play: True
       end_behavior: stop

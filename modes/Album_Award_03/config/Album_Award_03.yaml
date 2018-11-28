@@ -12,9 +12,9 @@ random_event_player:
   award_random_album_3:
     force_different: true
     events:
-      - start_mode_album_7
-      - start_mode_album_8
-      - start_mode_album_9
+      - start_mode_Album_07
+      - start_mode_Album_08
+      - start_mode_Album_09
 
 variable_player:
   mode_Album_Award_03_started:

@@ -7,6 +7,6 @@ mode:
 
 show_player:
   mode_Album_07_started: 
-    Transform_Album:
+    DWYE_Album:
       loops: 0
       speed: 1
