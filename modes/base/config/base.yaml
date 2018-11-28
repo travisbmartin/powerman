@@ -9,6 +9,18 @@ sound_player:
     Instrumental_track:
       action: play
       loops: -1
+  R_Pop_hit:
+    pop_bumpers:
+      action: play
+      loops: 0
+  L_Pop_hit:
+    pop_bumpers:
+      action: play
+      loops: 0
+  M_Pop_hit:
+    pop_bumpers:
+      action: play
+      loops: 0
 
 shots:
   R_Pop:
@@ -73,12 +85,12 @@ variable_player:
     score: 100 * current_player.pf_multiplier
   s_load_chamber_active:
     score: 100 * current_player.pf_multiplier
-  s_eject_chamer_active:
+  s_eject_chamber_active:
     score: 100 * current_player.pf_multiplier
   s_left_return_lane_active:
-    score: 100 * current_player.pf_multiplier
+    score: 10000 * current_player.pf_multiplier
   s_right_return_lane_active:
-    score: 100 * current_player.pf_multiplier
+    score: 10000 * current_player.pf_multiplier
   s_ramp_drop_target_active:
     score: 100 * current_player.pf_multiplier
   s_left_bumper_active:
@@ -98,26 +110,26 @@ variable_player:
   s_top_lane_L_active:
     score: 100 * current_player.pf_multiplier
   s_left_outlane_active:
-    score: 100 * current_player.pf_multiplier
+    score: 50000 * current_player.pf_multiplier
   s_right_outlane_active:
-    score: 100 * current_player.pf_multiplier
+    score: 50000 * current_player.pf_multiplier
   s_top_25K_lane_active:
-    score: 100 * current_player.pf_multiplier
+    score: 25000 * current_player.pf_multiplier
   s_top_50K_lane_active:
-    score: 100 * current_player.pf_multiplier
+    score: 50000 * current_player.pf_multiplier
   s_left_rollover_active:
-    score: 100 * current_player.pf_multiplier
+    score: 50000 * current_player.pf_multiplier
   s_right_rollover_active:
-    score: 100 * current_player.pf_multiplier
+    score: 50000 * current_player.pf_multiplier
   s_left_25K_target_active:
-    score: 100 * current_player.pf_multiplier
+    score: 25000 * current_player.pf_multiplier
   s_right_25K_target_active:
-    score: 100 * current_player.pf_multiplier
+    score: 25000 * current_player.pf_multiplier
 
 counters:
   lb_Right_Pop_count:
     count_events: R_Pop_hit
-    starting_count: 1
+    starting_count: 10
     count_complete_value: 0
     count_interval: 1
     direction: down
@@ -127,7 +139,7 @@ counters:
     reset_on_complete: false
   lb_Left_Pop_count:
     count_events: L_Pop_hit
-    starting_count: 1
+    starting_count: 10
     count_complete_value: 0
     direction: down
     count_interval: 1
@@ -137,7 +149,7 @@ counters:
     reset_on_complete: false
   lb_Mid_Pop_count:
     count_events: M_Pop_hit
-    starting_count: 1
+    starting_count: 10
     count_complete_value: 0
     direction: down
     count_interval: 1
@@ -153,3 +165,5 @@ accruals:
       - Super_Pop_M_Ready
       - Super_Pop_L_Ready
     events_when_complete: Super_Pops_Go
+
+

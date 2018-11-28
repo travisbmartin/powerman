@@ -27,14 +27,7 @@ config:
 - graphics.yaml
 - sounds.yaml
 - videos.yaml
-
-random_event_player:
-  play_random_event_global:
-    scope: machine
-    events:
-      - mode_start_Song_1
-      - mode_start_Song_2
-      - mode_start_Song_3
+- sound_pools.yaml
 
 widget_styles:
   text_default:
