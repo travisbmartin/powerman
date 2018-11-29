@@ -29,6 +29,62 @@ shots:
     switch: s_left_bumper
   M_Pop:
     switch: s_middle_bumper
+  right_return_shot:
+    switch: s_right_return_lane
+    show_tokens:
+      light: l_right_return
+    profile: r_cycle_profile
+  right_25K_shot:
+    switch: s_right_25K_target
+    show_tokens:
+      light: l_right_25K_target
+    profile: r_cycle_profile
+  right_rollover_shot:
+    switch: s_right_rollover
+    show_tokens:
+      light: l_right_rollover
+    profile: r_cycle_profile 
+  left_return_shot:
+    switch: s_left_return_lane
+    show_tokens:
+      light: l_left_return
+    profile: l_cycle_profile
+  left_25K_shot:
+    switch: s_left_25K_target
+    show_tokens:
+      light: l_left_25K_target
+    profile: l_cycle_profile
+  left_rollover_shot:
+    switch: s_left_rollover
+    show_tokens:
+      light: l_left_rollover
+    profile: l_cycle_profile
+  drop_target:
+    switch: s_drop_target
+    shot_tokens:
+      light: l_ramp_100K
+
+
+shot_profiles:
+  l_cycle_profile:
+    states:
+      - name: unlit  # step 1
+        show: off
+      - name: flashing  # step 2
+        show: flash
+      - name: lit  # step 3
+        show: on
+    loop: yes
+
+  r_cycle_profile:
+    states:
+      - name: unlit  # step 1
+        show: off
+      - name: flashing  # step 2
+        show: flash
+      - name: lit  # step 3
+        show: on
+    loop: yes
 
 slide_player:
   mode_base_started: score_slide
@@ -77,55 +133,6 @@ slides:
         auto_play: true
         end_behavior: stop
 
-
-variable_player:
-  s_left_saucer_active:
-    score: 100 * current_player.pf_multiplier
-  s_right_saucer_active:
-    score: 100 * current_player.pf_multiplier
-  s_load_chamber_active:
-    score: 100 * current_player.pf_multiplier
-  s_eject_chamber_active:
-    score: 100 * current_player.pf_multiplier
-  s_left_return_lane_active:
-    score: 10000 * current_player.pf_multiplier
-  s_right_return_lane_active:
-    score: 10000 * current_player.pf_multiplier
-  s_ramp_drop_target_active:
-    score: 100 * current_player.pf_multiplier
-  s_left_bumper_active:
-    score: 100 * current_player.pf_multiplier
-  s_middle_bumper_active:
-    score: 100 * current_player.pf_multiplier
-  s_right_bumper_active:
-    score: 100 * current_player.pf_multiplier
-  s_right_slingshot_active:
-    score: 100 * current_player.pf_multiplier
-  s_left_slingshot_active:
-    score: 100 * current_player.pf_multiplier
-  s_top_lane_R_active:
-    score: 100 * current_player.pf_multiplier
-  s_top_lane_C_active:
-    score: 100 * current_player.pf_multiplier
-  s_top_lane_L_active:
-    score: 100 * current_player.pf_multiplier
-  s_left_outlane_active:
-    score: 50000 * current_player.pf_multiplier
-  s_right_outlane_active:
-    score: 50000 * current_player.pf_multiplier
-  s_top_25K_lane_active:
-    score: 25000 * current_player.pf_multiplier
-  s_top_50K_lane_active:
-    score: 50000 * current_player.pf_multiplier
-  s_left_rollover_active:
-    score: 50000 * current_player.pf_multiplier
-  s_right_rollover_active:
-    score: 50000 * current_player.pf_multiplier
-  s_left_25K_target_active:
-    score: 25000 * current_player.pf_multiplier
-  s_right_25K_target_active:
-    score: 25000 * current_player.pf_multiplier
-
 counters:
   lb_Right_Pop_count:
     count_events: R_Pop_hit
@@ -167,3 +174,16 @@ accruals:
     events_when_complete: Super_Pops_Go
 
 
+variable_player:
+  left_return_shot_hit:
+    score: 1000 * current_player.pf_multiplier
+  left_25K_shot_hit:
+    score: 2500 * current_player.pf_multiplier
+  left_rollover_shot_hit:
+    score: 5000 * current_player.pf_multiplier
+  right_return_shot_hit:
+    score: 1000 * current_player.pf_multiplier
+  right_25K_target_shot_hit:
+    score: 2500 * current_player.pf_multiplier
+  right_rollover_shot_hit:
+    score: 5000 * current_player.pf_multiplier

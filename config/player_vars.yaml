@@ -13,10 +13,10 @@ player_vars:
     value_type: int
     initial_value: 1
 
-  pf_Album_Saucer_Ready:
-    value_type: int
-    initial_value: 0
-
   pf_album:
+    value_type: int
+    initial_value: 1
+
+  pf_drop_target_level:
     value_type: int
     initial_value: 1

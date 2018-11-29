@@ -161,6 +161,13 @@ sounds:
   super_pops:
     file: super_pops.wav
     priority: 500
+    ducking:
+        target: music
+        delay: 0
+        attack: 0.3 sec
+        attenuation: 0.45
+        release_point: 2.0 sec
+        release: 1.0 sec
 
   releasing_drones:
     file: releasing_drones.flac

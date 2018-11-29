@@ -1,0 +1,25 @@
+#config_version=5
+
+mode:
+  start_events: left_rollover_shot_hit
+  stop_events: timer_l_rollover_stopped
+
+timers:
+  l_rollover:
+    debug: True
+    start_value: 10
+    end_value: 0
+    direction: down
+    tick_interval: 1s
+    start_running: yes
+    control_events:
+      - event: left_rollover_shot_hit
+        action: reset
+
+variable_player:
+  right_return_shot_hit:
+    score: 10000 * current_player.pf_multiplier|block
+  right_25K_shot_hit:
+    score: 25000 * current_player.pf_multiplier|block
+  right_rollover_shot_hit:
+    score: 50000 * current_player.pf_multiplier|block

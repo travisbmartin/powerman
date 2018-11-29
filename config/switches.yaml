@@ -125,7 +125,6 @@ switches:
   s_album_target:
     number: 34
     tags: playfield_active
-
   s_PM5K_target:
     number: 35
     tags: playfield_active
