@@ -11,41 +11,47 @@ keyboard:
     switch: s_left_flipper
   /:
     switch: s_right_flipper
-  #v:
-  #  switch: s_eject_chamber
   
-  #r:
-  #  switch: s_top_lane_R
-  #c:
-  #  switch: s_top_lane_C
-  #l:
-  #  switch: s_top_lane_L
-  #a:
-  #  switch: s_PM5K_target
-  #k:
-  #  switch: s_album_target
+  4:
+    switch: s_top_lane_R
   5:
-    switch: s_left_bumper
+    switch: s_top_lane_C
   6:
-    switch: s_middle_bumper
+    switch: s_top_lane_L
+  a:
+    switch: s_PM5K_target
+  l:
+    switch: s_album_target
   7:
+    switch: s_left_bumper
+  8:
+    switch: s_middle_bumper
+  9:
     switch: s_right_bumper
-  #0:
-  #  switch: s_right_saucer
-  #  toggle: true
-  #9:
-  #  switch: s_left_saucer
-  #  toggle: true
-
-  w:
-    switch: s_left_rollover
-  o:
-    switch: s_right_rollover
-  d:
-    switch: s_left_25K_target
-  f:
-    switch: s_left_return_lane
-  j:
-    switch: s_right_25K_target
   k:
-    switch: s_right_return_lane
+    switch: s_right_saucer
+    toggle: true
+  d:
+    switch: s_left_saucer
+    toggle: true
+
+  #w:
+  #  switch: s_left_rollover
+  #o:
+  #  switch: s_right_rollover
+  #d:
+  #  switch: s_left_25K_target
+  #f:
+  #  switch: s_left_return_lane
+  #j:
+  #  switch: s_right_25K_target
+  #k:
+  #  switch: s_right_return_lane
+
+  #d:
+  #  switch: s_ramp_drop_target
+  #  toggle: true
+  #l:
+  #  switch: s_load_chamber
+  #e:
+  #  switch: s_eject_chamber

@@ -25,6 +25,8 @@ variable_player:
   balldevice_bd_left_saucer_ball_entered:
     score: 3000 * current_player.pf_multiplier
 
-#Transform
-#The Good, The Bad, and the Ugly, Vol 1
-#Destroy What You Enjoy
+#show_player:
+#  mode_Album_Award_03_started:
+#    Album_Off:
+#      show_tokens:
+#        lights: Album_A_Off, Album_L_Off, Album_B_Off, Album_U_Off, Album_M_Off

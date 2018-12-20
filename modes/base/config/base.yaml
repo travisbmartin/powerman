@@ -59,10 +59,14 @@ shots:
     show_tokens:
       light: l_left_rollover
     profile: l_cycle_profile
-  drop_target:
-    switch: s_drop_target
-    shot_tokens:
+  drop_target_shot:
+    switch: s_ramp_drop_target
+    show_tokens:
       light: l_ramp_100K
+  load_chamber_shot:
+    switch: s_load_chamber
+  eject_chamber_shot:
+    switch: s_eject_chamber
 
 
 shot_profiles:

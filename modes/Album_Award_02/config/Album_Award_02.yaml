@@ -25,7 +25,8 @@ variable_player:
   balldevice_bd_left_saucer_ball_entered:
     score: 2000 * current_player.pf_multiplier
 
-  
-#Tonight The Stars Revolt
-#Backstage and Beyond the Infinite
-#Anyone For Doomsday?
+#show_player:
+#  mode_Album_Award_02_started:
+#    Album_Off:
+#      show_tokens:
+#        lights: Album_A_Off, Album_L_Off, Album_B_Off, Album_U_Off, Album_M_Off

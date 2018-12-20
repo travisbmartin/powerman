@@ -6,7 +6,6 @@ mode:
 
 timers:
   l_rollover:
-    debug: True
     start_value: 10
     end_value: 0
     direction: down

@@ -16,7 +16,3 @@ player_vars:
   pf_album:
     value_type: int
     initial_value: 1
-
-  pf_drop_target_level:
-    value_type: int
-    initial_value: 1

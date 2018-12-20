@@ -1,6 +1,6 @@
 events:
   game_ended: 8
-  game_started: 819
+  game_started: 836
 player:
   score:
     average: 1250.875
@@ -15,7 +15,7 @@ player:
     - 300
     total: 8
 shots:
-  ALBUM: 585
+  ALBUM: 618
   Bombshell_Level_1: 7
   HEAVY: 22
   L_Pop: 194
@@ -24,31 +24,35 @@ shots:
   Level_3: 7
   METAL: 7
   M_Pop: 212
-  PM5K: 194
+  PM5K: 239
   R_Pop: 167
-  eject_chamber: 9
+  drop_target_shot: 14
+  eject_chamber: 26
+  eject_chamber_shot: 17
   left_25K_shot: 52
   left_return_shot: 45
   left_rollover_shot: 15
+  load_chamber_shot: 14
   right_25K_shot: 17
   right_return_shot: 23
   right_rollover_shot: 26
   top_lane_A: 80
-  top_lane_C: 55
+  top_lane_C: 58
   top_lane_J: 66
-  top_lane_L: 2
+  top_lane_L: 4
   top_lane_M: 68
+  top_lane_R: 2
 switches:
-  s_PM5K_target: 195
-  s_album_target: 588
+  s_PM5K_target: 240
+  s_album_target: 621
   s_cabinet_left: 0
   s_cabinet_right: 0
   s_center_target: 39
   s_coins_left: 0
   s_coins_middle: 0
   s_coins_right: 0
-  s_credit: 15
-  s_eject_chamber: 9
+  s_credit: 16
+  s_eject_chamber: 26
   s_heavy_target: 22
   s_left_25K_target: 66
   s_left_bumper: 198
@@ -56,32 +60,32 @@ switches:
   s_left_outlane: 0
   s_left_return_lane: 52
   s_left_rollover: 46
-  s_left_saucer: 103
+  s_left_saucer: 111
   s_left_slingshot: 30
-  s_load_chamber: 0
+  s_load_chamber: 14
   s_metal_target: 7
   s_middle_bumper: 212
   s_outhole: 0
-  s_ramp_drop_target: 0
+  s_ramp_drop_target: 14
   s_right_25K_target: 27
   s_right_bumper: 167
-  s_right_flipper: 0
+  s_right_flipper: 2
   s_right_outlane: 0
   s_right_return_lane: 30
   s_right_rollover: 42
-  s_right_saucer: 254
+  s_right_saucer: 268
   s_right_slingshot: 0
   s_slam: 0
   s_tilt: 0
   s_top_25K_lane: 0
   s_top_50K_lane: 0
   s_top_lane_A: 80
-  s_top_lane_C: 55
+  s_top_lane_C: 58
   s_top_lane_J: 66
-  s_top_lane_L: 2
+  s_top_lane_L: 4
   s_top_lane_M: 68
-  s_top_lane_R: 0
-  s_trough_1: 126
+  s_top_lane_R: 2
+  s_trough_1: 129
   s_trough_2: 0
   s_trough_3: 0
   s_trough_4: 0

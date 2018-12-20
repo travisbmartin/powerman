@@ -25,6 +25,8 @@ variable_player:
   balldevice_bd_left_saucer_ball_entered:
     score: 4000 * current_player.pf_multiplier
 
-#korea EP
-#copies clones
-#somewhere
+#show_player:
+#  mode_Album_Award_04_started:
+#    Album_Off:
+#      show_tokens:
+#        lights: Album_A_Off, Album_L_Off, Album_B_Off, Album_U_Off, Album_M_Off
