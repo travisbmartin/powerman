@@ -1,0 +1,12 @@
+#config_version=5
+
+mode:
+  start_events: start_mode_Member_10
+  stop_events: ball_ended, mode_Member_Award_04_starting
+  priority: 200
+
+show_player:
+  mode_Member_10_started: 
+    BSRS_Album:
+      loops: 0
+      speed: 1

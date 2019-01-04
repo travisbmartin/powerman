@@ -2,9 +2,32 @@ Things to impliment:
 
 Newton Ball Ramp
 Multiball Ramp
-Band Multiplier
 Extra Ball
 Special
 Hold Bonus
 
-Gut current PM5K and ALBUM modes to mimic a CFTBL style song change
+Set Up Member Awards 1-5
+	Spider One
+	DJ Rattan
+	Murv3
+	Ty Oliver
+
+	Erik Himel
+	Adam 12
+	M33
+	Al3
+	
+	Dorian 27
+	Jordan Cohen
+	Siggy 00
+	Ad7
+	
+	Johnny Rock Heatly
+	Terry Corso
+	Velkro
+	Evan 9
+	
+	X51
+	GFlash
+	Sci55ors
+	Ryan Hernandez

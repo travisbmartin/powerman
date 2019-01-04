@@ -65,7 +65,7 @@ show_player:
         lights: PM5K_P, PM5K_M, PM5K_Skull, PM5K_5, PM5K_K
 
 sequences:
-  lb_Next_Song:
+  lb_Next_Member:
     debug: true
     enable_events: mode_PM5K_made_started, reset_PM5K
     events:

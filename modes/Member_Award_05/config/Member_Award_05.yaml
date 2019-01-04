@@ -1,0 +1,27 @@
+#config_version=5
+
+mode:
+  start_events: balldevice_bd_left_saucer_ball_entered{current_player.pf_member==5}  
+  stop_events: ball_ended, mode_Member_Award_Jackpot_starting
+  priority: 200
+
+event_player:
+  mode_Member_Award_05_started: award_random_member_5
+
+random_event_player:
+  award_random_member_5:
+    force_different: true
+    events:
+      - start_mode_Member_17
+      - start_mode_Member_18
+      - start_mode_Member_19
+      - start_mode_Member_20
+
+variable_player:
+  mode_Member_Award_05_started:
+    pf_member:
+      int: 6
+      action: set
+
+  balldevice_bd_left_saucer_ball_entered:
+    score: 1000 * current_player.pf_multiplier
