@@ -2,27 +2,27 @@
 
 sound_pools:
 
-   pop_bumpers:
-      load: load
-      type: random
-      track: sfx
-      sounds:
-         - pop_bumpers_01
-         - pop_bumpers_02
-         - pop_bumpers_03
-         - pop_bumpers_04
-         - pop_bumpers_05
-         - pop_bumpers_06
-         - pop_bumpers_07
-         - pop_bumpers_08
-         - pop_bumpers_09
-         - pop_bumpers_10
-         - pop_bumpers_11
-         - pop_bumpers_12
-         - pop_bumpers_13
-         - pop_bumpers_14
-         - pop_bumpers_15
-         - pop_bumpers_16
-         - pop_bumpers_17
-         - pop_bumpers_18
-         - pop_bumpers_19
+  pop_bumpers:
+    load: load
+    type: random
+    track: sfx
+    sounds:
+      - pop_bumpers_01
+      - pop_bumpers_02
+      - pop_bumpers_03
+      - pop_bumpers_04
+      - pop_bumpers_05
+      - pop_bumpers_06
+      - pop_bumpers_07
+      - pop_bumpers_08
+      - pop_bumpers_09
+      - pop_bumpers_10
+      - pop_bumpers_11
+      - pop_bumpers_12
+      - pop_bumpers_13
+      - pop_bumpers_14
+      - pop_bumpers_15
+      - pop_bumpers_16
+      - pop_bumpers_17
+      - pop_bumpers_18
+      - pop_bumpers_19

@@ -28,6 +28,7 @@ config:
 - sounds.yaml
 - videos.yaml
 - sound_pools.yaml
+- playlists.yaml
 
 widget_styles:
   text_default:

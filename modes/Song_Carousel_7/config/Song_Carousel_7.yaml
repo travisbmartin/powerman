@@ -1,7 +1,7 @@
 #config_version=5
 
 mode:
-  start_events: reset_PM5K{current_player.pf_setlist==3}
+  start_events: Jukebox_Start{current_player.pf_setlist==3}
   stop_events: ball_ended, mode_Song_Carousel_10_starting
   priority: 200
 

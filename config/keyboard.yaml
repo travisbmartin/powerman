@@ -12,15 +12,15 @@ keyboard:
   /:
     switch: s_right_flipper
   
-  4:
+  d:
     switch: s_top_lane_R
-  5:
+  f:
     switch: s_top_lane_C
-  6:
+  g:
     switch: s_top_lane_L
   a:
     switch: s_PM5K_target
-  l:
+  h:
     switch: s_album_target
   7:
     switch: s_left_bumper
@@ -30,10 +30,8 @@ keyboard:
     switch: s_right_bumper
   k:
     switch: s_right_saucer
-    toggle: true
-  d:
-    switch: s_left_saucer
-    toggle: true
+  j:
+    switch: s_center_target
 
   #w:
   #  switch: s_left_rollover

@@ -67,6 +67,9 @@ variable_player:
 
   Skull_lanes_complete:
     score: 1000 * current_player.pf_multiplier
+    pf_Skulls_ready:
+      int: 1
+      action: set
 
 show_player:
   Skull_lanes_lit_complete:

@@ -1,0 +1,10 @@
+Things to impliment:
+
+Newton Ball Ramp
+Multiball Ramp
+Band Multiplier
+Extra Ball
+Special
+Hold Bonus
+
+Gut current PM5K and ALBUM modes to mimic a CFTBL style song change

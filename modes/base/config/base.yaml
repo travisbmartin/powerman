@@ -67,7 +67,14 @@ shots:
     switch: s_load_chamber
   eject_chamber_shot:
     switch: s_eject_chamber
-
+  spider_shot:
+    switch: s_center_target
+  album_shot:
+    switch: s_album_target
+  PM5K_shot:
+    switch: s_PM5K_target
+  R_Saucer_shot:
+    switch: s_right_saucer
 
 shot_profiles:
   l_cycle_profile:
@@ -146,7 +153,6 @@ counters:
     direction: down
     persist_state: false
     events_when_complete: Super_Pop_R_Ready
-    debug: true
     reset_on_complete: false
   lb_Left_Pop_count:
     count_events: L_Pop_hit
@@ -156,7 +162,6 @@ counters:
     count_interval: 1
     persist_state: false
     events_when_complete: Super_Pop_L_Ready
-    debug: true
     reset_on_complete: false
   lb_Mid_Pop_count:
     count_events: M_Pop_hit
@@ -166,8 +171,47 @@ counters:
     count_interval: 1
     persist_state: false
     events_when_complete: Super_Pop_M_Ready
-    debug: true
     reset_on_complete: false
+  lb_Spider_count:
+    count_events: spider_shot_hit
+    starting_count: 0
+    count_complete_value: 1
+    direction: up
+    count_interval: 1
+    persist_state: false
+    events_when_complete: Spider_Ready
+    reset_on_complete: true
+    disable_on_complete: false
+  lb_Album_count:
+    count_events: album_shot_hit
+    starting_count: 0
+    count_complete_value: 1
+    direction: up
+    count_interval: 1
+    persist_state: false
+    events_when_complete: Album_Ready
+    reset_on_complete: true
+    disable_on_complete: false
+  lb_PM5K_count:
+    count_events: PM5K_shot_hit
+    starting_count: 0
+    count_complete_value: 1
+    direction: up
+    count_interval: 1
+    persist_state: false
+    events_when_complete: PM5K_Ready
+    reset_on_complete: true
+    disable_on_complete: false
+  lb_Skulls_count:
+    count_events: Skull_lanes_done{count>1}
+    starting_count: 0
+    count_complete_value: 1
+    direction: up
+    count_interval: 1
+    persist_state: false
+    events_when_complete: Skulls_Ready
+    reset_on_complete: true
+    disable_on_complete: false
 
 accruals:
   lb_Super_Pops_Enable:
@@ -177,6 +221,25 @@ accruals:
       - Super_Pop_L_Ready
     events_when_complete: Super_Pops_Go
 
+  lb_Jukebox_Enable:
+    events:
+      - Spider_Ready
+      - Album_Ready
+      - PM5K_Ready
+      - Skulls_Ready
+    events_when_complete: Jukebox_Go
+    reset_on_complete: true
+    disable_on_complete: false
+
+sequences:
+  lb_Jukebox_Start:
+    events:
+      - Jukebox_Go
+      - R_Saucer_shot_hit
+    events_when_complete: Jukebox_Start
+    debug: true
+    reset_on_complete: true
+    disable_on_complete: false
 
 variable_player:
   left_return_shot_hit:
@@ -191,3 +254,7 @@ variable_player:
     score: 2500 * current_player.pf_multiplier
   right_rollover_shot_hit:
     score: 5000 * current_player.pf_multiplier
+  Jukebox_Go:
+    pf_Jukebox_Control:
+      int: 1
+      action: set
