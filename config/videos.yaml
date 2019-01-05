@@ -112,63 +112,56 @@ videos:
     width: 150
     height: 105
     file: return_track.mp4
-
   True_Force:
     width: 150
     height: 105
     file: True_Force.mp4
-
   BSRSystem:
     width: 150
     height: 105
     file: BSRSystem.mp4
-
   MKFR:
     width: 150
     height: 105
     file: MKFR.mp4
-
   TTSR:
     width: 150
     height: 105
     file: TTSR.mp4
-
   AFD:
     width: 150
     height: 105
     file: AFD.mp4
-
   Transform:
     width: 150
     height: 105
     file: Transform.mp4
-
   DWYE:
     width: 150
     height: 105
     file: DWYE.mp4
-
   TGTBTUV1:
     width: 150
     height: 105
     file: TGTBTUV1.mp4
-
   SOTOSON:
     width: 150
     height: 105
     file: SOTOSON.mp4
-
   CCR:
     width: 150
     height: 105
     file: CCR.mp4
-
   BOF:
     width: 150
     height: 105
     file: BOF.mp4
-
   NW:
     width: 150
     height: 105
     file: NW.mp4
+
+#  clip_01:
+#    width: 150
+#    height: 105
+#    file: clip_01.mp4

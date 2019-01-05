@@ -1,0 +1,38 @@
+#config_version=5
+
+video_pools:
+
+  Spider_Target:
+    load: load
+    type: random
+    videos:
+      - clip_01
+      - clip_02
+      - clip_03
+      - clip_04
+      - clip_05
+      - clip_06
+      - clip_07
+      - clip_08
+      - clip_09
+      - clip_10
+      - clip_11
+      - clip_12
+      - clip_13
+      - clip_14
+      - clip_15
+      - clip_16
+      - clip_17
+      - clip_18
+      - clip_19
+      - clip_20
+      - clip_21
+      - clip_22
+      - clip_23
+      - clip_24
+      - clip_25
+      - clip_26
+      - clip_27
+      - clip_28
+      - clip_29
+      - clip_30
