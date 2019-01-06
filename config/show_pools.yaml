@@ -1,11 +1,11 @@
 #config_version=5
 
-video_pools:
+show_pools:
 
   Spider_Target:
-    load: load
     type: random
-    videos:
+    load: load
+    shows:
       - clip_01
       - clip_02
       - clip_03
@@ -36,3 +36,5 @@ video_pools:
       - clip_28
       - clip_29
       - clip_30
+      - clip_31
+      - clip_32

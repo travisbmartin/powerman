@@ -258,3 +258,9 @@ variable_player:
     pf_Jukebox_Control:
       int: 1
       action: set
+
+show_player:
+  spider_shot_hit:
+    Spider_Target:
+      speed: 1
+      loops: 0

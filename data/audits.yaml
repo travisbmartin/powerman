@@ -1,6 +1,6 @@
 events:
   game_ended: 9
-  game_started: 890
+  game_started: 894
 player:
   score:
     average: 1778.5555555555557
@@ -41,7 +41,7 @@ shots:
   right_25K_shot: 17
   right_return_shot: 23
   right_rollover_shot: 26
-  spider_shot: 59
+  spider_shot: 61
   top_lane_A: 80
   top_lane_C: 132
   top_lane_J: 66
@@ -53,7 +53,7 @@ switches:
   s_album_target: 699
   s_cabinet_left: 0
   s_cabinet_right: 0
-  s_center_target: 98
+  s_center_target: 102
   s_coins_left: 0
   s_coins_middle: 0
   s_coins_right: 0
