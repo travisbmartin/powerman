@@ -102,6 +102,9 @@ slide_player:
   player_added:
     new_player_slide:
       priority: 1000
+  multiball_lock_ramplock_full: 
+    multiball_start_slide:
+      priority: 1000
       
 slides:
   score_slide:
@@ -137,6 +140,18 @@ slides:
     widgets:
       - type: text
         text: PLAYER (num) ADDED
+        font_size: 10
+      - type: video
+        video: radar
+        volume: 0  
+        auto_play: true
+        end_behavior: stop
+
+  multiball_start_slide:
+    expire: 3s
+    widgets:
+      - type: text
+        text: MULTIBALL
         font_size: 10
       - type: video
         video: radar
@@ -259,8 +274,8 @@ variable_player:
       int: 1
       action: set
 
-show_player:
-  spider_shot_hit:
-    Spider_Target:
-      speed: 1
-      loops: 0
+multiball_locks:
+  ramplock:
+    debug: true
+    balls_to_lock: 5
+    lock_devices: bd_ramp

@@ -5,8 +5,7 @@ keyboard:
   1:
     switch: s_trough_1
     toggle: true
-  #x:
-  #  switch: s_left_slingshot
+
   z:
     switch: s_left_flipper
   /:
@@ -33,23 +32,7 @@ keyboard:
   j:
     switch: s_center_target
 
-  #w:
-  #  switch: s_left_rollover
-  #o:
-  #  switch: s_right_rollover
-  #d:
-  #  switch: s_left_25K_target
-  #f:
-  #  switch: s_left_return_lane
-  #j:
-  #  switch: s_right_25K_target
-  #k:
-  #  switch: s_right_return_lane
-
-  #d:
-  #  switch: s_ramp_drop_target
-  #  toggle: true
-  #l:
-  #  switch: s_load_chamber
-  #e:
-  #  switch: s_eject_chamber
+  o:
+    switch: s_load_chamber
+  p:
+    switch: s_eject_chamber

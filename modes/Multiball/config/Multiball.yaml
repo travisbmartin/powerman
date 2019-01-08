@@ -1,7 +1,11 @@
-#congif_version=5
+#config_version=5
 
-#Strike the match
-#City Lights
-#Ultra mega
-#Hostage
-#Bombshell
+#config_version=5
+mode:
+  start_events: start_Multiball
+
+multiball_locks:
+    lock_physical_only:
+        lock_devices: bd_ramp
+        balls_to_lock: 5
+        locked_ball_counting_strategy: physical_only

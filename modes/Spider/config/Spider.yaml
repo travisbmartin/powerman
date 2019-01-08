@@ -1,0 +1,83 @@
+#config_version=5
+
+mode:
+  start_events: spider_shot_hit
+  stop_events: 
+    - ball_ended
+    - mode_clip_01_starting
+    - mode_clip_02_starting
+    - mode_clip_03_starting
+    - mode_clip_04_starting
+    - mode_clip_05_starting
+    - mode_clip_06_starting
+    - mode_clip_07_starting
+    - mode_clip_08_starting
+    - mode_clip_09_starting
+    - mode_clip_10_starting
+    - mode_clip_11_starting
+    - mode_clip_12_starting
+    - mode_clip_13_starting
+    - mode_clip_14_starting
+    - mode_clip_15_starting
+    - mode_clip_16_starting
+    - mode_clip_17_starting
+    - mode_clip_18_starting
+    - mode_clip_19_starting
+    - mode_clip_20_starting
+    - mode_clip_21_starting
+    - mode_clip_22_starting
+    - mode_clip_23_starting
+    - mode_clip_24_starting
+    - mode_clip_25_starting
+    - mode_clip_26_starting
+    - mode_clip_27_starting
+    - mode_clip_28_starting
+    - mode_clip_29_starting
+    - mode_clip_30_starting
+    - mode_clip_31_starting
+    - mode_clip_32_starting
+  priority: 300
+
+event_player:
+  mode_Spider_started: award_random_clip
+
+random_event_player:
+  award_random_clip:
+    force_different: true
+    events:
+      - start_mode_clip_01
+      - start_mode_clip_02
+      - start_mode_clip_03
+      - start_mode_clip_04
+      - start_mode_clip_05
+      - start_mode_clip_06
+      - start_mode_clip_07
+      - start_mode_clip_08
+      - start_mode_clip_09
+      - start_mode_clip_10
+      - start_mode_clip_11
+      - start_mode_clip_12
+      - start_mode_clip_13
+      - start_mode_clip_14
+      - start_mode_clip_15
+      - start_mode_clip_16
+      - start_mode_clip_17
+      - start_mode_clip_18
+      - start_mode_clip_19
+      - start_mode_clip_20
+      - start_mode_clip_21
+      - start_mode_clip_22
+      - start_mode_clip_23
+      - start_mode_clip_24
+      - start_mode_clip_25
+      - start_mode_clip_26
+      - start_mode_clip_27
+      - start_mode_clip_28
+      - start_mode_clip_29
+      - start_mode_clip_30
+      - start_mode_clip_31
+      - start_mode_clip_32
+
+variable_player:
+  mode_Spider_started:
+    score: 5000 * current_player.pf_multiplier

@@ -1,6 +1,6 @@
 events:
   game_ended: 9
-  game_started: 894
+  game_started: 936
 player:
   score:
     average: 1778.5555555555557
@@ -32,33 +32,33 @@ shots:
   Right_Saucer: 60
   album_shot: 69
   drop_target_shot: 14
-  eject_chamber: 26
-  eject_chamber_shot: 17
+  eject_chamber: 33
+  eject_chamber_shot: 24
   left_25K_shot: 52
   left_return_shot: 45
   left_rollover_shot: 15
-  load_chamber_shot: 14
+  load_chamber_shot: 71
   right_25K_shot: 17
   right_return_shot: 23
   right_rollover_shot: 26
-  spider_shot: 61
+  spider_shot: 356
   top_lane_A: 80
   top_lane_C: 132
   top_lane_J: 66
   top_lane_L: 81
   top_lane_M: 68
-  top_lane_R: 78
+  top_lane_R: 79
 switches:
   s_PM5K_target: 324
   s_album_target: 699
   s_cabinet_left: 0
   s_cabinet_right: 0
-  s_center_target: 102
+  s_center_target: 407
   s_coins_left: 0
   s_coins_middle: 0
   s_coins_right: 0
   s_credit: 25
-  s_eject_chamber: 26
+  s_eject_chamber: 33
   s_heavy_target: 22
   s_left_25K_target: 66
   s_left_bumper: 198
@@ -68,7 +68,7 @@ switches:
   s_left_rollover: 46
   s_left_saucer: 113
   s_left_slingshot: 30
-  s_load_chamber: 14
+  s_load_chamber: 71
   s_metal_target: 7
   s_middle_bumper: 212
   s_outhole: 0
@@ -90,8 +90,8 @@ switches:
   s_top_lane_J: 66
   s_top_lane_L: 81
   s_top_lane_M: 68
-  s_top_lane_R: 78
-  s_trough_1: 138
+  s_top_lane_R: 79
+  s_trough_1: 139
   s_trough_2: 0
   s_trough_3: 0
   s_trough_4: 0

@@ -24,9 +24,9 @@ ball_devices:
     eject_timeouts: 2s
     tags: saucer
 
-  #bd_ramp:
-  #  ball_switches: s_load_chamber, s_eject_chamber
-    #locked_ball_counting_strategy: physical_only
+  bd_ramp:
+    ball_switches: s_load_chamber
+    eject_coil: c_pin_down
   
 drop_targets:
   bd_drop_target:
@@ -41,20 +41,3 @@ drop_target_banks:
       - ball_searching
       - ball_ending
     reset_on_complete: 10s
-
-diverters:
-     multiball_diverter:
-         activation_coil: c_pin_down
-         activate_events: device.counters.multiball_count{count==5}
-         type: hold
-         activation_time: 5s
-         #enable_events: mode_drop_target_ramp_entrance_started
-         #disable_events: ball_ended
-         targets_when_active: playfield
-
-
-#multiball_locks:
-#   ramp:
-#      balls_to_lock: 4
-#      lock_devices: bd_ramp
-
