@@ -2,9 +2,7 @@ Things to impliment:
 
 Newton Ball Ramp
 Multiball Ramp
-Extra Ball
-Special
 Hold Bonus
 
-Video Pool
-  ~30 5 sec clips
+Improve sounds
+Improve scoring

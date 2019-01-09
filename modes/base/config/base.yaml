@@ -86,7 +86,6 @@ shot_profiles:
       - name: lit  # step 3
         show: on
     loop: yes
-
   r_cycle_profile:
     states:
       - name: unlit  # step 1
@@ -102,10 +101,13 @@ slide_player:
   player_added:
     new_player_slide:
       priority: 1000
-  multiball_lock_ramplock_full: 
-    multiball_start_slide:
+  extra_ball_Jukebox_01_awarded:
+    extra_ball_slide:
       priority: 1000
-      
+  extra_ball_Jukebox_02_awarded:
+    extra_ball_slide:
+      priority: 1000
+            
 slides:
   score_slide:
     widgets:
@@ -134,7 +136,6 @@ slides:
         volume: 0
         auto_play: true
         end_behavior: loop
-
   new_player_slide:
     expire: 1s
     widgets:
@@ -146,7 +147,6 @@ slides:
         volume: 0  
         auto_play: true
         end_behavior: stop
-
   multiball_start_slide:
     expire: 3s
     widgets:
@@ -158,6 +158,17 @@ slides:
         volume: 0  
         auto_play: true
         end_behavior: stop
+  extra_ball_slide:
+    expire: 3s
+    widgets:
+      - type: text
+        text: EXTRA BALL
+        font_size: 20
+#      - type: video
+#        video: radar
+#        volume: 0  
+#        auto_play: true
+#        end_behavior: stop
 
 counters:
   lb_Right_Pop_count:
@@ -227,6 +238,12 @@ counters:
     events_when_complete: Skulls_Ready
     reset_on_complete: true
     disable_on_complete: false
+  lb_Jukebox_count:
+    count_events: Jukebox_Start
+    starting_count: 0
+    direction: up
+    count_interval: 1
+    persist_state: true
 
 accruals:
   lb_Super_Pops_Enable:
@@ -235,7 +252,6 @@ accruals:
       - Super_Pop_M_Ready
       - Super_Pop_L_Ready
     events_when_complete: Super_Pops_Go
-
   lb_Jukebox_Enable:
     events:
       - Spider_Ready
@@ -252,9 +268,29 @@ sequences:
       - Jukebox_Go
       - R_Saucer_shot_hit
     events_when_complete: Jukebox_Start
-    debug: true
     reset_on_complete: true
     disable_on_complete: false
+  lb_Jukebox_EB_01:
+    events:
+      - counter_lb_Jukebox_count_hit{count==2}
+      - spider_shot_hit
+    events_when_complete: Award_EB_01
+    reset_on_complete: true
+    disable_on_complete: true
+  lb_Jukebox_EB_02:
+    events:
+      - counter_lb_Jukebox_count_hit{count==9}
+      - spider_shot_hit
+    events_when_complete: Award_EB_02
+    reset_on_complete: true
+    disable_on_complete: true
+  lb_Jukebox_Special_01:
+    events:
+      - counter_lb_Jukebox_count_hit{count==16}
+      - spider_shot_hit
+    events_when_complete: special
+    reset_on_complete: true
+    disable_on_complete: true
 
 variable_player:
   left_return_shot_hit:
@@ -269,13 +305,19 @@ variable_player:
     score: 2500 * current_player.pf_multiplier
   right_rollover_shot_hit:
     score: 5000 * current_player.pf_multiplier
+  s_load_chamber:
+    score: 100000 * current_player.pf_multiplier
   Jukebox_Go:
     pf_Jukebox_Control:
       int: 1
       action: set
+  spider_shot_hit:
+    spider_bonus: 1
 
-multiball_locks:
-  ramplock:
-    debug: true
-    balls_to_lock: 5
-    lock_devices: bd_ramp
+extra_balls:
+  Jukebox_01:
+    enabled: true
+    award_events: Award_EB_01
+  Jukebox_02:
+    enabled: true
+    award_events: Award_EB_02

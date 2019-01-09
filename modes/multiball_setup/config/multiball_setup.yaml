@@ -1,8 +1,0 @@
-#config_version=5
-
-multiballs:
-    multiballs:
-        ball_count: 5
-        shoot_again: 0
-        start_events: start_Multiball
-        ball_locks: bd_ramp

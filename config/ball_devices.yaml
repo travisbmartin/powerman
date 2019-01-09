@@ -24,9 +24,10 @@ ball_devices:
     eject_timeouts: 2s
     tags: saucer
 
-  bd_ramp:
-    ball_switches: s_load_chamber
+  bd_ramp_load:
+    entrance_switch: s_load_chamber
     eject_coil: c_pin_down
+    ball_capacity: 5
   
 drop_targets:
   bd_drop_target:

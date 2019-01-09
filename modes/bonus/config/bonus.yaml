@@ -1,0 +1,50 @@
+#config_version=5
+
+mode_settings:
+   display_delay_ms: 1s
+   hurry_up_delay_ms: 0
+   bonus_entries:
+    - event: bonus_spider
+      score: 500
+    - event: bonus_jukebox
+      score: 1200 * (current_player.pf_Jukebox_Hits + 2)
+
+slide_player:
+   mode_bonus_started: bonus_start_slide
+   bonus_spider: bonus_spider_slide
+   bonus_jukebox: bonus_jukebox_slide
+   bonus_total: bonus_total_slide
+
+slides:
+  bonus_start_slide:
+    widgets:
+      - type: text
+        text: Bonus
+  bonus_spider_slide:
+    - type: text
+      text: "Spider (player|bonus_spider)"
+      font_size: 10
+    - type: text
+      text: (score)
+      font_size: 10
+  bonus_jukebox_slide:
+    - type: text
+      text: "Jukebox (player|pf_Jukebox_Hits)"
+      font_size: 10
+    - type: text
+      text: (score)
+      font_size: 10
+  bonus_multiplier_slide:
+    - type: text
+      text: "Multiplier"
+      font_size: 10
+    - type: text
+      text: "(pf_multiplier)X"
+      font_size: 10
+  bonus_total_slide:
+    - type: text
+      text: "Total Bonus"
+      font_size: 10
+    - type: text
+      text: (score)
+      font_size: 10

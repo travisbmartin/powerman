@@ -20,3 +20,7 @@ player_vars:
   pf_Jukebox_Control:
     value_type: int
     initial_value: 0
+
+  pf_Jukebox_Hits:
+    value_type: int
+    initial_value: 0

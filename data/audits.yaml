@@ -1,6 +1,6 @@
 events:
   game_ended: 9
-  game_started: 936
+  game_started: 961
 player:
   score:
     average: 1778.5555555555557
@@ -16,82 +16,82 @@ player:
     - 300
     total: 9
 shots:
-  ALBUM: 696
+  ALBUM: 722
   Bombshell_Level_1: 7
   HEAVY: 22
-  L_Pop: 194
+  L_Pop: 204
   Level_1: 32
   Level_2: 22
   Level_3: 7
   METAL: 7
-  M_Pop: 212
-  PM5K: 323
-  PM5K_shot: 76
-  R_Pop: 167
-  R_Saucer_shot: 6
+  M_Pop: 222
+  PM5K: 349
+  PM5K_shot: 102
+  R_Pop: 177
+  R_Saucer_shot: 34
   Right_Saucer: 60
-  album_shot: 69
+  album_shot: 95
   drop_target_shot: 14
   eject_chamber: 33
   eject_chamber_shot: 24
   left_25K_shot: 52
   left_return_shot: 45
   left_rollover_shot: 15
-  load_chamber_shot: 71
+  load_chamber_shot: 85
   right_25K_shot: 17
   right_return_shot: 23
   right_rollover_shot: 26
-  spider_shot: 356
+  spider_shot: 407
   top_lane_A: 80
-  top_lane_C: 132
+  top_lane_C: 159
   top_lane_J: 66
-  top_lane_L: 81
+  top_lane_L: 108
   top_lane_M: 68
-  top_lane_R: 79
+  top_lane_R: 105
 switches:
-  s_PM5K_target: 324
-  s_album_target: 699
+  s_PM5K_target: 350
+  s_album_target: 725
   s_cabinet_left: 0
   s_cabinet_right: 0
-  s_center_target: 407
+  s_center_target: 458
   s_coins_left: 0
   s_coins_middle: 0
   s_coins_right: 0
-  s_credit: 25
+  s_credit: 27
   s_eject_chamber: 33
   s_heavy_target: 22
   s_left_25K_target: 66
-  s_left_bumper: 198
+  s_left_bumper: 208
   s_left_flipper: 0
   s_left_outlane: 0
   s_left_return_lane: 52
   s_left_rollover: 46
   s_left_saucer: 113
   s_left_slingshot: 30
-  s_load_chamber: 71
+  s_load_chamber: 85
   s_metal_target: 7
-  s_middle_bumper: 212
+  s_middle_bumper: 222
   s_outhole: 0
   s_ramp_drop_target: 14
   s_right_25K_target: 27
-  s_right_bumper: 167
+  s_right_bumper: 177
   s_right_flipper: 2
   s_right_outlane: 0
   s_right_return_lane: 30
   s_right_rollover: 42
-  s_right_saucer: 354
+  s_right_saucer: 382
   s_right_slingshot: 0
   s_slam: 0
   s_tilt: 0
   s_top_25K_lane: 0
   s_top_50K_lane: 0
   s_top_lane_A: 80
-  s_top_lane_C: 132
+  s_top_lane_C: 159
   s_top_lane_J: 66
-  s_top_lane_L: 81
+  s_top_lane_L: 108
   s_top_lane_M: 68
-  s_top_lane_R: 79
-  s_trough_1: 139
+  s_top_lane_R: 105
+  s_trough_1: 148
   s_trough_2: 0
   s_trough_3: 0
   s_trough_4: 0

@@ -22,6 +22,19 @@ credits:
     credits: 1
   - price: 2
     credits: 5
+  events:
+  - event: special
+    type: special
+    credits: 1
+  - event: replay
+    type: replay
+    credits: 1
+  - event: high_score_credit
+    type: high_score
+    credits: 1
+  - event: match
+    type: match
+    credits: 1  
   fractional_credit_expiration_time: 15m
   credit_expiration_time: 2h
   persist_credits_while_off_time: 1h
