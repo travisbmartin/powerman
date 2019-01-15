@@ -37,8 +37,8 @@ videos:
     height: 70
     file: human_track.mp4
   free_track:
-    width: 120
-    height: 82
+    width: 150
+    height: 105
     file: free_track.mp4
   wild_track:
     width: 150
@@ -69,8 +69,8 @@ videos:
     height: 70
     file: hey_track.mp4
   villain_track:
-    width: 100
-    height: 70
+    width: 150
+    height: 105
     file: villain_track.mp4
   sid_track:
     width: 100
@@ -97,16 +97,16 @@ videos:
     height: 70
     file: nobodys_track.mp4
   walking_track:
-    width: 100
-    height: 70
+    width: 150
+    height: 105
     file: walking_track.mp4
   riot_track:
     width: 150
     height: 105
     file: riot_track.mp4
   apathy_track:
-    width: 100
-    height: 70
+    width: 150
+    height: 105
     file: apathy_track.mp4
   return_track:
     width: 150
@@ -174,8 +174,8 @@ videos:
     height: 105
     file: clip_03.mp4
   clip_04:
-    width: 100
-    height: 70
+    width: 150
+    height: 105
     file: clip_04.mp4
   clip_05:
     width: 150
@@ -186,12 +186,12 @@ videos:
     height: 105
     file: clip_06.mp4
   clip_07:
-    width: 100
-    height: 70
+    width: 150
+    height: 105
     file: clip_07.mp4
   clip_08:
-    width: 100
-    height: 70
+    width: 150
+    height: 105
     file: clip_08.mp4
   clip_09:
     width: 150
@@ -202,8 +202,8 @@ videos:
     height: 105
     file: clip_10.mp4
   clip_11:
-    width: 100
-    height: 70
+    width: 150
+    height: 105
     file: clip_11.mp4
   clip_12:
     width: 150
@@ -222,8 +222,8 @@ videos:
     height: 105
     file: clip_15.mp4
   clip_16:
-    width: 100
-    height: 70
+    width: 150
+    height: 105
     file: clip_16.mp4
   clip_17:
     width: 150
@@ -298,16 +298,16 @@ videos:
     height: 105
     file: clip_22a.mp4
   clip_23a:
-    width: 100
-    height: 70
+    width: 150
+    height: 105
     file: clip_23a.mp4
   clip_24a:
-    width: 100
-    height: 70
+    width: 150
+    height: 105
     file: clip_24a.mp4
   clip_25a:
-    width: 100
-    height: 70
+    width: 150
+    height: 105
     file: clip_25a.mp4
   clip_26a:
     width: 150

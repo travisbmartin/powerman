@@ -23,7 +23,7 @@ variable_player:
       action: set
 
   balldevice_bd_left_saucer_ball_entered:
-    score: 1000 * current_player.pf_multiplier
+    score: 10000 * current_player.pf_multiplier * current_player.pf_MBall_multiplier
 
 #show_player:
 #  mode_Album_Award_01_started:

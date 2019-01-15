@@ -6,7 +6,6 @@
     bombshell_startup:
       widgets:
       - type: text
-        text: BOMBSHELL
+        text: SUPER POPS
         font_size: 20
-        color: red
         y: 60%

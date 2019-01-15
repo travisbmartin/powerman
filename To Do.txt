@@ -1,8 +1,6 @@
 Things to impliment:
 
-Newton Ball Ramp
-Multiball Ramp
 Hold Bonus
 
 Improve sounds
-Improve scoring
+Improve lightshows

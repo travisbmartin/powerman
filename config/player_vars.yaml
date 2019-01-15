@@ -24,3 +24,19 @@ player_vars:
   pf_Jukebox_Hits:
     value_type: int
     initial_value: 0
+
+  pf_spider_bonus:
+    value_type: int
+    initial_value: 0
+
+  pf_MBall_Multiplier:
+    value_type: int
+    initial_value: 1
+
+  pf_album_bonus:
+    value_type: int
+    initial_value: 0
+
+  pf_PM5K_bonus:
+    value_type: int
+    initial_value: 0

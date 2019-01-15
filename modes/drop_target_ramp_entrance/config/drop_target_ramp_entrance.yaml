@@ -3,20 +3,10 @@
 mode:
   start_events: ball_started
   stop_events: ball_ending
-
-shot_groups:
-  shot_lock_ball:
-    shots: load_chamber_shot, eject_chamber_shot
-
-counters:
- multiball_count:
-    count_events: shot_lock_ball_hit
-    events_when_hit: ball_locked
-    starting_count: 0
-    count_complete_value: 5
+  priority: 200
 
 timers:
-  reset_drop_target_01:
+  drop_target_01:
     debug: True
     start_value: 10
     end_value: 0

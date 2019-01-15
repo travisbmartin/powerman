@@ -4,47 +4,70 @@ mode_settings:
    display_delay_ms: 1s
    hurry_up_delay_ms: 0
    bonus_entries:
-    - event: bonus_spider
+    - event: pf_spider_bonus
       score: 500
-    - event: bonus_jukebox
-      score: 1200 * (current_player.pf_Jukebox_Hits + 2)
+    - event: pf_Jukebox_Hits
+      score: 1000 * (current_player.pf_Jukebox_Hits + 2)
+    - event: pf_album_bonus
+      score: 500
+    - event: pf_PM5K_bonus
+      score: 500
 
 slide_player:
-   mode_bonus_started: bonus_start_slide
-   bonus_spider: bonus_spider_slide
-   bonus_jukebox: bonus_jukebox_slide
-   bonus_total: bonus_total_slide
+  mode_bonus_started: bonus_start_slide
+  pf_spider_bonus: spider_bonus_slide
+  pf_Jukebox_Hits: jukebox_bonus_slide
+  pf_album_bonus: album_bonus_slide
+  pf_PM5K_bonus: PM5K_bonus_slide   
+  bonus_total: bonus_total_slide
 
 slides:
   bonus_start_slide:
     widgets:
       - type: text
         text: Bonus
-  bonus_spider_slide:
+  spider_bonus_slide:
     - type: text
-      text: "Spider (player|bonus_spider)"
-      font_size: 10
-    - type: text
-      text: (score)
-      font_size: 10
-  bonus_jukebox_slide:
-    - type: text
-      text: "Jukebox (player|pf_Jukebox_Hits)"
-      font_size: 10
+      text: "Spiders Caught: (player|pf_spider_bonus)"
+      anchor_y: bottom
+      font_size: 15
     - type: text
       text: (score)
-      font_size: 10
-  bonus_multiplier_slide:
+      font_size: 150
+      anchor_y: top
+  jukebox_bonus_slide:
     - type: text
-      text: "Multiplier"
-      font_size: 10
+      text: "Jukebox Hits: (player|pf_Jukebox_Hits)"
+      font_size: 15
+      anchor_y: bottom
     - type: text
-      text: "(pf_multiplier)X"
-      font_size: 10
+      text: (score)
+      anchor_y: top
+      font_size: 15
+  album_bonus_slide:
+    - type: text
+      text: "Albums Collected: (player|pf_album_bonus)"
+      font_size: 15
+      anchor_y: bottom
+    - type: text
+      text: (score)
+      anchor_y: top
+      font_size: 15
+  PM5K_bonus_slide:
+    - type: text
+      text: "Concerts Rocked: (player|pf_PM5K_bonus)"
+      font_size: 15
+      anchor_y: bottom
+    - type: text
+      text: (score)
+      anchor_y: top
+      font_size: 15
   bonus_total_slide:
     - type: text
       text: "Total Bonus"
-      font_size: 10
+      anchor_y: bottom
+      font_size: 15
     - type: text
       text: (score)
-      font_size: 10
+      anchor_y: top
+      font_size: 15

@@ -1,3 +1,5 @@
+device_size: 0.025
+
 autofire:
   left_jet:
     x: 0.5826369350866029

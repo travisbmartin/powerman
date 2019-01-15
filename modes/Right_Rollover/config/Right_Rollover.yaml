@@ -18,8 +18,8 @@ timers:
 
 variable_player:
   left_return_shot_hit:
-    score: 10000 * current_player.pf_multiplier|block
+    score: 10000 * current_player.pf_multiplier|block * current_player.pf_MBall_multiplier|block
   left_25K_shot_hit:
-    score: 25000 * current_player.pf_multiplier|block
+    score: 25000 * current_player.pf_multiplier|block * current_player.pf_MBall_multiplier|block
   left_rollover_shot_hit:
-    score: 50000 * current_player.pf_multiplier|block
+    score: 50000 * current_player.pf_multiplier|block * current_player.pf_MBall_multiplier|block

@@ -28,6 +28,7 @@ ball_devices:
     entrance_switch: s_load_chamber
     eject_coil: c_pin_down
     ball_capacity: 5
+    eject_timeouts: 1s
   
 drop_targets:
   bd_drop_target:
@@ -38,7 +39,8 @@ drop_target_banks:
     drop_targets: bd_drop_target
     reset_coils: c_drop_target
     reset_events:
-      - machine_reset_phase_3
       - ball_searching
       - ball_ending
+      - ball_device_bd_ramp_load_ball_entered
     reset_on_complete: 10s
+

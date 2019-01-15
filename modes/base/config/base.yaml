@@ -147,28 +147,12 @@ slides:
         volume: 0  
         auto_play: true
         end_behavior: stop
-  multiball_start_slide:
-    expire: 3s
-    widgets:
-      - type: text
-        text: MULTIBALL
-        font_size: 10
-      - type: video
-        video: radar
-        volume: 0  
-        auto_play: true
-        end_behavior: stop
   extra_ball_slide:
     expire: 3s
     widgets:
       - type: text
         text: EXTRA BALL
         font_size: 20
-#      - type: video
-#        video: radar
-#        volume: 0  
-#        auto_play: true
-#        end_behavior: stop
 
 counters:
   lb_Right_Pop_count:
@@ -294,25 +278,44 @@ sequences:
 
 variable_player:
   left_return_shot_hit:
-    score: 1000 * current_player.pf_multiplier
+    score: 1000 * current_player.pf_multiplier * current_player.pf_MBall_multiplier
   left_25K_shot_hit:
-    score: 2500 * current_player.pf_multiplier
+    score: 25000 * current_player.pf_multiplier * current_player.pf_MBall_multiplier
   left_rollover_shot_hit:
-    score: 5000 * current_player.pf_multiplier
+    score: 5000 * current_player.pf_multiplier * current_player.pf_MBall_multiplier
   right_return_shot_hit:
-    score: 1000 * current_player.pf_multiplier
+    score: 1000 * current_player.pf_multiplier * current_player.pf_MBall_multiplier
   right_25K_target_shot_hit:
-    score: 2500 * current_player.pf_multiplier
+    score: 25000 * current_player.pf_multiplier * current_player.pf_MBall_multiplier
   right_rollover_shot_hit:
-    score: 5000 * current_player.pf_multiplier
+    score: 5000 * current_player.pf_multiplier * current_player.pf_MBall_multiplier
   s_load_chamber:
-    score: 100000 * current_player.pf_multiplier
+    score: 100000 * current_player.pf_multiplier * current_player.pf_MBall_multiplier
   Jukebox_Go:
     pf_Jukebox_Control:
       int: 1
       action: set
+    pf_Jukebox_Hits: 1
   spider_shot_hit:
-    spider_bonus: 1
+    pf_spider_bonus: 
+    s_load_chamber:
+    number: 3
+    tags: 
+#  s_eject_chamber:
+#  s_ramp_drop_target:
+#  s_right_slingshot:
+#  s_left_slingshot:
+#  s_top_lane_R:
+#  s_top_lane_C:
+#  s_top_lane_L:
+#  s_left_outlane:
+#  s_right_outlane:
+#  s_top_25K_lane:
+#  s_top_50K_lane:
+#  s_center_target:
+#  s_album_target:
+#  s_PM5K_target:
+
 
 extra_balls:
   Jukebox_01:
@@ -321,3 +324,19 @@ extra_balls:
   Jukebox_02:
     enabled: true
     award_events: Award_EB_02
+
+show_player:
+  Award_EB_01:
+    Rock_Again_On:
+      show_tokens:
+        lights: Rock_Again
+
+  Award_EB_02:
+    Rock_Again_On:
+      show_tokens:
+        lights: Rock_Again
+
+  ball_ended:
+    Rock_Again_Off:
+      show_tokens:
+        lights: Rock_Again

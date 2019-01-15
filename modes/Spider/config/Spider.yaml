@@ -80,4 +80,4 @@ random_event_player:
 
 variable_player:
   mode_Spider_started:
-    score: 5000 * current_player.pf_multiplier
+    score: 5000 * current_player.pf_multiplier * current_player.pf_MBall_multiplier|block

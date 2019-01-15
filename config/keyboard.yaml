@@ -5,6 +5,18 @@ keyboard:
   1:
     switch: s_trough_1
     toggle: true
+  2:
+    switch: s_trough_2
+    toggle: true
+  3:
+    switch: s_trough_3
+    toggle: true
+  4:
+    switch: s_trough_4
+    toggle: true
+  5:
+    switch: s_trough_5
+    toggle: true
 
   z:
     switch: s_left_flipper
@@ -36,3 +48,6 @@ keyboard:
     switch: s_load_chamber
   p:
     switch: s_eject_chamber
+
+  i:
+    switch: s_ramp_drop_target

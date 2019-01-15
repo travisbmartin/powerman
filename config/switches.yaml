@@ -18,20 +18,16 @@ switches:
     tags: 
   s_eject_chamber:
     number: 4
-    tags: 
-
+    events_when_activated: ev_start_multiball
   s_cabinet_left:
     number: 5
     tags: playfield_active
-
   s_credit:
     number: 6
     tags: start
-
   s_cabinet_right:
     number: 7
     tags: playfield_active
-
   s_outhole:
     number: 8
     tags: 
@@ -44,7 +40,6 @@ switches:
   s_coins_middle:
     number: 11
     tags: playfield_active
-
   s_left_return_lane:
     number: 12
     tags: playfield_active

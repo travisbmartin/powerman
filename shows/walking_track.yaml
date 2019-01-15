@@ -8,5 +8,6 @@
       volume: 0
       auto_play: True
       end_behavior: stop
+      y: -1
 
 - time: +6

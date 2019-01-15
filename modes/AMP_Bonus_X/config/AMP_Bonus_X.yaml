@@ -50,7 +50,7 @@ variable_player:
       int: 6
       action: set
   eject_chamber_hit:
-    score: 1000 * current_player.pf_Bonus_Multiplier
+    score: 10000 * current_player.pf_Bonus_Multiplier * current_player.pf_MBall_multiplier|block
 
 show_player:
   AMP_shot_done:

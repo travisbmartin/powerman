@@ -158,30 +158,35 @@ lights:
 
   l_level_5:
     number: 52
+    tags: Level_5
 
   l_right_collect_bonus:
     number: 53
 
   l_level_4:
     number: 54
+    tags: Level_4
 
   l_left_collect_bonus:
     number: 55
 
   l_level_3:
     number: 56
+    tags: Level_3
 
   l_right_25K_target:
     number: 57
 
   l_level_2:
     number: 58
+    tags: Level_2
 
   l_left_25K_target:
     number: 59
 
   l_level_1:
     number: 60
+    tags: Level_1
 
   l_PM5K_P:
     number: 61
