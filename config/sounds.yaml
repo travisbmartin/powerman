@@ -150,9 +150,9 @@ sounds:
   pop_bumpers_16:
     file: pop_bumpers_16.wav
     priority: 200
-  pop_bumpers_17:
-    file: pop_bumpers_17.wav
-    priority: 200
+  #pop_bumpers_17:
+  #  file: pop_bumpers_17.wav
+  #  priority: 200
   pop_bumpers_18:
     file: pop_bumpers_18.wav
     priority: 200
@@ -177,3 +177,44 @@ sounds:
   new_album_collected:
     file: new_album_collected.flac
     priority: 400
+
+  target_01:
+    file: target_01.wav
+    priority: 200
+    volume: 2
+  target_02:
+    file: target_02.wav
+    priority: 200
+    volume: 2
+  target_03:
+    file: target_03.wav
+    priority: 200
+    volume: 2  
+  target_04:
+    file: target_04.wav
+    priority: 200
+    volume: 2
+  target_05:
+    file: target_05.wav
+    priority: 200
+    volume: 2
+  target_06:
+    file: target_06.wav
+    priority: 200
+    volume: 2
+  target_07:
+    file: target_07.wav
+    priority: 200
+    volume: 2
+  target_08:
+    file: target_08.wav
+    priority: 200
+    volume: 2
+  target_09:
+    file: target_09.wav
+    priority: 200
+    volume: 2
+  target_10:
+    file: target_10.wav
+    priority: 200
+    volume: 2

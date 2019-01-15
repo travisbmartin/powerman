@@ -23,6 +23,23 @@ sound_pools:
       - pop_bumpers_14
       - pop_bumpers_15
       - pop_bumpers_16
-      - pop_bumpers_17
+      #- pop_bumpers_17
       - pop_bumpers_18
       - pop_bumpers_19
+
+  targets:
+    load: load
+    type: random
+    track: sfx
+    sounds:
+      - target_01
+      - target_02
+      - target_03
+      - target_04
+      - target_05
+      - target_06
+      - target_07
+      - target_08
+      - target_09
+      - target_10
+      
