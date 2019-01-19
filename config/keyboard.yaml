@@ -43,11 +43,11 @@ keyboard:
     switch: s_right_saucer
   j:
     switch: s_center_target
-
   o:
     switch: s_load_chamber
   p:
     switch: s_eject_chamber
-
   i:
     switch: s_ramp_drop_target
+  q:
+    switch: s_left_saucer

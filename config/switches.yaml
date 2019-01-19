@@ -7,12 +7,15 @@ switches:
   s_right_flipper:
     number: 71
     tags: right_flipper
+
   s_left_saucer:
     number: 1
     tags: 
+
   s_right_saucer:
     number: 2
     tags: 
+      
   s_load_chamber:
     number: 3
     tags: 
@@ -119,6 +122,7 @@ switches:
   s_album_target:
     number: 34
     tags: playfield_active
+
   s_PM5K_target:
     number: 35
     tags: playfield_active

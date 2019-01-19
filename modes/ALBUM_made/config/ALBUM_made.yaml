@@ -16,33 +16,61 @@ counters:
     reset_on_complete: True
     events_when_complete: ALBUM_ready
     enable_events: mode_ALBUM_made_started, reset_ALBUM
-    debug: true
+
+  lb_PM5K_complete_count:
+    count_events: PM5K_Targets_complete
+    events_when_hit: PM5K_Targets_done
+    count_complete_value: 5
+    starting_count: 0
+    direction: up
+    persist_state: false
+    reset_on_complete: True
+    events_when_complete: PM5K_ready
+    enable_events: mode_ALBUM_made_started, reset_PM5K
+
 
 shots:
   ALBUM:
     switch: s_album_target
-    show_tokens:
-      light: l_right_25K_target
+  PM5K:
+    switch: s_PM5K_target
 
 shot_groups:
   ALBUM_Targets:
     shots: ALBUM
     reset_events: 
       ALBUM_Targets_complete: 1s
+  PM5K_Targets:
+    shots: PM5K
+    reset_events: 
+      PM5K_Targets_complete: 1s
 
 variable_player:
   ALBUM_Targets_done{count==1}:
-    score: 1000 * current_player.pf_multiplier|block * current_player.pf_MBall_multiplier|block
+    score: 1000 * current_player.pf_multiplier #* current_player.pf_MBall_multiplier|block
   ALBUM_Targets_done{count==2}:
-    score: 2000 * current_player.pf_multiplier|block * current_player.pf_MBall_multiplier|block
+    score: 2000 * current_player.pf_multiplier #* current_player.pf_MBall_multiplier|block
   ALBUM_Targets_done{count==3}:
-    score: 3000 * current_player.pf_multiplier|block * current_player.pf_MBall_multiplier|block
+    score: 3000 * current_player.pf_multiplier #* current_player.pf_MBall_multiplier|block
   ALBUM_Targets_done{count==4}:
-    score: 4000 * current_player.pf_multiplier|block * current_player.pf_MBall_multiplier|block
+    score: 4000 * current_player.pf_multiplier #* current_player.pf_MBall_multiplier|block
   ALBUM_Targets_done{count==5}:
-    score: 10000 * current_player.pf_multiplier|block * current_player.pf_MBall_multiplier|block
-  ALBUM_hit:
+    score: 10000 * current_player.pf_multiplier #* current_player.pf_MBall_multiplier|block
+  ALBUM_ready:
     pf_album_bonus: 1
+  PM5K_Targets_done{count==1}:
+    score: 1000 * current_player.pf_multiplier #* current_player.pf_MBall_multiplier|block
+  PM5K_Targets_done{count==2}:
+    score: 2000 * current_player.pf_multiplier #* current_player.pf_MBall_multiplier|block
+  PM5K_Targets_done{count==3}:
+    score: 3000 * current_player.pf_multiplier #* current_player.pf_MBall_multiplier|block
+  PM5K_Targets_done{count==4}:
+    score: 4000 * current_player.pf_multiplier #* current_player.pf_MBall_multiplier|block
+  PM5K_Targets_done{count==5}:
+    score: 10000 * current_player.pf_multiplier #* current_player.pf_MBall_multiplier|block
+  PM5K_hit:
+    pf_PM5K_bonus: 1
+
 
 show_player:
   ALBUM_Targets_done{count==1}:
@@ -66,12 +94,51 @@ show_player:
       show_tokens:
         lights: Album_a, Album_l, Album_b, Album_u, Album_m
 
-sequences:
-  lb_Next_Album:
+  ALBUM_ready:
+    Album_Off:
+      show_tokens:
+        lights: Album_a, Album_l, Album_b, Albumu, Album_m
+
+  PM5K_Targets_done{count==1}:
+    PM5K_P_On:
+      show_tokens:
+        lights: PM5K_P
+  PM5K_Targets_done{count==2}:
+    PM5K_M_On:
+      show_tokens:
+        lights: PM5K_P, PM5K_M
+  PM5K_Targets_done{count==3}:
+    PM5K_Skull_On:
+      show_tokens:
+        lights: PM5K_P, PM5K_M, PM5K_Skull
+  PM5K_Targets_done{count==4}:
+    PM5K_5_On:
+      show_tokens:
+        lights: PM5K_P, PM5K_M, PM5K_Skull, PM5K_5
+  PM5K_Targets_done{count==5}:
+    PM5K_K_On:
+      show_tokens:
+        lights: PM5K_P, PM5K_M, PM5K_Skull, PM5K_5, PM5K_K
+
+accruals:
+  lb_ALBUM_award:
     debug: true
-    enable_events: mode_ALBUM_made_started, reset_ALBUM
     events:
       - ALBUM_ready
+      - PM5K_ready
+    events_when_complete: ALBUM_award_ready
+    persist_state: false
+    reset_on_complete: true
+    restart_events: reset_album_award
+
+sequences:
+  lb_Next_Album:
+    enable_events: mode_ALBUM_made_started, reset_ALBUM
+    events:
+      - ALBUM_award_ready
       - balldevice_bd_left_saucer_ball_enter
     events_when_complete: 
       - reset_ALBUM
+      - reset_PM5K
+      - reset_album_award
+

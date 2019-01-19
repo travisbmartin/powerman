@@ -61,11 +61,11 @@ sound_player:
     targets:
       action: play
       loops: 0
-  album_shot_hit:
+  ALBUM_hit:
     targets:
       action: play
       loops: 0
-  PM5K_shot_hit:
+  PM5K_hit:
     targets:
       action: play
       loops: 0
@@ -117,12 +117,10 @@ shots:
     switch: s_eject_chamber
   spider_shot:
     switch: s_center_target
-  album_shot:
-    switch: s_album_target
-  PM5K_shot:
-    switch: s_PM5K_target
   R_Saucer_shot:
     switch: s_right_saucer
+  L_Saucer_shot:
+    switch: s_left_saucer
 #  s_ramp_drop_target:
 #  s_right_slingshot:
 #  s_left_slingshot:
@@ -251,7 +249,7 @@ counters:
     reset_on_complete: true
     disable_on_complete: false
   lb_Album_count:
-    count_events: album_shot_hit
+    count_events: ALBUM_hit
     starting_count: 0
     count_complete_value: 1
     direction: up
@@ -261,7 +259,7 @@ counters:
     reset_on_complete: true
     disable_on_complete: false
   lb_PM5K_count:
-    count_events: PM5K_shot_hit
+    count_events: PM5K_hit
     starting_count: 0
     count_complete_value: 1
     direction: up
@@ -308,7 +306,7 @@ sequences:
   lb_Jukebox_Start:
     events:
       - Jukebox_Go
-      - R_Saucer_shot_hit
+      - balldevice_bd_right_saucer_ball_enter
     events_when_complete: Jukebox_Start
     reset_on_complete: true
     disable_on_complete: false

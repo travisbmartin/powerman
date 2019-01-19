@@ -1,7 +1,7 @@
 #config_version=5
 
 mode:
-  start_events: balldevice_bd_left_saucer_ball_entered{current_player.pf_album==2}  
+  start_events: reset_ALBUM{current_player.pf_album==2}  
   stop_events: ball_ended, mode_Album_Award_03_starting
   priority: 200
 
@@ -25,8 +25,14 @@ variable_player:
   balldevice_bd_left_saucer_ball_entered:
     score: 20000 * current_player.pf_multiplier * current_player.pf_MBall_multiplier
 
-#show_player:
-#  mode_Album_Award_02_started:
-#    Album_Off:
-#      show_tokens:
-#        lights: Album_A_Off, Album_L_Off, Album_B_Off, Album_U_Off, Album_M_Off
+show_player:
+  mode_Album_Award_02_started:
+    Album_Off:
+      show_tokens:
+        lights: l_album_a, l_album_l, l_album_b, l_albumu, l_album_m
+
+sound_player:
+  award_random_album_2:
+    new_album_collected:
+      action: play
+      loops: 0
