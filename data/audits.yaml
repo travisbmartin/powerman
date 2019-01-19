@@ -1,30 +1,30 @@
 events:
   game_ended: 0
-  game_started: 30
+  game_started: 34
 player:
   score:
     average: 0
     top: []
     total: 0
 shots:
-  ALBUM: 164
-  L_Saucer_shot: 60
-  PM5K: 105
-  R_Saucer_shot: 19
-  spider_shot: 11
-  top_lane_C: 10
-  top_lane_L: 10
-  top_lane_R: 10
+  ALBUM: 179
+  L_Saucer_shot: 61
+  PM5K: 120
+  R_Saucer_shot: 36
+  spider_shot: 22
+  top_lane_C: 21
+  top_lane_L: 21
+  top_lane_R: 22
 switches:
-  s_PM5K_target: 105
-  s_album_target: 164
+  s_PM5K_target: 120
+  s_album_target: 179
   s_cabinet_left: 0
   s_cabinet_right: 0
-  s_center_target: 11
+  s_center_target: 22
   s_coins_left: 0
   s_coins_middle: 0
   s_coins_right: 0
-  s_credit: 0
+  s_credit: 1
   s_eject_chamber: 0
   s_left_25K_target: 0
   s_left_bumper: 0
@@ -32,7 +32,7 @@ switches:
   s_left_outlane: 0
   s_left_return_lane: 0
   s_left_rollover: 0
-  s_left_saucer: 64
+  s_left_saucer: 65
   s_left_slingshot: 0
   s_load_chamber: 0
   s_middle_bumper: 0
@@ -44,15 +44,15 @@ switches:
   s_right_outlane: 0
   s_right_return_lane: 0
   s_right_rollover: 0
-  s_right_saucer: 21
+  s_right_saucer: 38
   s_right_slingshot: 0
   s_slam: 0
   s_tilt: 0
   s_top_25K_lane: 0
   s_top_50K_lane: 0
-  s_top_lane_C: 10
-  s_top_lane_L: 10
-  s_top_lane_R: 10
+  s_top_lane_C: 21
+  s_top_lane_L: 21
+  s_top_lane_R: 22
   s_trough_1: 0
   s_trough_2: 0
   s_trough_3: 0

@@ -9,6 +9,9 @@ sound_player:
     Instrumental_track:
       action: play
       loops: -1
+    intro:
+      action: play
+      loops: 0
   R_Pop_hit:
     pop_bumpers:
       action: play
@@ -69,6 +72,15 @@ sound_player:
     targets:
       action: play
       loops: 0
+  Award_EB_01:
+    extra_ball:
+      action: play
+      loops: 0
+  Award_EB_02:
+    extra_ball:
+      action: play
+      loops: 0
+
 
 shots:
   R_Pop:

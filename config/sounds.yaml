@@ -163,20 +163,35 @@ sounds:
     file: super_pops.wav
     priority: 500
     ducking:
-        target: music
-        delay: 0
-        attack: 0.3 sec
-        attenuation: 0.45
-        release_point: 2.0 sec
-        release: 1.0 sec
+      target: music
+      delay: 0
+      attack: 0.3 sec
+      attenuation: 0.45
+      release_point: 2.0 sec
+      release: 1.0 sec
 
   releasing_drones:
     file: releasing_drones.flac
     priority: 1000
+    ducking:
+      target: music
+      delay: 0
+      attack: 0.3 sec
+      attenuation: 0.45
+      release_point: 2.0 sec
+      release: 1.0 sec
 
   new_album_collected:
     file: new_album_collected.flac
     priority: 400
+    ducking:
+      target: music
+      delay: 0
+      attack: 0.3 sec
+      attenuation: 0.45
+      release_point: 2.0 sec
+      release: 1.0 sec
+
 
   target_01:
     file: target_01.wav
@@ -218,3 +233,47 @@ sounds:
     file: target_10.wav
     priority: 200
     volume: 2
+
+  extra_ball:
+    file: extra_ball.wav
+    priority: 800
+    ducking:
+      target: music
+      delay: 0
+      attack: 0.3 sec
+      attenuation: 0.45
+      release_point: 2.0 sec
+      release: 1.0 sec
+
+  intro:
+    file: intro.wav
+    priority: 400
+    ducking:
+      target: music
+      delay: 0
+      attack: 0.3 sec
+      attenuation: 0.45
+      release_point: 2.0 sec
+      release: 1.0 sec
+
+  chant:
+    file: powerman_chant.wav
+    priority: 400
+    ducking:
+      target: music
+      delay: 0
+      attack: 0.3 sec
+      attenuation: 0.45
+      release_point: 2.0 sec
+      release: 1.0 sec
+
+  cheering:
+    file: crowd_cheering.wav
+    priority: 400
+    ducking:
+      target: music
+      delay: 0
+      attack: 0.3 sec
+      attenuation: 0.45
+      release_point: 2.0 sec
+      release: 1.0 sec
