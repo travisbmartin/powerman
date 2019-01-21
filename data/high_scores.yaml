@@ -1,0 +1,29 @@
+loops: []
+score:
+- !!python/tuple
+  - TBM
+  - 96550
+- !!python/tuple
+  - BRI
+  - 90000
+- !!python/tuple
+  - JAN
+  - 80000
+- !!python/tuple
+  - QUI
+  - 70000
+- !!python/tuple
+  - MAR
+  - 60000
+- !!python/tuple
+  - JOH
+  - 50000
+- !!python/tuple
+  - ELI
+  - 40000
+- !!python/tuple
+  - TBM
+  - 33690
+- !!python/tuple
+  - MIK
+  - 30000

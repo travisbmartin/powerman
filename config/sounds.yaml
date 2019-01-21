@@ -67,9 +67,6 @@ sounds:
   Vampire_track:
     file: V Is For Vampire.flac
     priority: 200
-  Sky_track:
-    file: Watch the Sky for Me.flac
-    priority: 200
   Worlds_track:
     file: When Worlds Collide.flac
     priority: 200
@@ -91,7 +88,6 @@ sounds:
   Return_track:
     file: Return To The City Of The Dead.flac
     priority: 200
-  
   City_track:
     file: City Lights.flac
     priority: 200
@@ -101,6 +97,9 @@ sounds:
   Instrumental_track:
     file: Heroes and Villains Instrumental.flac
     priority: 200
+  Watch_track:
+    file: Watch the Sky for Me.wav
+    priority: 300
  
   pop_bumpers_01:
     file: pop_bumpers_01.wav
@@ -192,7 +191,6 @@ sounds:
       release_point: 2.0 sec
       release: 1.0 sec
 
-
   target_01:
     file: target_01.wav
     priority: 200
@@ -253,7 +251,7 @@ sounds:
       delay: 0
       attack: 0.3 sec
       attenuation: 0.45
-      release_point: 2.0 sec
+      release_point: 3.0 sec
       release: 1.0 sec
 
   chant:
@@ -277,3 +275,30 @@ sounds:
       attenuation: 0.45
       release_point: 2.0 sec
       release: 1.0 sec
+
+  match_made:
+    file: match.wav
+    priority: 400
+    ducking:
+      target: music
+      delay: 0
+      attack: 0.3 sec
+      attenuation: 0.45
+      release_point: 2.0 sec
+      release: 1.0 s
+
+  no_match:
+    file: no_match.wav
+    priority: 400
+    ducking:
+      target: music
+      delay: 0
+      attack: 0.3 sec
+      attenuation: 0.45
+      release_point: 2.0 sec
+      release: 1.0 s
+
+  riff_01:
+    file: riff_01.wav
+    priority: 200
+    volume: 2

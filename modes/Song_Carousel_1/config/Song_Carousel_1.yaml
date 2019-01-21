@@ -26,7 +26,9 @@ sound_player:
       action: stop
     Return_track:
       action: stop
-      
+    cheering:
+      action: play
+      loops: 0      
   mode_Song_Carousel_1_ending:
     Voices_track:
       action: stop

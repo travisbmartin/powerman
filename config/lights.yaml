@@ -38,7 +38,7 @@ lights:
     number: 17
     tags: AMP_Bonus_X
 
-  l_collide:
+  l_next_song:
     number: 18
 
   l_power_amp_2_mid:
@@ -150,7 +150,7 @@ lights:
   l_top_lane_50K:
     number: 49
 
-  l_qualify_hold_bonus:
+  l_next_album:
     number: 50
 
   l_top_lane_25K:
@@ -160,14 +160,14 @@ lights:
     number: 52
     tags: Level_5
 
-  l_right_collect_bonus:
+  l_collect_extra_ball:
     number: 53
 
   l_level_4:
     number: 54
     tags: Level_4
 
-  l_left_collect_bonus:
+  l_collect_special:
     number: 55
 
   l_level_3:

@@ -26,6 +26,9 @@ sound_player:
       action: stop
     Human_track:
       action: stop
+    cheering:
+      action: play
+      loops: 0  
   mode_Song_Carousel_7_ending:
     Cult_track:
       action: stop

@@ -2,7 +2,7 @@
 
 mode:
   start_events: start_mode_Song_12
-  stop_events: ball_ended, mode_Song_Carousel_13_starting
+  stop_events: mode_Song_Carousel_13_starting
   priority: 200
 
 sound_player:

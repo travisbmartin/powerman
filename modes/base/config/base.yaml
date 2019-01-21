@@ -5,13 +5,19 @@ mode:
   priority: 100
 
 sound_player:
-  mode_base_started:
+  mode_base_started{ball==1}:
     Instrumental_track:
       action: play
       loops: -1
     intro:
       action: play
       loops: 0
+    Watch_track:
+      action: stop
+  mode_base_started{ball>1}:
+    Instrumental_track:
+      action: play
+      loops: -1
   R_Pop_hit:
     pop_bumpers:
       action: play
@@ -24,6 +30,12 @@ sound_player:
     pop_bumpers:
       action: play
       loops: 0
+  left_slingshot_shot_hit:
+    pop_bumpers:
+      action: play
+  right_slingshot_shot_hit:
+    pop_bumpers:
+      action: play
   right_return_shot_hit:
     targets:
       action: play
@@ -45,6 +57,18 @@ sound_player:
       action: play
       loops: 0
   left_rollover_shot_hit:
+    targets:
+      action: play
+      loops: 0
+  top_lane_R_hit:
+    targets:
+      action: play
+      loops: 0
+  top_lane_C_hit:
+    targets:
+      action: play
+      loops: 0
+  top_lane_L_hit:
     targets:
       action: play
       loops: 0
@@ -80,7 +104,71 @@ sound_player:
     extra_ball:
       action: play
       loops: 0
-
+  ball_will_end:
+    Instrumental_track:
+      action: stop
+    Apathy_track:
+      action: stop
+    Bombshell_track:
+      action: stop
+    Cult_track:
+      action: stop
+    Danger_track:
+      action: stop
+    Destroy_track:
+      action: stop
+    Voices_track:
+      action: stop
+    Free_track:
+      action: stop
+    Heroes_track:
+      action: stop
+    Hey_track:
+      action: stop
+    Human_track:
+      action: stop
+    Invade_track:
+      action: stop
+    Mega_track:
+      action: stop
+    Nobody_track:
+      action: stop
+    Organizized_track:
+      action: stop
+    Riot_track:
+      action: stop
+    Showme_track:
+      action: stop
+    Sid_track:
+      action: stop
+    Supernova_track:
+      action: stop
+    Villain_track:
+      action: stop
+    Everything_track:
+      action: stop
+    Revolution_track:
+      action: stop
+    Vampire_track:
+      action: stop
+    Worlds_track:
+      action: stop
+    Wild_track:
+      action: stop
+    Love_track:
+      action: stop
+    Hostage_track:
+      action: stop
+    Match_track:
+      action: stop
+    Walking_track:
+      action: stop
+    Return_track:
+      action: stop
+    City_track:
+      action: stop
+    Ultra_track:
+      action: stop
 
 shots:
   R_Pop:
@@ -133,16 +221,18 @@ shots:
     switch: s_right_saucer
   L_Saucer_shot:
     switch: s_left_saucer
-#  s_ramp_drop_target:
-#  s_right_slingshot:
-#  s_left_slingshot:
-#  s_top_lane_R:
-#  s_top_lane_C:
-#  s_top_lane_L:
-#  s_left_outlane:
-#  s_right_outlane:
-#  s_top_25K_lane:
-#  s_top_50K_lane:
+  right_slingshot_shot:
+    switch: s_right_slingshot
+  left_slingshot_shot:
+    switch: s_left_slingshot
+  left_outlane_shot:
+    switch: s_left_outlane
+  right_outlane_shot:
+    switch: s_right_outlane
+  top_25K_lane_shot:
+    switch: s_top_25K_lane
+  top_50K_lane_shot:
+    switch: s_top_50K_lane
 
 shot_profiles:
   l_cycle_profile:
@@ -325,14 +415,14 @@ sequences:
   lb_Jukebox_EB_01:
     events:
       - counter_lb_Jukebox_count_hit{count==2}
-      - spider_shot_hit
+      - balldevice_bd_right_saucer_ball_enter
     events_when_complete: Award_EB_01
     reset_on_complete: true
     disable_on_complete: true
   lb_Jukebox_EB_02:
     events:
       - counter_lb_Jukebox_count_hit{count==9}
-      - spider_shot_hit
+      - balldevice_bd_right_saucer_ball_enter
     events_when_complete: Award_EB_02
     reset_on_complete: true
     disable_on_complete: true
@@ -359,6 +449,37 @@ variable_player:
     score: 5000 * current_player.pf_multiplier * current_player.pf_MBall_multiplier
   s_load_chamber:
     score: 100000 * current_player.pf_multiplier * current_player.pf_MBall_multiplier
+  s_left_bumper_active:
+    score: 110 * current_player.pf_multiplier * current_player.pf_MBall_multiplier
+  s_right_bumper_active:
+    score: 110 * current_player.pf_multiplier * current_player.pf_MBall_multiplier
+  s_middle_bumper_active:
+    score: 110 * current_player.pf_multiplier * current_player.pf_MBall_multiplier
+  eject_chamber_shot_hit:
+    score: 10000 * current_player.pf_multiplier * current_player.pf_MBall_multiplier
+  drop_target_shot_hit:
+    score: 5000 * current_player.pf_multiplier * current_player.pf_MBall_multiplier
+  right_slingshot_hit:
+    score: 500 * current_player.pf_multiplier * current_player.pf_MBall_multiplier
+  left_slingshot_hit:
+    score: 500 * current_player.pf_multiplier * current_player.pf_MBall_multiplier
+  top_lane_R_shot_hit:
+    score: 1000 * current_player.pf_multiplier * current_player.pf_MBall_multiplier
+  top_lane_C_shot_hit:
+    score: 1000 * current_player.pf_multiplier * current_player.pf_MBall_multiplier
+  top_lane_L_shot_hit:
+    score: 1000 * current_player.pf_multiplier * current_player.pf_MBall_multiplier
+  left_outlane_shot_hit:
+    score: 500 * current_player.pf_multiplier * current_player.pf_MBall_multiplier
+  right_outlane_shot_hit:
+    score: 500 * current_player.pf_multiplier * current_player.pf_MBall_multiplier
+  top_25K_lane_shot_hit:
+    score: 25000 * current_player.pf_multiplier * current_player.pf_MBall_multiplier
+  top_50K_lane_shot_hit:
+    score: 50000 * current_player.pf_multiplier * current_player.pf_MBall_multiplier
+  center_target_shot_hit:
+    score: 5000 * current_player.pf_multiplier * current_player.pf_MBall_multiplier
+  
   Jukebox_Go:
     pf_Jukebox_Control:
       int: 1
@@ -366,22 +487,6 @@ variable_player:
     pf_Jukebox_Hits: 1
   spider_shot_hit:
     pf_spider_bonus: 1
-
-#  s_eject_chamber:
-#  s_ramp_drop_target:
-#  s_right_slingshot:
-#  s_left_slingshot:
-#  s_top_lane_R:
-#  s_top_lane_C:
-#  s_top_lane_L:
-#  s_left_outlane:
-#  s_right_outlane:
-#  s_top_25K_lane:
-#  s_top_50K_lane:
-#  s_center_target:
-#  s_album_target:
-#  s_PM5K_target:
-
 
 extra_balls:
   Jukebox_01:
@@ -392,6 +497,7 @@ extra_balls:
     award_events: Award_EB_02
 
 show_player:
+
   Award_EB_01:
     Rock_Again_On:
       show_tokens:
@@ -402,7 +508,7 @@ show_player:
       show_tokens:
         lights: Rock_Again
 
-  ball_ended:
+  ball_will_end:
     Rock_Again_Off:
       show_tokens:
         lights: Rock_Again

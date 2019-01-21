@@ -71,3 +71,9 @@ slides:
       text: (score)
       anchor_y: top
       font_size: 15
+
+sound_player:
+  bonus_start:
+    riff_01:
+      action: play
+      loops: 0

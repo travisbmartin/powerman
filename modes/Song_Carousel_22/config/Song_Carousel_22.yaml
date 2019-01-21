@@ -26,7 +26,9 @@ sound_player:
       action: stop
     Walking_track:
       action: stop
-
+    cheering:
+      action: play
+      loops: 0  
   mode_Song_Carousel_22_ending:
     Riot_track:
       action: stop

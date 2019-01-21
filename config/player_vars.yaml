@@ -29,7 +29,7 @@ player_vars:
     value_type: int
     initial_value: 0
 
-  pf_MBall_Multiplier:
+  pf_MBall_multiplier:
     value_type: int
     initial_value: 1
 

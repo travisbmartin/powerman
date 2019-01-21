@@ -93,3 +93,5 @@ modes:
 - clip_32
 - bonus
 - Collide_Multiball
+- match
+- high_score

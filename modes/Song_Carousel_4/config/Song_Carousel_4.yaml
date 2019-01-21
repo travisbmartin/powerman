@@ -26,6 +26,9 @@ sound_player:
       action: stop
     Invade_track:
       action: stop
+    cheering:
+      action: play
+      loops: 0  
   mode_Song_Carousel_4_ending:
     Supernova_track:
       action: stop

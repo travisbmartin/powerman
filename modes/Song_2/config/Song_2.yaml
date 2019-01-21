@@ -2,7 +2,7 @@
 
 mode:
   start_events: start_mode_Song_2
-  stop_events: ball_ended, mode_Song_Carousel_4_starting
+  stop_events: mode_Song_Carousel_4_starting
   priority: 200
 
 sound_player:
@@ -16,6 +16,7 @@ sound_player:
   mode_Song_2_ending:
     Invade_track:
       action: stop
+
 
 show_player:
   mode_Song_2_started: 

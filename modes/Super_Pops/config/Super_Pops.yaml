@@ -13,11 +13,11 @@ sound_player:
 
 variable_player:
   s_left_bumper_active:
-    score: 5000 * current_player.pf_multiplier|block * current_player.pf_MBall_multiplier|block
+    score: 5000 * current_player.pf_multiplier * current_player.pf_MBall_multiplier|block
   s_right_bumper_active:
-    score: 5000 * current_player.pf_multiplier|block * current_player.pf_MBall_multiplier|block
+    score: 5000 * current_player.pf_multiplier * current_player.pf_MBall_multiplier|block
   s_middle_bumper_active:
-    score: 5000 * current_player.pf_multiplier|block * current_player.pf_MBall_multiplier|block
+    score: 5000 * current_player.pf_multiplier * current_player.pf_MBall_multiplier|block
 
 show_player:
   mode_Super_Pops_started: 

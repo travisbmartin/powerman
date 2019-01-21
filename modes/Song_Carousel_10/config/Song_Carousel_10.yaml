@@ -26,6 +26,9 @@ sound_player:
       action: stop
     Organizized_track:
       action: stop
+    cheering:
+      action: play
+      loops: 0  
   mode_Song_Carousel_10_ending:
     Vampire:
       action: stop

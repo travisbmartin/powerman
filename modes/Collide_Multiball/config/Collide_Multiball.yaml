@@ -22,19 +22,19 @@ event_player:
 
 variable_player:
   balls_in_play{balls==2}:
-    pf_MBall_Multiplier: 
+    pf_MBall_multiplier: 
       int: 2
       action: set
   balls_in_play{balls==3}:
-    pf_MBall_Multiplier: 
+    pf_MBall_multiplier: 
       int: 3
       action: set
   balls_in_play{balls==4}:
-    pf_MBall_Multiplier: 
+    pf_MBall_multiplier: 
       int: 4
       action: set
   balls_in_play{balls==5}:
-    pf_Mball_Multiplier: 
+    pf_Mball_multiplier: 
       int: 5
       action: set
 

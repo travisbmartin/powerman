@@ -2,7 +2,7 @@
 
 mode:
   start_events: start_mode_Song_24
-  stop_events: ball_ended, mode_Red_starting
+  stop_events: mode_Red_starting
   priority: 200
 
 sound_player:
