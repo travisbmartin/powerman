@@ -55,8 +55,6 @@ modes:
 - Album_10
 - Album_11
 - Album_12
-- Left_Rollover
-- Right_Rollover
 - drop_target_ramp_entrance
 - Spider
 - clip_01
@@ -95,3 +93,4 @@ modes:
 - Collide_Multiball
 - match
 - high_score
+- rollovers
