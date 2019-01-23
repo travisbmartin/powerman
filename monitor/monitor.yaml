@@ -116,7 +116,7 @@ light:
   l_collide:
     x: 0.6984291335423
     y: 0.4466700050075113
-  l_extra_ball:
+  l_hurry_up:
     x: 0.4815485078633753
     y: 0.5027541311967952
   l_left_25K_target:

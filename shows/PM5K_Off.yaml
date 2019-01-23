@@ -1,0 +1,8 @@
+#show_version=5
+- time: 0
+  lights:
+    l_PM5K_P: 00
+    l_PM5K_M: 00
+    l_PM5K_Skull: 00
+    l_PM5K_5: 00
+    l_PM5K_K: 00

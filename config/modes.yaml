@@ -39,10 +39,6 @@ modes:
 - Song_23
 - Song_24
 - Album_Award_01
-- Album_Award_02
-- Album_Award_03
-- Album_Award_04
-- Album_Award_Jackpot
 - Album_01
 - Album_02
 - Album_03
@@ -94,3 +90,4 @@ modes:
 - match
 - high_score
 - rollovers
+- hurry_up

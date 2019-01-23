@@ -6,7 +6,7 @@ mode:
   priority: 125
 
 counters:
-  lb_ALBUM_complete_count:
+  lb_ALBUM_complete:
     count_events: ALBUM_Targets_complete
     events_when_hit: ALBUM_Targets_done
     count_complete_value: 5
@@ -15,9 +15,9 @@ counters:
     persist_state: false
     reset_on_complete: True
     events_when_complete: ALBUM_ready
-    enable_events: mode_ALBUM_made_started, reset_ALBUM
+    restart_events: reset_ALBUM
 
-  lb_PM5K_complete_count:
+  lb_PM5K_complete:
     count_events: PM5K_Targets_complete
     events_when_hit: PM5K_Targets_done
     count_complete_value: 5
@@ -26,8 +26,7 @@ counters:
     persist_state: false
     reset_on_complete: True
     events_when_complete: PM5K_ready
-    enable_events: mode_ALBUM_made_started, reset_PM5K
-
+    restart_events: reset_PM5K
 
 shots:
   ALBUM:
@@ -47,30 +46,29 @@ shot_groups:
 
 variable_player:
   ALBUM_Targets_done{count==1}:
-    score: 1000 * current_player.pf_multiplier #* current_player.pf_MBall_multiplier|block
+    score: 1000 * current_player.pf_multiplier * current_player.pf_MBall_multiplier|block
   ALBUM_Targets_done{count==2}:
-    score: 2000 * current_player.pf_multiplier #* current_player.pf_MBall_multiplier|block
+    score: 2000 * current_player.pf_multiplier * current_player.pf_MBall_multiplier|block
   ALBUM_Targets_done{count==3}:
-    score: 3000 * current_player.pf_multiplier #* current_player.pf_MBall_multiplier|block
+    score: 3000 * current_player.pf_multiplier * current_player.pf_MBall_multiplier|block
   ALBUM_Targets_done{count==4}:
-    score: 4000 * current_player.pf_multiplier #* current_player.pf_MBall_multiplier|block
+    score: 4000 * current_player.pf_multiplier * current_player.pf_MBall_multiplier|block
   ALBUM_Targets_done{count==5}:
-    score: 10000 * current_player.pf_multiplier #* current_player.pf_MBall_multiplier|block
+    score: 10000 * current_player.pf_multiplier * current_player.pf_MBall_multiplier|block
   ALBUM_ready:
-    pf_album_bonus: 1
+      pf_album_bonus: 1
   PM5K_Targets_done{count==1}:
-    score: 1000 * current_player.pf_multiplier #* current_player.pf_MBall_multiplier|block
+    score: 1000 * current_player.pf_multiplier * current_player.pf_MBall_multiplier|block
   PM5K_Targets_done{count==2}:
-    score: 2000 * current_player.pf_multiplier #* current_player.pf_MBall_multiplier|block
+    score: 2000 * current_player.pf_multiplier * current_player.pf_MBall_multiplier|block
   PM5K_Targets_done{count==3}:
-    score: 3000 * current_player.pf_multiplier #* current_player.pf_MBall_multiplier|block
+    score: 3000 * current_player.pf_multiplier * current_player.pf_MBall_multiplier|block
   PM5K_Targets_done{count==4}:
-    score: 4000 * current_player.pf_multiplier #* current_player.pf_MBall_multiplier|block
+    score: 4000 * current_player.pf_multiplier * current_player.pf_MBall_multiplier|block
   PM5K_Targets_done{count==5}:
-    score: 10000 * current_player.pf_multiplier #* current_player.pf_MBall_multiplier|block
+    score: 10000 * current_player.pf_multiplier * current_player.pf_MBall_multiplier|block
   PM5K_hit:
     pf_PM5K_bonus: 1
-
 
 show_player:
   ALBUM_Targets_done{count==1}:
@@ -94,11 +92,6 @@ show_player:
       show_tokens:
         lights: Album_a, Album_l, Album_b, Album_u, Album_m
 
-  ALBUM_ready:
-    Album_Off:
-      show_tokens:
-        lights: Album_a, Album_l, Album_b, Albumu, Album_m
-
   PM5K_Targets_done{count==1}:
     PM5K_P_On:
       show_tokens:
@@ -120,9 +113,23 @@ show_player:
       show_tokens:
         lights: PM5K_P, PM5K_M, PM5K_Skull, PM5K_5, PM5K_K
 
+
+  ALBUM_award_ready:
+    flash: 
+      loops: -1
+      speed: 10
+      show_tokens:
+        lights: Next_Album
+
+  reset_album_award:
+    flash: 
+      loops: 0
+      speed: 4
+      show_tokens:
+        lights: Next_Album
+
 accruals:
   lb_ALBUM_award:
-    debug: true
     events:
       - ALBUM_ready
       - PM5K_ready
@@ -141,4 +148,3 @@ sequences:
       - reset_ALBUM
       - reset_PM5K
       - reset_album_award
-

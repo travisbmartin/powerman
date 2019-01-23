@@ -40,6 +40,7 @@ lights:
 
   l_next_song:
     number: 18
+    tags: Next_Song
 
   l_power_amp_2_mid:
     number: 19
@@ -144,14 +145,16 @@ lights:
   l_top_box_left:
     number: 47
 
-  l_extra_ball:
+  l_hurry_up:
     number: 48
+    tags: Hurry_Up
 
   l_top_lane_50K:
     number: 49
 
   l_next_album:
     number: 50
+    tags: Next_Album
 
   l_top_lane_25K:
     number: 51

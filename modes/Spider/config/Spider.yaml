@@ -46,5 +46,5 @@ random_event_player:
       - start_mode_clip_32
 
 variable_player:
-  mode_Spider_started:
+  spider_shot_hit:
     score: 5000 * current_player.pf_multiplier * current_player.pf_MBall_multiplier|block

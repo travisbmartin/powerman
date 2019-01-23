@@ -489,3 +489,17 @@ show_player:
     Rock_Again_Off:
       show_tokens:
         lights: Rock_Again
+
+  Jukebox_Go:
+    flash: 
+      loops: -1
+      speed: 10
+      show_tokens:
+        lights: Next_Song
+
+  Jukebox_Start:
+    flash: 
+      loops: 0
+      speed: 4
+      show_tokens:
+        lights: Next_Song
