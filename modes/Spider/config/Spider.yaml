@@ -1,45 +1,12 @@
 #config_version=5
 
 mode:
-  start_events: spider_shot_hit
-  stop_events: 
-    - ball_ended
-    - mode_clip_01_starting
-    - mode_clip_02_starting
-    - mode_clip_03_starting
-    - mode_clip_04_starting
-    - mode_clip_05_starting
-    - mode_clip_06_starting
-    - mode_clip_07_starting
-    - mode_clip_08_starting
-    - mode_clip_09_starting
-    - mode_clip_10_starting
-    - mode_clip_11_starting
-    - mode_clip_12_starting
-    - mode_clip_13_starting
-    - mode_clip_14_starting
-    - mode_clip_15_starting
-    - mode_clip_16_starting
-    - mode_clip_17_starting
-    - mode_clip_18_starting
-    - mode_clip_19_starting
-    - mode_clip_20_starting
-    - mode_clip_21_starting
-    - mode_clip_22_starting
-    - mode_clip_23_starting
-    - mode_clip_24_starting
-    - mode_clip_25_starting
-    - mode_clip_26_starting
-    - mode_clip_27_starting
-    - mode_clip_28_starting
-    - mode_clip_29_starting
-    - mode_clip_30_starting
-    - mode_clip_31_starting
-    - mode_clip_32_starting
+  start_events: ball_starting
+  stop_events: ball_ended
   priority: 300
 
 event_player:
-  mode_Spider_started: award_random_clip
+  spider_shot_hit: award_random_clip
 
 random_event_player:
   award_random_clip:

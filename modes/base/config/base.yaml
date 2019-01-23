@@ -181,17 +181,12 @@ shots:
     switch: s_right_return_lane
     show_tokens:
       light: l_right_return
-    profile: r_cycle_profile
+    profile: l_cycle_profile
   right_25K_shot:
     switch: s_right_25K_target
     show_tokens:
       light: l_right_25K_target
-    profile: r_cycle_profile
-  right_rollover_shot:
-    switch: s_right_rollover
-    show_tokens:
-      light: l_right_rollover
-    profile: r_cycle_profile 
+    profile: l_cycle_profile
   left_return_shot:
     switch: s_left_return_lane
     show_tokens:
@@ -201,11 +196,6 @@ shots:
     switch: s_left_25K_target
     show_tokens:
       light: l_left_25K_target
-    profile: l_cycle_profile
-  left_rollover_shot:
-    switch: s_left_rollover
-    show_tokens:
-      light: l_left_rollover
     profile: l_cycle_profile
   drop_target_shot:
     switch: s_ramp_drop_target
@@ -236,15 +226,6 @@ shots:
 
 shot_profiles:
   l_cycle_profile:
-    states:
-      - name: unlit  # step 1
-        show: off
-      - name: flashing  # step 2
-        show: flash
-      - name: lit  # step 3
-        show: on
-    loop: yes
-  r_cycle_profile:
     states:
       - name: unlit  # step 1
         show: off
@@ -439,14 +420,10 @@ variable_player:
     score: 1000 * current_player.pf_multiplier * current_player.pf_MBall_multiplier
   left_25K_shot_hit:
     score: 25000 * current_player.pf_multiplier * current_player.pf_MBall_multiplier
-  left_rollover_shot_hit:
-    score: 5000 * current_player.pf_multiplier * current_player.pf_MBall_multiplier
   right_return_shot_hit:
     score: 1000 * current_player.pf_multiplier * current_player.pf_MBall_multiplier
   right_25K_target_shot_hit:
     score: 25000 * current_player.pf_multiplier * current_player.pf_MBall_multiplier
-  right_rollover_shot_hit:
-    score: 5000 * current_player.pf_multiplier * current_player.pf_MBall_multiplier
   s_load_chamber:
     score: 100000 * current_player.pf_multiplier * current_player.pf_MBall_multiplier
   s_left_bumper_active:

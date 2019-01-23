@@ -302,3 +302,8 @@ sounds:
     file: riff_01.wav
     priority: 200
     volume: 2
+
+  hurry_up:
+    file: hurry_up.wav
+    priority: 400
+    volume: 3
