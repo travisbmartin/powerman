@@ -23,7 +23,6 @@ timers:
         action: reset
 
 variable_player:
-
   timer_lb_spider_hurry_up_started:
     temp_hurryup_value:
       action: set

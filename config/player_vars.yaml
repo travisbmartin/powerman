@@ -12,10 +12,6 @@ player_vars:
   pf_setlist:
     value_type: int
     initial_value: 1
-
-  pf_album:
-    value_type: int
-    initial_value: 1
     
   pf_Jukebox_Control:
     value_type: int

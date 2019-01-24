@@ -1,6 +1,11 @@
 Things to impliment:
 
-Hold Bonus
-
-Improve sounds
-Improve lightshows
+Fix Album and PM5K light cycling
+Power lights on drop target hit
+light all score targets (25K, 100K, etc.)
+add flash to rollover shots
+tie song carousel to guitar lights
+make a mode where all the score targets are hit to reset them?
+find a use for second light by spider target
+add description of rules to attract mode
+add video to multiballs

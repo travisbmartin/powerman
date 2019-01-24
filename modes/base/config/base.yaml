@@ -474,6 +474,40 @@ extra_balls:
     award_events: Award_EB_02
 
 show_player:
+  counter_lb_Jukebox_count_hit{count==2}:
+    flash: 
+      loops: -1
+      speed: 10
+      show_tokens:
+        lights: Extra_Ball
+
+  counter_lb_Jukebox_count_hit{count==9}:
+    flash: 
+      loops: -1
+      speed: 10
+      show_tokens:
+        lights: Extra_Ball
+
+  balldevice_bd_right_saucer_ball_enter:
+    flash: 
+      loops: 0
+      speed: 4
+      show_tokens:
+        lights: Extra_Ball
+
+  counter_lb_Jukebox_count_hit{count==16}:
+    flash: 
+      loops: -1
+      speed: 10
+      show_tokens:
+        lights: Special
+
+  balldevice_bd_left_saucer_ball_enter:
+    flash: 
+      loops: 0
+      speed: 4
+      show_tokens:
+        lights: Special
 
   Award_EB_01:
     Rock_Again_On:
@@ -503,3 +537,9 @@ show_player:
       speed: 4
       show_tokens:
         lights: Next_Song
+
+  s_eject_chamber_active:
+    AMP_lights:
+      show_tokens:
+        lights: AMP_Bonus_X
+      loops: 0

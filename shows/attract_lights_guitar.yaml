@@ -19,6 +19,9 @@
     l_bonus_32K: ff
 - time: '+1'
   lights:
+    l_bonus_64K: ff
+- time: '+1'
+  lights:
     l_bonus_128K: ff
 - time: '+1'
   lights:
@@ -28,6 +31,7 @@
     l_bonus_8K: 0
     l_bonus_16K: 0
     l_bonus_32K: 0
+    l_bonus_64K: 0
     l_bonus_128K: 0
 - time: '+1'
   lights:
@@ -37,6 +41,7 @@
     l_bonus_8K: ff
     l_bonus_16K: ff
     l_bonus_32K: ff
+    l_bonus_64K: ff
     l_bonus_128K: ff
 - time: '+1'
   lights:
@@ -46,6 +51,7 @@
     l_bonus_8K: 0
     l_bonus_16K: 0
     l_bonus_32K: 0
+    l_bonus_64K: 0
     l_bonus_128K: 0
 - time: '+1'
   lights:
@@ -55,6 +61,7 @@
     l_bonus_8K: ff
     l_bonus_16K: ff
     l_bonus_32K: ff
+    l_bonus_64K: ff
     l_bonus_128K: ff
 - time: '+1'
   lights:
@@ -64,5 +71,6 @@
     l_bonus_8K: 0
     l_bonus_16K: 0
     l_bonus_32K: 0
+    l_bonus_64K: 0
     l_bonus_128K: 0
 - time: '+1'

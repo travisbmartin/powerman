@@ -39,11 +39,6 @@ random_event_player:
       - start_mode_Album_12
 
 variable_player:
-  mode_Album_Award_01_started:
-    pf_album:
-      int: 2
-      action: set
-
   balldevice_bd_left_saucer_ball_entered:
     score: 20000 * current_player.pf_multiplier * current_player.pf_MBall_multiplier|block
 
@@ -57,7 +52,7 @@ show_player:
         lights: Album_a, Album_l, Album_b, Album_u, Album_m
 
 sound_player:
-  award_random_album_1:
+  award_random_album:
     new_album_collected:
       action: play
       loops: 0

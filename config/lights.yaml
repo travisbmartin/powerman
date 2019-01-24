@@ -165,6 +165,7 @@ lights:
 
   l_collect_extra_ball:
     number: 53
+    tags: Extra_Ball
 
   l_level_4:
     number: 54
@@ -172,6 +173,7 @@ lights:
 
   l_collect_special:
     number: 55
+    tags: Special
 
   l_level_3:
     number: 56
