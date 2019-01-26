@@ -69,7 +69,8 @@ variable_player:
     score: 10000 * current_player.pf_multiplier * current_player.pf_MBall_multiplier|block
   PM5K_hit:
     pf_PM5K_bonus: 1
-
+  balldevice_bd_left_saucer_ball_entered:
+    score: 20000 * current_player.pf_multiplier * current_player.pf_MBall_multiplier|block
 show_player:
   ALBUM_Targets_done{count==1}:
     Album_A_On:
@@ -113,6 +114,54 @@ show_player:
       show_tokens:
         lights: PM5K_P, PM5K_M, PM5K_Skull, PM5K_5, PM5K_K
 
+  Album_01: 
+    True_Force_Album:
+      loops: 0
+      speed: 1
+  Album_02: 
+    BSRS_Album:
+      loops: 0
+      speed: 1
+  Album_03: 
+    MKFR_Album:
+      loops: 0
+      speed: 1
+  Album_04: 
+    TTSR_Album:
+      loops: 0
+      speed: 1
+  Album_05: 
+    AFD_Album:
+      loops: 0
+      speed: 1
+  Album_06: 
+    Transform_Album:
+      loops: 0
+      speed: 1
+  Album_07: 
+    DWYE_Album:
+      loops: 0
+      speed: 1
+  Album_08: 
+    TGTBTUV1_Album:
+      loops: 0
+      speed: 1
+  Album_09: 
+    SOTOSON_Album:
+      loops: 0
+      speed: 1
+  Album_10: 
+    CCR_Album:
+      loops: 0
+      speed: 1
+  Album_11: 
+    BOTF_Album:
+      loops: 0
+      speed: 1
+  Album_12: 
+    NW_Album:
+      loops: 0
+      speed: 1
 
   ALBUM_award_ready:
     flash: 
@@ -148,3 +197,26 @@ sequences:
       - reset_ALBUM
       - reset_PM5K
       - reset_album_award
+
+random_event_player:
+  reset_album_award:
+    force_different: true
+    events:
+      - Album_01
+      - Album_02
+      - Album_03
+      - Album_04
+      - Album_05
+      - Album_06
+      - Album_07
+      - Album_08
+      - Album_09
+      - Album_10
+      - Album_11
+      - Album_12
+
+sound_player:
+  award_random_album:
+    new_album_collected:
+      action: play
+      loops: 0
