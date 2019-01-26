@@ -1,13 +1,18 @@
 #config_version=5
 
 mode:
-  start_events: ball_starting
+  start_events: drop_target_shot_hit
+  stop_events: multiball_collide_mb_ended
   priority: 500
 
 multiball_locks:
   collide_lock:
+    debug: true
     balls_to_lock: 5
     lock_devices: bd_ramp_load
+    reset_all_counts_events:  multiball_collide_mb_ended
+    #enable_events: ball_starting, multiball_collide_mb_ended
+    #locked_ball_counting_strategy: physical_only
 
 multiballs:
   collide_mb:
@@ -17,7 +22,7 @@ multiballs:
     start_events: multiball_lock_collide_lock_full, ev_start_multiball
 
 event_player:
-  s_eject_chamber_hit:
+  eject_chamber_shot_hit:
     - ev_start_multiball
 
 variable_player:
@@ -37,19 +42,10 @@ variable_player:
     pf_Mball_multiplier: 
       int: 5
       action: set
-
-slide_player:
-  multiball_collide_mb_started:
-    multiball_slide:
-      priority: 500
-
-slides:
-  multiball_slide:
-    expire: 3s
-    widgets:
-      - type: text
-        text: MULTIBALL
-        font_size: 20
+  multiball_collide_mb_ended:
+    pf_Mball_multiplier:
+      int: 1
+      action: set
 
 timers:
     mb_shoot_again_timer:
@@ -87,28 +83,28 @@ sequences:
       - Level_5_Flash
   lb_Level_2_song:
     events:
-      - multiball_lock_collide_lock_locked_ball{total_balls_locked==1}
+      - balls_in_play{balls==2}
       - multiball_collide_mb_started
     disable_events: multiball_lock_collide_lock_locked_ball{total_balls_locked>2}
     events_when_complete: 
       - Level_2_Play
   lb_Level_3_song:
     events:
-      - multiball_lock_collide_lock_locked_ball{total_balls_locked==2}
+      - balls_in_play{balls==3}
       - multiball_collide_mb_started
     disable_events: multiball_lock_collide_lock_locked_ball{total_balls_locked>3}
     events_when_complete: 
       - Level_3_Play
   lb_Level_4_song:
     events:
-      - multiball_lock_collide_lock_locked_ball{total_balls_locked==3}
+      - balls_in_play{balls==4}
       - multiball_collide_mb_started
     disable_events: multiball_lock_collide_lock_locked_ball{total_balls_locked>4}
     events_when_complete: 
       - Level_4_Play
   lb_Level_5_song:
     events:
-      - multiball_lock_collide_lock_locked_ball{total_balls_locked==4}
+      - balls_in_play{balls==5}
       - multiball_collide_mb_started
     disable_events: multiball_lock_collide_lock_locked_ball{total_balls_locked>5}
     events_when_complete: 
@@ -190,45 +186,45 @@ show_player:
       show_tokens:
         lights: Level_5
 
+  Level_2_Play:
+    play_Tokyo:
+      loops: 0
+      speed: 1
+  Level_3_Play:
+    play_Bombshell:
+      loops: 0
+      speed: 1
+  Level_4_Play:
+    play_Hostage:
+      loops: 0
+      speed: 1
+  Level_5_Play:
+    play_Collide:
+      loops: 0
+      speed: 1
 
 sound_player:
   Level_2_Play:
     Instrumental_track:
       action: stop
-    Mega_track:
+    Tokyo_track:
       action: play
       loops: -1
-
   Level_3_Play:
     Instrumental_track:
       action: stop
     Bombshell_track:
       action: play
       loops: -1
-
   Level_4_Play:
     Instrumental_track:
       action: stop
     Hostage_track:
       action: play
       loops: -1
-
   Level_5_Play:
     Instrumental_track:
       action: stop
     Worlds_track:
-      action: play
-      loops: -1
-
-  multiball_collide_mb_ended:
-    Mega_track:
-      action: stop
-    Bombshell_track:
-      action: stop
-    Hostage_track:
-      action: stop
-    Worlds_track:
-      action: stop
-    Instrumental_track:
       action: play
       loops: -1

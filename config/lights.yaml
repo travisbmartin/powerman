@@ -85,6 +85,7 @@ lights:
 
   l_booster_3_top:
     number: 30
+    tags: Power
 
   l_Skull_L:
     number: 31
@@ -92,6 +93,7 @@ lights:
 
   l_booster_2_mid:
     number: 32
+    tags: Power
 
   l_Skull_C:
     number: 33
@@ -99,7 +101,8 @@ lights:
 
   l_booster_1_bottom:
     number: 34
-
+    tags: Power
+    
   l_Skull_R:
     number: 35
     tags: Skull_lanes

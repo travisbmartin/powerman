@@ -1,8 +1,8 @@
 #config_version=5
 
 mode:
-  start_events: ball_started
-  stop_events: ball_ending
+  start_events: drop_target_shot_hit
+  stop_events: ball_ending, drop_target_bank_ramp_drop_target_up
   priority: 200
 
 timers:
@@ -13,5 +13,7 @@ timers:
     direction: down
     tick_interval: 1s
     control_events:
-      - event: drop_target_shot_hit
+      - event: mode_drop_target_ramp_entrance_started
         action: start
+      - event: load_chamber_shot_hit
+        action: stop

@@ -34,8 +34,8 @@ sounds:
   Invade_track:
     file: Invade, Destroy, Repeat.flac
     priority: 100
-  Mega_track:
-    file: Mega Kung Fu Radio.flac
+  Tokyo_track:
+    file: Tokyo Vigilante.wav
     priority: 200
   Nobody_track:
     file: Nobodys Real.flac

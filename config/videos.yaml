@@ -321,3 +321,23 @@ videos:
     width: 150
     height: 105
     file: clip_28a.mp4
+
+  Bombshell:
+    width: 150
+    height: 105
+    file: bombshell.mp4
+
+  Tokyo:
+    width: 150
+    height: 105
+    file: Tokyo.mp4
+
+  Hostage:
+    width: 150
+    height: 105
+    file: hostage.mp4
+
+  Collide:
+    width: 150
+    height: 105
+    file: collide.mp4

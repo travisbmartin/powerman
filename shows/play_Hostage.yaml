@@ -2,11 +2,11 @@
 
 - time: 0
   slides:
-    clip_01:
+    Hostage:
     - type: video
-      video: clip_01
+      video: Hostage
       volume: 0
       auto_play: True
       end_behavior: stop
 
-- time: +4
+- time: +2

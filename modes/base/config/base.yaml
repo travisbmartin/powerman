@@ -81,7 +81,7 @@ sound_player:
       action: play
       loops: 0
   eject_chamber_shot_hit:
-    targets:
+    cheering:
       action: play
       loops: 0
   spider_shot_hit:
@@ -129,7 +129,7 @@ sound_player:
       action: stop
     Invade_track:
       action: stop
-    Mega_track:
+    Tokyo_track:
       action: stop
     Nobody_track:
       action: stop
@@ -169,6 +169,20 @@ sound_player:
       action: stop
     Ultra_track:
       action: stop
+
+  mode_Collide_Multiball_stopped:
+    Tokyo_track:
+      action: stop
+    Bombshell_track:
+      action: stop
+    Hostage_track:
+      action: stop
+    Worlds_track:
+      action: stop
+    Instrumental_track:
+      action: play
+      loops: -1
+
 
 shots:
   R_Pop:
@@ -543,3 +557,11 @@ show_player:
       show_tokens:
         lights: AMP_Bonus_X
       loops: 0
+      speed: 5
+
+  drop_target_shot_hit:
+    Power_lights:
+      show_tokens:
+        lights: Power
+      loops: 0
+      speed: 5

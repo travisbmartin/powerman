@@ -41,6 +41,6 @@ drop_target_banks:
     reset_events:
       - ball_searching
       - ball_ending
-      - ball_device_bd_ramp_load_ball_entered
+      - load_chamber_shot_hit
     reset_on_complete: 10s
 

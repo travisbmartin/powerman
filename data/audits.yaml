@@ -1,6 +1,6 @@
 events:
   game_ended: 3
-  game_started: 91
+  game_started: 140
 player:
   score:
     average: 51786.666666666664
@@ -10,70 +10,70 @@ player:
     - 25120
     total: 3
 shots:
-  ALBUM: 111
-  L_Pop: 47
-  L_Saucer_shot: 27
-  M_Pop: 60
-  PM5K: 127
-  R_Pop: 47
-  R_Saucer_shot: 12
-  drop_target_shot: 9
+  ALBUM: 117
+  L_Pop: 69
+  L_Saucer_shot: 30
+  M_Pop: 83
+  PM5K: 148
+  R_Pop: 61
+  R_Saucer_shot: 14
+  drop_target_shot: 117
   eject_chamber: 2
-  eject_chamber_shot: 8
+  eject_chamber_shot: 83
   left_25K_shot: 3
   left_outlane_shot: 2
   left_return_shot: 3
-  left_rollover_shot: 195
-  left_slingshot_shot: 6
-  load_chamber_shot: 3
+  left_rollover_shot: 202
+  left_slingshot_shot: 8
+  load_chamber_shot: 124
   right_25K_shot: 4
   right_outlane_shot: 1
-  right_rollover_shot: 190
-  right_slingshot_shot: 2
-  spider_shot: 102
-  top_lane_C: 6
-  top_lane_L: 7
-  top_lane_R: 6
+  right_rollover_shot: 191
+  right_slingshot_shot: 3
+  spider_shot: 143
+  top_lane_C: 8
+  top_lane_L: 11
+  top_lane_R: 8
 switches:
-  s_PM5K_target: 127
-  s_album_target: 111
+  s_PM5K_target: 148
+  s_album_target: 117
   s_cabinet_left: 0
-  s_cabinet_right: 0
-  s_center_target: 102
+  s_cabinet_right: 2
+  s_center_target: 143
   s_coins_left: 0
   s_coins_middle: 0
   s_coins_right: 0
   s_credit: 12
-  s_eject_chamber: 8
+  s_eject_chamber: 85
   s_left_25K_target: 3
-  s_left_bumper: 47
+  s_left_bumper: 69
   s_left_flipper: 8
   s_left_outlane: 2
   s_left_return_lane: 3
-  s_left_rollover: 195
-  s_left_saucer: 28
-  s_left_slingshot: 6
-  s_load_chamber: 3
-  s_middle_bumper: 60
-  s_outhole: 0
-  s_ramp_drop_target: 9
+  s_left_rollover: 202
+  s_left_saucer: 31
+  s_left_slingshot: 8
+  s_load_chamber: 124
+  s_middle_bumper: 83
+  s_outhole: 58
+  s_ramp_drop_target: 117
   s_right_25K_target: 4
-  s_right_bumper: 47
+  s_right_bumper: 61
   s_right_flipper: 114
   s_right_outlane: 1
   s_right_return_lane: 0
-  s_right_rollover: 191
-  s_right_saucer: 12
-  s_right_slingshot: 2
+  s_right_rollover: 192
+  s_right_saucer: 14
+  s_right_slingshot: 3
   s_slam: 0
   s_tilt: 0
   s_top_25K_lane: 0
   s_top_50K_lane: 0
-  s_top_lane_C: 6
-  s_top_lane_L: 7
-  s_top_lane_R: 6
-  s_trough_1: 10
-  s_trough_2: 1
-  s_trough_3: 0
-  s_trough_4: 0
+  s_top_lane_C: 8
+  s_top_lane_L: 11
+  s_top_lane_R: 8
+  s_trough_1: 43
+  s_trough_2: 23
+  s_trough_3: 15
+  s_trough_4: 3
   s_trough_5: 0
