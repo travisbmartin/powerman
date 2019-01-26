@@ -1,6 +1,6 @@
 events:
   game_ended: 3
-  game_started: 140
+  game_started: 141
 player:
   score:
     average: 51786.666666666664
@@ -14,9 +14,9 @@ shots:
   L_Pop: 69
   L_Saucer_shot: 30
   M_Pop: 83
-  PM5K: 148
+  PM5K: 150
   R_Pop: 61
-  R_Saucer_shot: 14
+  R_Saucer_shot: 15
   drop_target_shot: 117
   eject_chamber: 2
   eject_chamber_shot: 83
@@ -30,16 +30,16 @@ shots:
   right_outlane_shot: 1
   right_rollover_shot: 191
   right_slingshot_shot: 3
-  spider_shot: 143
+  spider_shot: 150
   top_lane_C: 8
   top_lane_L: 11
   top_lane_R: 8
 switches:
-  s_PM5K_target: 148
+  s_PM5K_target: 150
   s_album_target: 117
   s_cabinet_left: 0
   s_cabinet_right: 2
-  s_center_target: 143
+  s_center_target: 150
   s_coins_left: 0
   s_coins_middle: 0
   s_coins_right: 0
@@ -63,7 +63,7 @@ switches:
   s_right_outlane: 1
   s_right_return_lane: 0
   s_right_rollover: 192
-  s_right_saucer: 14
+  s_right_saucer: 15
   s_right_slingshot: 3
   s_slam: 0
   s_tilt: 0
