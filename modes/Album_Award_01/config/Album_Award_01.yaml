@@ -2,20 +2,8 @@
 
 mode:
   start_events: reset_ALBUM 
-  stop_events: 
-    - ball_ended
-    - start_mode_Album_01
-    - start_mode_Album_02
-    - start_mode_Album_03
-    - start_mode_Album_04
-    - start_mode_Album_05
-    - start_mode_Album_06
-    - start_mode_Album_07
-    - start_mode_Album_08
-    - start_mode_Album_09
-    - start_mode_Album_10
-    - start_mode_Album_11
-    - start_mode_Album_12
+  stop_events: balldevice_bd_left_saucer_ball_eject_success
+
   priority: 300
 
 event_player:
@@ -25,18 +13,18 @@ random_event_player:
   award_random_album:
     force_different: true
     events:
-      - start_mode_Album_01
-      - start_mode_Album_02
-      - start_mode_Album_03
-      - start_mode_Album_04
-      - start_mode_Album_05
-      - start_mode_Album_06
-      - start_mode_Album_07
-      - start_mode_Album_08
-      - start_mode_Album_09
-      - start_mode_Album_10
-      - start_mode_Album_11
-      - start_mode_Album_12
+      - Album_01
+      - Album_02
+      - Album_03
+      - Album_04
+      - Album_05
+      - Album_06
+      - Album_07
+      - Album_08
+      - Album_09
+      - Album_10
+      - Album_11
+      - Album_12
 
 variable_player:
   balldevice_bd_left_saucer_ball_entered:
@@ -50,6 +38,55 @@ show_player:
     Album_Off:
       show_tokens:
         lights: Album_a, Album_l, Album_b, Album_u, Album_m
+
+  Album_01: 
+    True_Force_Album:
+      loops: 0
+      speed: 1
+  Album_02: 
+    BSRS_Album:
+      loops: 0
+      speed: 1
+  Album_03: 
+    MKFR_Album:
+      loops: 0
+      speed: 1
+  Album_04: 
+    TTSR_Album:
+      loops: 0
+      speed: 1
+  Album_05: 
+    AFD_Album:
+      loops: 0
+      speed: 1
+  Album_06: 
+    Transform_Album:
+      loops: 0
+      speed: 1
+  Album_07: 
+    DWYE_Album:
+      loops: 0
+      speed: 1
+  Album_08: 
+    TGTBTUV1_Album:
+      loops: 0
+      speed: 1
+  Album_09: 
+    SOTOSON_Album:
+      loops: 0
+      speed: 1
+  Album_10: 
+    CCR_Album:
+      loops: 0
+      speed: 1
+  Album_11: 
+    BOTF_Album:
+      loops: 0
+      speed: 1
+  Album_12: 
+    NW_Album:
+      loops: 0
+      speed: 1
 
 sound_player:
   award_random_album:
