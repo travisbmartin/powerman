@@ -12,9 +12,9 @@ random_event_player:
   play_random_song_3:
     force_different: true
     events:
-      - start_mode_Song_7
-      - start_mode_Song_8
-      - start_mode_Song_9
+      - Song_7
+      - Song_8
+      - Song_9
 
 sound_player:
   mode_Song_Carousel_7_starting:
@@ -29,6 +29,7 @@ sound_player:
     cheering:
       action: play
       loops: 0  
+
   mode_Song_Carousel_7_ending:
     Cult_track:
       action: stop
@@ -36,6 +37,21 @@ sound_player:
       action: stop
     Organizized_track:
       action: stop
+
+  Song_7:
+    Wild_track:
+      action: play
+      loops: -1
+
+  Song_8:
+    Cult_track:
+      action: play
+      loops: -1
+
+  Song_9:
+    Organizized_track:
+      action: play
+      loops: -1
 
 variable_player:
   mode_Song_Carousel_7_started:
@@ -45,3 +61,20 @@ variable_player:
     pf_Album_3_Ready:
       int: 0
       action: set
+
+show_player:
+
+  Song_7: 
+    wild_track:
+      loops: 0
+      speed: 1
+
+  Song_8: 
+    cult_track:
+      loops: 0
+      speed: 1
+
+   Song_9: 
+    organizized_track:
+      loops: 0
+      speed: 1

@@ -12,9 +12,9 @@ random_event_player:
   play_random_song_4:
     force_different: true
     events:
-      - start_mode_Song_10
-      - start_mode_Song_11
-      - start_mode_Song_12
+      - Song_10
+      - Song_11
+      - Song_12
 
 sound_player:
   mode_Song_Carousel_10_starting:
@@ -29,6 +29,7 @@ sound_player:
     cheering:
       action: play
       loops: 0  
+
   mode_Song_Carousel_10_ending:
     Vampire:
       action: stop
@@ -36,6 +37,21 @@ sound_player:
       action: stop
     Danger_track:
       action: stop
+
+  Song_10:
+    Vampire_track:
+      action: play
+      loops: -1
+
+  Song_11:
+    Destroy_track:
+      action: play
+      loops: -1
+
+  Song_12:
+    Danger_track:
+      action: play
+      loops: -1
 
 variable_player:
   mode_Song_Carousel_10_started:
@@ -45,3 +61,20 @@ variable_player:
     pf_Album_4_Ready:
       int: 0
       action: set
+
+
+show_player:
+  Song_10: 
+    vampire_track:
+      loops: 0
+      speed: 1
+
+  Song_11: 
+    destroy_track:
+      loops: 0
+      speed: 1
+
+  Song_12: 
+    danger_track:
+      loops: 0
+      speed: 1

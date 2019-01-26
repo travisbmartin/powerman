@@ -12,9 +12,9 @@ random_event_player:
   play_random_song_2:
     force_different: true
     events:
-      - start_mode_Song_4
-      - start_mode_Song_5
-      - start_mode_Song_6
+      - Song_4
+      - Song_5
+      - Song_6
 
 sound_player:
   mode_Song_Carousel_4_starting:
@@ -29,6 +29,7 @@ sound_player:
     cheering:
       action: play
       loops: 0  
+
   mode_Song_Carousel_4_ending:
     Supernova_track:
       action: stop
@@ -37,6 +38,21 @@ sound_player:
     Human_track:
       action: stop
 
+  Song_4:
+    Human_track:
+      action: play
+      loops: -1
+
+  Song_5:
+    Supernova_track:
+      action: play
+      loops: -1
+
+  Song_6:
+    Free_track:
+      action: play
+      loops: -1
+
 variable_player:
   mode_Song_Carousel_4_started:
     pf_setlist:
@@ -44,4 +60,20 @@ variable_player:
       action: set
     pf_Album_2_Ready:
       int: 0
-      action: set
+      action: 
+
+show_player:
+  Song_4: 
+    human_track:
+      loops: 0
+      speed: 1
+
+  Song_5: 
+    supernova_track:
+      loops: 0
+      speed: 1
+
+  Song_6: 
+    free_track:
+      loops: 0
+      speed: 1

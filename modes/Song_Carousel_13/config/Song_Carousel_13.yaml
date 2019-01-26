@@ -12,9 +12,9 @@ random_event_player:
   play_random_song_5:
     force_different: true
     events:
-      - start_mode_Song_13
-      - start_mode_Song_14
-      - start_mode_Song_15
+      - Song_13
+      - Song_14
+      - Song_15
 
 sound_player:
   mode_Song_Carousel_13_starting:
@@ -26,6 +26,7 @@ sound_player:
       action: stop
     Danger_track:
       action: stop
+ 
   mode_Song_Carousel_13_ending:
     Hey_track:
       action: stop
@@ -34,6 +35,21 @@ sound_player:
     Sid_track:
       action: stop
 
+  Song_13:
+    Hey_track:
+      action: play
+      loops: -1
+
+  Song_14:
+    Villain_track:
+      action: play
+      loops: -1
+
+  Song_15:
+    Sid_track:
+      action: play
+      loops: -1
+
 variable_player:
   mode_Song_Carousel_13_started:
     pf_setlist:
@@ -41,4 +57,20 @@ variable_player:
       action: set
     pf_Album_5_Ready:
       int: 0
-      action: set
+      action: 
+
+show_player:
+  Song_13: 
+    hey_track:
+      loops: 0
+      speed: 1
+
+  Song_14: 
+    villain_track:
+      loops: 0
+      speed: 1
+
+  Song_15: 
+    sid_track:
+      loops: 0
+      speed: 1

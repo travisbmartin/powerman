@@ -12,9 +12,9 @@ random_event_player:
   play_random_song_8:
     force_different: true
     events:
-      - start_mode_Song_22
-      - start_mode_Song_23
-      - start_mode_Song_24
+      - Song_22
+      - Song_23
+      - Song_24
 
 sound_player:
   mode_Song_Carousel_22_starting:
@@ -37,6 +37,21 @@ sound_player:
     Return_track:
       action: stop
 
+  Song_22:
+    Riot_track:
+      action: play
+      loops: -1
+
+  Song_23:
+    Apathy_track:
+      action: play
+      loops: -1
+
+  Song_24_:
+    Return_track:
+      action: play
+      loops: -1
+
 variable_player:
   mode_Song_Carousel_22_started:
     pf_setlist:
@@ -45,3 +60,19 @@ variable_player:
     pf_Album_8_Ready:
       int: 0
       action: set
+
+show_player:
+  Song_22: 
+    riot_track:
+      loops: 0
+      speed: 1
+
+  Song_23: 
+    apathy_track:
+      loops: 0
+      speed: 1
+
+  Song_24: 
+    return_track:
+      loops: 0
+      speed: 1

@@ -12,9 +12,9 @@ random_event_player:
   play_random_song_7:
     force_different: true
     events:
-      - start_mode_Song_19
-      - start_mode_Song_20
-      - start_mode_Song_21
+      - Song_19
+      - Song_20
+      - Song_21
 
 sound_player:
   mode_Song_Carousel_19_starting:
@@ -37,6 +37,21 @@ sound_player:
     Walking_track:
       action: stop
 
+  Song_19:
+    Love_track:
+      action: play
+      loops: -1
+
+  Song_20:
+    Nobody_track:
+      action: play
+      loops: -1
+
+  Song_21:
+    Walking_track:
+      action: play
+      loops: -1
+
 variable_player:
   mode_Song_Carousel_19_started:
     pf_setlist:
@@ -45,3 +60,20 @@ variable_player:
     pf_Album_7_Ready:
       int: 0
       action: set
+
+show_player:
+
+  Song_19: 
+    love_track:
+      loops: 0
+      speed: 1
+
+  Song_20: 
+    nobodys_track:
+      loops: 0
+      speed: 1
+
+  Song_21: 
+    walking_track:
+      loops: 0
+      speed: 1

@@ -12,9 +12,9 @@ random_event_player:
   play_random_song_1:
     force_different: true
     events:
-      - start_mode_Song_1
-      - start_mode_Song_2
-      - start_mode_Song_3
+      - Song_1
+      - Song_2
+      - Song_3
 
 sound_player:
   mode_Song_Carousel_1_starting:
@@ -29,6 +29,7 @@ sound_player:
     cheering:
       action: play
       loops: 0      
+
   mode_Song_Carousel_1_ending:
     Voices_track:
       action: stop
@@ -37,8 +38,39 @@ sound_player:
     Invade_track:
       action: stop
 
+  Song_1:
+    Voices_track:
+      action: play
+      loops: -1
+
+  Song_2:
+    Invade_track:
+      action: play
+      loops: -1
+
+  Song_3:
+    Showme_track:
+      action: play
+      loops: -1
+
 variable_player:
   mode_Song_Carousel_1_started:
     pf_setlist:
       int: 2
       action: set
+
+show_player:
+  Song_1: 
+    footsteps_track:
+      loops: 0
+      speed: 1
+
+  Song_2: 
+    invade_track:
+      loops: 0
+      speed: 1
+
+  Song_3: 
+    showme_track:
+      loops: 0
+      speed: 1

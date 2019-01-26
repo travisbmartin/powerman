@@ -12,9 +12,9 @@ random_event_player:
   play_random_song_6:
     force_different: true
     events:
-      - start_mode_Song_16
-      - start_mode_Song_17
-      - start_mode_Song_18
+      - Song_16
+      - Song_17
+      - Song_18
 
 sound_player:
   mode_Song_Carousel_16_starting:
@@ -37,6 +37,21 @@ sound_player:
     Revolution_track:
       action: stop
 
+  Song_16:
+    Everything_track:
+      action: play
+      loops: -1
+
+  Song_17:
+    Ultra_track:
+      action: play
+      loops: -1
+
+  Song_18:
+    Revolution_track:
+      action: play
+      loops: -1
+
 variable_player:
   mode_Song_Carousel_16_started:
     pf_setlist:
@@ -45,3 +60,20 @@ variable_player:
     pf_Album_6_Ready:
       int: 0
       action: set
+
+
+show_player:
+  Song_16: 
+    everything_track:
+      loops: 0
+      speed: 1
+
+  Song_17: 
+    ultra_track:
+      loops: 0
+      speed: 1
+
+  Song_18: 
+    revolution_track:
+      loops: 0
+      speed: 1
