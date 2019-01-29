@@ -74,3 +74,8 @@ show_player:
     showme_track:
       loops: 0
       speed: 1
+
+  mode_Song_Carousel_1_started:
+    Guitar_1K_On:
+      show_tokens:
+        lights: Guitar_1X

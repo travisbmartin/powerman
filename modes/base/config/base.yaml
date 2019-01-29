@@ -416,14 +416,14 @@ sequences:
     disable_on_complete: true
   lb_Jukebox_EB_02:
     events:
-      - counter_lb_Jukebox_count_hit{count==9}
+      - counter_lb_Jukebox_count_hit{count==4}
       - balldevice_bd_right_saucer_ball_enter
     events_when_complete: Award_EB_02
     reset_on_complete: true
     disable_on_complete: true
   lb_Jukebox_Special_01:
     events:
-      - counter_lb_Jukebox_count_hit{count==16}
+      - counter_lb_Jukebox_count_hit{count==6}
       - spider_shot_hit
     events_when_complete: special
     reset_on_complete: true
@@ -495,7 +495,7 @@ show_player:
       show_tokens:
         lights: Extra_Ball
 
-  counter_lb_Jukebox_count_hit{count==9}:
+  counter_lb_Jukebox_count_hit{count==4}:
     flash: 
       loops: -1
       speed: 10
@@ -509,7 +509,7 @@ show_player:
       show_tokens:
         lights: Extra_Ball
 
-  counter_lb_Jukebox_count_hit{count==16}:
+  counter_lb_Jukebox_count_hit{count==6}:
     flash: 
       loops: -1
       speed: 10

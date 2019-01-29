@@ -54,13 +54,14 @@ sound_player:
       loops: -1
 
 variable_player:
+
   mode_Song_Carousel_4_started:
     pf_setlist:
       int: 3
       action: set
     pf_Album_2_Ready:
       int: 0
-      action: 
+      action: set
 
 show_player:
   Song_4: 
@@ -77,3 +78,8 @@ show_player:
     free_track:
       loops: 0
       speed: 1
+
+  mode_Song_Carousel_4_started:
+    Guitar_2K_On:
+      show_tokens:
+        lights: Guitar_2X

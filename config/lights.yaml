@@ -3,35 +3,50 @@
 lights:
   l_rock_again:
     number: 1
-  l_bonus_128K:
+
+  l_guitar_128K:
     number: 2
+
   l_bonus_held:
     number: 3
-  l_bonus_64K:
+
+  l_guitar_64K:
     number: 4
+
   l_right_rollover:
     number: 5
-  l_bonus_32K:
+
+  l_guitar_32K:
     number: 6
+
   l_left_rollover:
     number: 7
-  l_bonus_16K:
+
+  l_guitar_16K:
     number: 8
+
   l_right_return:
     number: 9
-  l_bonus_8K:
+
+  l_guitar_8K:
     number: 10
+
   l_left_return:
     number: 11
-  l_bonus_4K:
+
+  l_guitar_4K:
     number: 12
+
   l_right_outlane:
     number: 13
-  l_bonus_2K:
+
+  l_guitar_2K:
     number: 14
+
   l_left_outlane:
     number: 15
-  l_bonus_1K:
+
+  l_guitar_1K:
     number: 16
 
   l_power_amp_3_top:

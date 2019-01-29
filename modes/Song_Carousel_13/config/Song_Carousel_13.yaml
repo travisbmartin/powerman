@@ -57,7 +57,7 @@ variable_player:
       action: set
     pf_Album_5_Ready:
       int: 0
-      action: 
+      action: set
 
 show_player:
   Song_13: 
@@ -74,3 +74,9 @@ show_player:
     sid_track:
       loops: 0
       speed: 1
+
+
+  mode_Song_Carousel_13_started:
+    Guitar_16K_On:
+      show_tokens:
+        lights: Guitar_16X

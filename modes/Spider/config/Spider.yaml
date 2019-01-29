@@ -19,7 +19,6 @@ random_event_player:
       - clip_05
       - clip_06
       - clip_07
-      - clip_08
       - clip_09
       - clip_10
       - clip_11
@@ -82,11 +81,6 @@ show_player:
 
   clip_07: 
     play_clip_07:
-      loops: 0
-      speed: 1
-
-  clip_08: 
-    play_clip_08:
       loops: 0
       speed: 1
 

@@ -112,6 +112,7 @@ videos:
     width: 150
     height: 105
     file: return_track.mp4
+
   True_Force:
     width: 150
     height: 105
@@ -189,10 +190,6 @@ videos:
     width: 150
     height: 105
     file: clip_07.mp4
-  clip_08:
-    width: 150
-    height: 105
-    file: clip_08.mp4
   clip_09:
     width: 150
     height: 105

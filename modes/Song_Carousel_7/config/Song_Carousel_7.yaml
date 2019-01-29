@@ -54,6 +54,7 @@ sound_player:
       loops: -1
 
 variable_player:
+  
   mode_Song_Carousel_7_started:
     pf_setlist:
       int: 4
@@ -63,18 +64,20 @@ variable_player:
       action: set
 
 show_player:
-
   Song_7: 
     wild_track:
       loops: 0
       speed: 1
-
   Song_8: 
     cult_track:
       loops: 0
       speed: 1
-
-   Song_9: 
+  Song_9: 
     organizized_track:
       loops: 0
       speed: 1
+
+  mode_Song_Carousel_7_started:
+    Guitar_4K_On:
+      show_tokens:
+        lights: Guitar_4X

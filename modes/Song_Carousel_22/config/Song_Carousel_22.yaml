@@ -2,7 +2,7 @@
 
 mode:
   start_events: Jukebox_Start{current_player.pf_setlist==8}
-  stop_events: ball_ended, mode_Red_starting
+  stop_events: ball_ended, mode_Song_Carousel_1_starting
   priority: 200
 
 event_player:
@@ -47,15 +47,16 @@ sound_player:
       action: play
       loops: -1
 
-  Song_24_:
+  Song_24:
     Return_track:
       action: play
       loops: -1
 
 variable_player:
+  
   mode_Song_Carousel_22_started:
     pf_setlist:
-      int: 9
+      int: 1
       action: set
     pf_Album_8_Ready:
       int: 0
@@ -76,3 +77,8 @@ show_player:
     return_track:
       loops: 0
       speed: 1
+
+  mode_Song_Carousel_22_started:
+    Guitar_128K_On:
+      show_tokens:
+        lights: Guitar_128X
