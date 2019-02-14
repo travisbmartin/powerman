@@ -44,3 +44,12 @@ drop_target_banks:
       - load_chamber_shot_hit
     reset_on_complete: 10s
 
+
+ball_holds:
+  Left_Saucer:
+    hold_devices: bd_left_saucer
+    balls_to_hold: 1
+    enable_events: timer_lb_left_saucer_eject_started
+    release_all_events: timer_lb_left_saucer_eject_complete
+
+      

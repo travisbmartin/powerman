@@ -6,7 +6,6 @@ mode:
   priority: 500
 
 timers:
-
   lb_spider_hurry_up:
     start_value: 30
     end_value: 0

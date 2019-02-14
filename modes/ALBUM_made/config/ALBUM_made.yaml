@@ -28,6 +28,17 @@ counters:
     events_when_complete: PM5K_ready
     restart_events: reset_PM5K
 
+  lb_album_hurry_up_setup:
+    count_events: reset_ALBUM
+    events_when_hit: album_hurry_up_hit
+    count_complete_value: 5
+    starting_count: 0
+    direction: up
+    persist_state: false
+    reset_on_complete: True
+    events_when_complete: Album_Hurry_Up_Ready
+    restart_events: mode_album_hurry_up_ended
+
 shots:
   ALBUM:
     switch: s_album_target
@@ -71,6 +82,7 @@ variable_player:
     pf_PM5K_bonus: 1
   balldevice_bd_left_saucer_ball_entered:
     score: 20000 * current_player.pf_multiplier * current_player.pf_MBall_multiplier|block
+
 show_player:
   ALBUM_Targets_done{count==1}:
     Album_A_On:
@@ -79,19 +91,19 @@ show_player:
   ALBUM_Targets_done{count==2}:
     Album_L_On:
       show_tokens:
-        lights: Album_a, Album_l
+        lights: Album_l
   ALBUM_Targets_done{count==3}:
     Album_B_On:
       show_tokens:
-        lights: Album_a, Album_l, Album_b
+        lights: Album_b
   ALBUM_Targets_done{count==4}:
     Album_U_On:
       show_tokens:
-        lights: Album_a, Album_l, Album_b, Album_u
+        lights: Album_u
   ALBUM_Targets_done{count==5}:
     Album_M_On:
       show_tokens:
-        lights: Album_a, Album_l, Album_b, Album_u, Album_m
+        lights: Album_m
 
   PM5K_Targets_done{count==1}:
     PM5K_P_On:
@@ -100,19 +112,30 @@ show_player:
   PM5K_Targets_done{count==2}:
     PM5K_M_On:
       show_tokens:
-        lights: PM5K_P, PM5K_M
+        lights: PM5K_M
   PM5K_Targets_done{count==3}:
     PM5K_Skull_On:
       show_tokens:
-        lights: PM5K_P, PM5K_M, PM5K_Skull
+        lights: PM5K_Skull
   PM5K_Targets_done{count==4}:
     PM5K_5_On:
       show_tokens:
-        lights: PM5K_P, PM5K_M, PM5K_Skull, PM5K_5
+        lights: PM5K_5
   PM5K_Targets_done{count==5}:
     PM5K_K_On:
       show_tokens:
-        lights: PM5K_P, PM5K_M, PM5K_Skull, PM5K_5, PM5K_K
+        lights: PM5K_K
+
+  reset_ALBUM:
+    Album_Off:
+      show_tokens:
+        Album_a, Album_l, Album_b, Album_u, Album_m
+
+  reset_PM5K:
+    PM5K_Off:
+      show_tokens:
+        PM5K_P, PM5K_M, PM5K_Skull, PM5K_5, PM5K_K
+
 
   Album_01: 
     True_Force_Album:
@@ -216,7 +239,18 @@ random_event_player:
       - Album_12
 
 sound_player:
-  award_random_album:
+  reset_album_award:
     new_album_collected:
       action: play
       loops: 0
+
+
+timers:  
+  lb_left_saucer_eject:
+    start_value: 4
+    end_value: 0
+    direction: down
+    tick_interval: 1
+    control_events:
+      - event: balldevice_bd_left_saucer_ball_entered
+        action: start

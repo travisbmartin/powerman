@@ -24,37 +24,37 @@ switches:
     events_when_activated: ev_start_multiball
   s_cabinet_left:
     number: 5
-    tags: playfield_active
+    tags: 
   s_credit:
     number: 6
     tags: start
   s_cabinet_right:
     number: 7
-    tags: playfield_active
+    tags: 
   s_outhole:
     number: 8
     tags: 
   s_coins_right:
     number: 9
-    tags: playfield_active
+    tags: 
   s_coins_left:
     number: 10
-    tags: playfield_active
+    tags: 
   s_coins_middle:
     number: 11
-    tags: playfield_active
+    tags: 
   s_left_return_lane:
     number: 12
-    tags: playfield_active
+    tags: 
   s_right_return_lane:
     number: 13
-    tags: playfield_active
+    tags: 
   s_slam:
     number: 14
-    tags: playfield_active
+    tags: 
   s_tilt:
     number: 15
-    tags: playfield_active
+    tags: 
   s_ramp_drop_target:
     number: 16
     tags: 
@@ -75,57 +75,57 @@ switches:
     tags: 
   s_top_lane_R:
     number: 22
-    tags: playfield_active, Skull_lanes
+    tags: Skull_lanes
   s_top_lane_C:
     number: 23
-    tags: playfield_active, Skull_lanes
+    tags: Skull_lanes
   s_top_lane_L:
     number: 24
-    tags: playfield_active, Skull_lanes
+    tags: Skull_lanes
 
   s_left_outlane:
     number: 25
-    tags: playfield_active
+    tags: 
 
   s_right_outlane:
     number: 26
-    tags: playfield_active
+    tags: 
 
   s_top_25K_lane:
     number: 27
-    tags: playfield_active
+    tags: 
 
   s_top_50K_lane:
     number: 28
-    tags: playfield_active
+    tags: 
 
   s_left_rollover:
     number: 29
-    tags: playfield_active
+    tags: 
 
   s_right_rollover:
     number: 30
-    tags: playfield_active
+    tags: 
 
   s_left_25K_target:
     number: 31
-    tags: playfield_active
+    tags: 
 
   s_right_25K_target:
     number: 32
-    tags: playfield_active
+    tags: 
 
   s_center_target:
     number: 33
-    tags: playfield_active
+    tags: 
 
   s_album_target:
     number: 34
-    tags: playfield_active
+    tags: 
 
   s_PM5K_target:
     number: 35
-    tags: playfield_active
+    tags: 
 
   s_trough_5:
     number: 36

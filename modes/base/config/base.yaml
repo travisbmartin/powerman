@@ -295,11 +295,6 @@ slides:
       - type: text
         text: PLAYER (num) ADDED
         font_size: 10
-      - type: video
-        video: radar
-        volume: 0  
-        auto_play: true
-        end_behavior: stop
   extra_ball_slide:
     expire: 3s
     widgets:

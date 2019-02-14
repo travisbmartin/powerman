@@ -157,8 +157,9 @@ lights:
   l_top_box_mid:
     number: 45
 
-  l_special:
+  l_album_hurry_up:
     number: 46
+    tags: album_hurry_up
 
   l_top_box_left:
     number: 47

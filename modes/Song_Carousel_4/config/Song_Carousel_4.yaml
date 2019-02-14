@@ -80,6 +80,9 @@ show_player:
       speed: 1
 
   mode_Song_Carousel_4_started:
+    Guitar_1K_On:
+      show_tokens:
+        lights: Guitar_1K
     Guitar_2K_On:
       show_tokens:
-        lights: Guitar_2X
+        lights: Guitar_2K

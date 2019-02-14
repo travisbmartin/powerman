@@ -79,6 +79,21 @@ show_player:
       speed: 1
 
   mode_Song_Carousel_16_started:
+    Guitar_1K_On:
+      show_tokens:
+        lights: Guitar_1K
+    Guitar_2K_On:
+      show_tokens:
+        lights: Guitar_2K
+    Guitar_4K_On:
+      show_tokens:
+        lights: Guitar_4K
+    Guitar_8K_On:
+      show_tokens:
+        lights: Guitar_8K
+    Guitar_16K_On:
+      show_tokens:
+        lights: Guitar_16K
     Guitar_32K_On:
       show_tokens:
-        lights: Guitar_32X
+        lights: Guitar_32K
