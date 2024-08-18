@@ -1,7 +1,0 @@
-Things to impliment:
-
-Fix Album and PM5K light cycling
-light all score targets (25K, 100K, etc.)
-add flash to rollover shots
-make a mode where all the score targets are hit to reset them?
-add description of rules to attract mode
